@@ -20,10 +20,17 @@ except:
     import simplejson as json
 import subprocess
 from chardet import detect
+import tarfile
 
 command = "sysctl -p"
 command_se = "getenforce"
 stop_firewall_cmd = "systemctl stop firewalld.service"
+disable_firewall_cmd = "systemctl status firewalld"
+pt_list = "yum install perl-IO-Socket-SSL perl-DBD-MySQL perl-Time-HiRes perl-DBI  -y"
+wget_pt_tools = "wget -c https://www.percona.com/downloads/percona-toolkit/3.0.13/binary/tarball/percona-toolkit-3.0.13_x86_64.tar.gz"
+tools_pkg = "percona-toolkit-3.0.13_x86_64.tar.gz"
+softdir = "/usr/local/webserver/software/"
+profile = "/root/.bash_profile"
 
 def runCmd(cmd):
     try:
@@ -43,6 +50,11 @@ def check(dstStr, fn):
         return dstStr in content
     except:
         return False
+
+def untar(fname, dirs):
+	t = tarfile.open(fname)
+	t.extractall(path = dirs)
+	
 
 #liunx init
 
@@ -103,28 +115,47 @@ def check_params():
 				f_w.write(flag)
 	
 	check_firewall = runCmd(stop_firewall_cmd)[1]
-	if check_firewall == 0:
+	disable_firewall = runCmd(disable_firewall_cmd)[1]
+	if check_firewall == 0 and disable_firewall == 0:
 		print("firewall is stop")
 	else:
 		print("firewall is on")		
 
+	
 
 #check && install pt-tools
-
-
-#check && install innodbbackupex
-
-#check && install 
-
-
-#def test():
-#	f=sys.argv[1]
-#	d=sys.argv[2]
-#	c=sys.argv[3]
-
+def install_pt_tools():
+	if os.path.exists(softdir) == True:
+		print("softdir is exists")
+	else:
+		os.makedirs(softdir)
+	os.chdir(softdir)
+	check_pt_list = runCmd(pt_list)[1]
+	check_pt_tools = runCmd(wget_pt_tools)[1]
+	if check_pt_list == 0 and check_pt_tools == 0:
+	#解压&& 配置.bash_profile&& source	
+		untar(tools_pkg, softdir)
+		print("tar sucess")
+	else:
+		print("pt_tools is not ready")
+	
+	for i in os.listdir():
+		if i.find('percona') == 0 and os.path.isdir(i):
+			pt_dir = i
+			
+	pt_bin = softdir + pt_dir + '/bin'
+	pro = "export PATH=$PATH:" + pt_bin
+	with open(profile, "a+") as f:
+		f.write(pro + "\n")
+	
+	profile_flag = runCmd('source ' + profile)[1]
+	if profile_flag == 0:
+		print "source profile sucessd"
+	
 def main():
-#	modify_file()
+	modify_file()
 	check_params()
+	install_pt_tools()
 
 if __name__ == '__main__':
     main()
