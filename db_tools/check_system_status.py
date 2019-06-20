@@ -3,7 +3,8 @@
 # Creator: shenjinhong
 # UpdateTime:2019.6.10
 
-
+import platform
+import socket
 import psutil
 import datetime
 #from datetime import datetime
@@ -20,12 +21,7 @@ except:
     import simplejson as json
 import subprocess
 
-
-pt_hostname="/usr/local/bin/pt-summary | grep Hostname | awk -F '|' '{print $2}'"
-pt_platform="/usr/local/bin/pt-summary |grep -iv System| grep Platform | awk -F '|' '{print $2}'"
-pt_release="/usr/local/bin/pt-summary | grep Release | awk -F '|' '{print $2}'"
-pt_kernel="/usr/local/bin/pt-summary | grep Kernel | awk -F '|' '{print $2}'"
-pt_system="/usr/local/bin/pt-summary | grep System | awk -F '|' '{print $2}'"
+pt_system="dmidecode -s system-product-name"
 
 def runCmd(cmd):
     try:
@@ -38,11 +34,11 @@ def runCmd(cmd):
 
 def get_sys_info():
 	sys_info={}
-	sys_info['hostname']=str(list(runCmd(pt_hostname))[0])
-	sys_info['platform']=str(list(runCmd(pt_platform))[0])
-	sys_info['release']=str(list(runCmd(pt_release))[0])
-	sys_info['kernel']=str(list(runCmd(pt_kernel))[0])
-	sys_info['system']=str(list(runCmd(pt_system))[0])
+	sys_info['hostname']=socket.getfqdn(socket.gethostname())
+	sys_info['platform']=platform.system()
+	sys_info['kernel']=platform.uname()[2]
+	sys_info['system']= re.sub('[\n]','',runCmd(pt_system)[0].decode('utf-8', 'ignore'))
+	sys_info['ip_addr']=socket.gethostbyname(sys_info['hostname'])
 	print(sys_info)
 	return sys_info
 
