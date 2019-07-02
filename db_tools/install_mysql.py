@@ -125,7 +125,9 @@ def init_sys_mysql():
 # 
 # /usr/local/mysql/bin/mysqld --initialize   --user=mysql  --datadir=/data/mysql/mysql_3306/data/ --basedir=/usr/local/mysql/
 # cat /data/mysql/mysql_3306/logs/mysql-error-log.err  |grep password | awk -F 'localhost: ' '{print $2}'
-# ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123';
+# update user set password_expired="N" where user="root";
+# ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123' EXPIRE NEVER;
+# flush privilegs;
 def build_mysql():
     try:
         if len(os.listdir(data_dir)) > 0:
@@ -244,10 +246,10 @@ def alter_user():
 
 def main():
 #    get_mysql()
-#    init_sys_mysql()
-#    write_config()
-#    build_mysql()
-#    start_mysql()
+    init_sys_mysql()
+    write_config()
+    build_mysql()
+    start_mysql()
     print("haha")
 
 if __name__ == '__main__':
