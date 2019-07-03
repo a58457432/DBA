@@ -217,7 +217,6 @@ def write_config():
     config['mysqld']['sync_binlog'] = '10'
     config['mysqld']['gtid_mode'] = 'off'
     config['mysqld']['symbolic-links'] = '0'
-    config['mysqld']['test'] = 'testinfo'
     config['mysqld_safe'] = {'log-error': config['mysqld']['log-error'], 'pid-file' : config['mysqld']['pid-file']}
     with open('/etc/my.cnf', 'w') as configfile:
         config.write(configfile)
