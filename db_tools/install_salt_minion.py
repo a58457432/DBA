@@ -63,6 +63,11 @@ def main():
         print(i)
         a = sshd(i['host'], ylist['port'], ylist['sysuser']['user'], ylist['sysuser']['passwd'])
         a.to_do('hostname')
+#        a.to_do('cat /etc/redhat-release')
+#        a.to_do('yum install https://repo.saltstack.com/yum/redhat/salt-repo-latest.el6.noarch.rpm -y')
+#        a.to_do('yum install salt-minion -y')
+#        a.to_do("echo 'master: 172.20.20.187' > /etc/salt/minion")
+        a.to_do('service salt-minion start')
 
 if __name__ == '__main__':
     main()
