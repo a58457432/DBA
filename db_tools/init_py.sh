@@ -20,6 +20,8 @@ setuptools_dir='setuptools-19.6'
 
 init_py(){
 yum install libffi-devel -y 
+yum install zlib -y
+yum install zlib-devel -y
 mkdir -p $dir
 cd $dir
 if [[ $hcode == 200 ]];then
