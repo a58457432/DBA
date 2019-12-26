@@ -1,4 +1,0 @@
-#https://github.com/seanlook/SchemaSync
-
-# useage
-schemasync mysql://root:'A123!@#b200'@172.18.30.86:3306/* mysql://root:'A123!@#b200'@172.20.30.11:3306/* --sync-comments --tag=BASE --output-directory=/usr/local/tools/erp

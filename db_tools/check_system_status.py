@@ -42,7 +42,7 @@ def get_sys_info():
     sys_info['system'] = re.sub('[\n]', '',
                                 runCmd(pt_system)[0].decode('utf-8', 'ignore'))
     sys_info['ip_addr'] = socket.gethostbyname(sys_info['hostname'])
-    print(sys_info)
+#    print(sys_info)
     return sys_info
 
 
@@ -56,7 +56,7 @@ def get_cpu_info():
     cpu_info['hardirq'] = data[5]
     cpu_info['softirq'] = data[6]
     cpu_info['cpu_cores'] = psutil.cpu_count()
-    print(cpu_info)
+#    print(cpu_info)
     return cpu_info
 
 
@@ -66,7 +66,7 @@ def get_mem_info():
     mem_info['mem_total'] = data[0] / 1024 / 1024 / 1024
     mem_info['mem_avariable'] = data[1] / 1024 / 1024 / 1024
     mem_info['mem_percent'] = data[2]
-    print(mem_info)
+#    print(mem_info)
     return mem_info
 
 
@@ -81,7 +81,7 @@ def get_disk_info():
             i[1])[0] / 1024 / 1024 / 1024
         disk_info[i[0]]['used_percent'] = psutil.disk_usage(i[1])[3]
 
-    print(disk_info)
+#    print(disk_info)
     return disk_info
 
 
