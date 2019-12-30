@@ -1,3 +1,5 @@
-# 
+#此监控脚本及模板适用于 mysql5.6, mysql5.7 单实例及主从架构
+#
+
 # crontab 
 */5 * * * *  python /usr/local/webserver/mysql_script/getdbStatus.py >/dev/null 2>&1 
