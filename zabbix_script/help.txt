@@ -1,0 +1,3 @@
+# 
+# crontab 
+*/5 * * * *  python /usr/local/webserver/mysql_script/getdbStatus.py >/dev/null 2>&1 
