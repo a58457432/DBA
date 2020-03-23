@@ -1,0 +1,12 @@
+connect target /
+run
+{
+allocate channel ch1 type disk;
+allocate channel ch2 type disk;
+backup as compressed backupset incremental level 0 database include current controlfile format '/home/oracle/rman_backup/backup_%s_%T.lv0';
+BACKUP as compressed backupset ARCHIVELOG ALL NOT BACKED UP 1 TIMES format '/home/oracle/rman_backup/arch_%s_%T.bak';
+backup current controlfile format '/home/oracle/rman_backup/controlfile_%s_%T.bak';
+DELETE ARCHIVELOG ALL COMPLETED BEFORE 'SYSDATE-7';
+release channel ch1;
+release channel ch2;
+}

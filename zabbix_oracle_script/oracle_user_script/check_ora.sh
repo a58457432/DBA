@@ -4,9 +4,13 @@
 
 lsnr_status=`lsnrctl status|grep -v grep| grep -c READY`
 lsnr_process=`ps -ef |grep tnslsnr |grep -v grep | wc -l`
-IP=192.168.31.173
+IP=172.25.20.14
 PORT=1521
 lsnr_num=`echo -n "\n"|telnet $IP $PORT|grep Connected|wc -l`
+SCAN_IP=172.25.20.102
+scan_ip_num=`ping -w 2 -c 3 $SCAN_IP | grep packet | awk -F" " '{print $6}'| awk -F"%" '{print $1}'| awk -F' ' '{print $1}'`
+
+script_home='/usr/local/webserver/zabbix_oracle_script/oracle_user_script'
 
 db_alive=`sqlplus -silent "/ as sysdba" <<END
 set pagesize 0 feedback off verify off heading off echo off
@@ -27,12 +31,12 @@ select trim(value) from v\\\$parameter where name ='processes';
 exit;
 END`
 
-TNS=wwg
+TNS=PAICESDB
 
 
 #check lsnrctl; 1 is ok, 0  is fail
 ora_lsnrctl_status(){
-    if [ ${lsnr_status} -lt 1 ]; then
+    if [ ${lsnr_status} -lt 3 ]; then
         lsnrctl_status_flag=0
         echo 'lsnrctl_status_flag='$lsnrctl_status_flag
     else
@@ -55,11 +59,22 @@ ora_check_listen_port(){
 ora_tns_status(){
     tnschk=`tnsping $TNS |grep -c OK `
     if [ ${tnschk} -eq 1 ]; then
-        echo "tns_status_$TNS=1"
+        echo "tns_status=1"
     else
-        echo "tns_status_$TNS=0"
+        echo "tns_status=0"
     fi
 }
+
+#check scan ip, 1 is ok, 0 is fail
+ora_scan_ip_status(){
+    if [ ${scan_ip_num} -eq 0 ]; then
+        echo "scan_ip=1"
+    else
+        echo "scan_ip=0"
+    fi
+}
+
+
 
 # grep ORA- alert.log
 
@@ -118,8 +133,8 @@ EOF
 
 # get tbl
 ora_get_tblspace(){
-tbl_name=`sh /home/oracle/script/tblspace.sh |awk -F ' ' '{print $1}'`
-tbl_percent=`sh /home/oracle/script/tblspace.sh |awk -F ' ' '{print $4}'`
+tbl_name=`sh $script_home/tblspace.sh | grep -iv selected |awk -F ' ' '{print $1}'`
+tbl_percent=`sh $script_home/tblspace.sh | grep -iv selected |awk -F ' ' '{print $4}'`
 
 tbl_name1=($tbl_name)
 tbl_percent1=($tbl_percent)
@@ -133,15 +148,34 @@ done
 
 }
 
+# get asm
+ora_asm_used_per(){
+asm_name=`sh $script_home/asm_used.sh |awk -F ' ' '{print $1}'`
+asm_percent=`sh $script_home/asm_used.sh |awk -F ' ' '{print $2}'`
+
+asm_name1=($asm_name)
+asm_percent1=($asm_percent)
+num=${#asm_name1[*]}
+num1=$[$num-1]
+
+for i in `seq 0 $num1`;
+do
+    echo asm_${asm_name1[$i]}=${asm_percent1[$i]}
+done
+
+}
+
 main(){
 ora_lsnrctl_status
 ora_check_listen_port
 ora_tns_status
+ora_scan_ip_status
 ora_check_DBalive
 ora_active_session
 ora_all_process
 #ora_check_tablespace
 ora_get_tblspace
+ora_asm_used_per
 }
 
 main

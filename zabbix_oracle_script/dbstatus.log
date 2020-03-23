@@ -2,10 +2,11 @@ lsnrctl_status_flag=1
 listen_1521=1
 tns1=1
 db_status=1
-db_active_session=27
+db_active_session=29
 db_all_process=150
-tbl_SYSTEM=99.51
-tbl_SYSAUX=94.85
-tbl_UNDOTBS1=27.91
+tbl_SYSTEM=99.65
+tbl_SYSAUX=93.93
 tbl_USERS=26.20
-Last login: Wed Mar 11 15:28:01 CST 2020
+tbl_UNDOTBS1=25.83
+tbl_SJHDATA=1.06
+Last login: Mon Mar 23 16:51:01 CST 2020

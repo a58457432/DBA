@@ -3,7 +3,7 @@
 #
 #    (C) 21vianet Inc.
 #
-#    Last update: sjh 2020-03-05
+#    Last update: sjh 2020-02-28
 
 """ Run CMD or SCP In Batch Mode
 
@@ -35,22 +35,9 @@ dt = datetime.now()
 DATETIME = dt.strftime('%Y-%m-%d %H:%M:%S')
 
 
-# master/slave dba info
-sock = ''
-port = 3307
-IP = '192.168.31.125'
-user = 'root'
-password = '123456'
-dbschema = 'mysql'
 
-
-# zabbix server
-zb_sender = '/usr/bin/zabbix_sender'
-zb_server = '192.168.31.156'
-zb_server_port = 10051
-
-# zabbix agent
-insname = 'MySQL_' + socket.gethostname()
+# hostname
+insname = 'Mongodb_' + socket.gethostname()
 
 # <----- Global Variables
 
@@ -68,29 +55,12 @@ def runCmd(cmd):
 
 
 # ----------------------------------------------------------------------------------------
-# Some prepare work before scp or run command.
-# ----------------------------------------------------------------------------------------
-
-
-# ----------------------------------------------------------------------------------------
 # init dbs dict()
 # ----------------------------------------------------------------------------------------
 def init_dbins_info():
     dbins = {}  # db实例字典
     dbinfo = {}  # db信息字典
-    dbinfo['global_var'] = {}  # db global variables 字典
-    dbinfo['global_status'] = {}  # db global status 字典
-    dbinfo['slave_status'] = {}  # db主从状态变量
-    dbinfo['master_status'] = {}  # db从库对应主库状态变量
-    dbinfo['last_status'] = {}  # db上一次状态数值字典
-    dbinfo['cur_status_cal'] = {}  # db当前计算后状态变量
-    dbinfo['processlist'] = {}
-    dbinfo['server_status'] = ''  # dbserver 状态数值(是否active), 初始化为"on"
-    dbinfo['port'] = port
-    dbinfo['ip'] = IP
-    dbinfo['user'] = user
-    dbinfo['password'] = password
-    dbinfo['dbschema'] = dbschema
+    dbinfo['mongodb'] = {}
     dbinfo['insname'] = insname
 
     dbins[insname] = copy.deepcopy(dbinfo)
@@ -99,20 +69,29 @@ def init_dbins_info():
 #-------------------------
 # conn mongodb
 #-------------------------
-def conn_mongodb():
-    myclient = pymongo.MongoClient('mongodb://admin:admin@192.168.31.156:27017/')
-    c = myclient.database_names()
-    a = myclient["school"]
-    b = a['col']
-    print b.find().count()
-    for i in c:
-        print "database_name : " +  i
-        print myclient[i].list_collection_names(session=None)
-        print myclient[i].list_collection_names(session=None)[0]
+def calc_mongodb():
+    dbins = init_dbins_info()
+    database_list = []
+    for dbi in dbins.values():
+        myclient = pymongo.MongoClient('mongodb://admin:admin@192.168.31.156:27017/')
+        c = myclient.database_names()
+        for i in c:
+            if i in ['config','admin','local']:
+                continue
+            dbi['mongodb'][i] = {}
+            print "database_name : " +  i
+            db_name =  myclient[i].list_collection_names(session=None)
+            for x in db_name:
+                dbi['mongodb'][i][x] = myclient[i][x].find().count()
+                print str(x) + "=" + str(myclient[i][x].find().count())
+            print "\n"
+            print 'db_count:' + str(sum(dbi['mongodb'][i].values()))
+            print "\n"
+            database_list.append(sum(dbi['mongodb'][i].values()))
+        #print dbi['mongodb']
+        print  'instance_cnt = ' + str(sum(database_list))
+            
 
-# ----------------------------------------------------------------------------------------
-# Class for DBStatus.
-# ----------------------------------------------------------------------------------------
 
 if __name__ == '__main__':
-    conn_mongodb()
+    calc_mongodb()

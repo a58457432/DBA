@@ -1,0 +1,3 @@
+0 0 * * 6 /u01/tools/rmanscripts/rman_lv0.sh
+1 2 * * 5 /u01/tools/rmanscripts/rman_lv1.sh
+1 2 * * 1,3,4,6,0 /u01/tools/rmanscripts/rman_lv2.sh

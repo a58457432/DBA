@@ -249,7 +249,6 @@ def main():
     write_config()
     build_mysql()
     start_mysql()
-    print("haha")
 
 if __name__ == '__main__':
     main()

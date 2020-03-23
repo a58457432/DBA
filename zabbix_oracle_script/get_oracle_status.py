@@ -37,11 +37,11 @@ DATETIME = dt.strftime('%Y-%m-%d %H:%M:%S')
 
 # zabbix server
 zb_sender = '/usr/bin/zabbix_sender'
-zb_server = '192.168.31.156'
+zb_server = '172.25.10.244'
 zb_server_port = 10051
 
 # zabbix agent
-insname = 'Ora_' + socket.gethostname()
+insname = 'RAC_' + socket.gethostname()
 
 # <----- Global Variables
 
@@ -73,7 +73,8 @@ def init_dbins_info():
     dbinfo['tbl_status'] = {}
     dbinfo['test'] = {}
     dbinfo['insname'] = insname
-
+    dbinfo['asm_status'] = {}
+    dbinfo['scan_ip'] = {}
     dbins[insname] = copy.deepcopy(dbinfo)
     return dbins
 
@@ -83,7 +84,7 @@ def init_dbins_info():
 def get_oracle_status():
     dbins = init_dbins_info() 
     for db in dbins.values():
-        with open('/usr/local/webserver/DBA/zabbix_oracle_script/dbstatus.log','r') as f:
+        with open('/usr/local/webserver/zabbix_oracle_script/dbstatus.log','r') as f:
             for line in f.readlines():
                 if line[0:4] == 'Last':
                     continue    
@@ -99,7 +100,11 @@ def get_oracle_status():
                     db['db_status'][linelist[0]] = linelist[1]
                 if "tbl" in line:
                     db['tbl_status'][linelist[0]] = linelist[1]
-
+                if "asm" in line:
+                    db['asm_status'][linelist[0]] = linelist[1]
+                if "scan" in line:
+                    db['scan_ip'][linelist[0]] = linelist[1]
+#    print dbins
     return dbins
 
 
@@ -114,7 +119,7 @@ def push_zabbix_items():
     dbs = dbins.values()
     dbs.sort()
     
-    for status_type in ('lsnrctl_status', 'listen_status', 'tns_status', 'db_status', 'tbl_status'):
+    for status_type in ('lsnrctl_status', 'listen_status', 'tns_status', 'db_status', 'tbl_status', 'asm_status','scan_ip'):
         for (key, value) in dbs[0][status_type].items():
             zb_sender_cmd = ('%s -z %s -p %d -s %s -k %s -o %s') % (zb_sender, zb_server, zb_server_port, insname, str(key), str(value))
             print zb_sender_cmd

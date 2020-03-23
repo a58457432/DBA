@@ -16,7 +16,7 @@ TO_CHAR(ROUND((D .TOT_GROOTTE_MB - F.TOTAL_BYTES) / D .TOT_GROOTTE_MB * 100,2),'
 F.TOTAL_BYTES "free_size_M"
 FROM
 (SELECT TABLESPACE_NAME,                                                                                                                      ROUND (SUM(BYTES) /(1024 * 1024), 2) TOTAL_BYTES,
-        ROUND (MAX(BYTES) /(1024 * 1024), 2) MAX_BYTES                                                                                        FROM  SYS.DBA_FREE_SPACE
+        ROUND (MAX(BYTES) /(1024 * 1024), 2) MAX_BYTES                                                                                        FROM  SYS.DBA_FREE_SPACE where tablespace_name not in('SYSAUX','SYSTEM','USERS','UNDOTBS2','UNDOTBS1')
         GROUP BY TABLESPACE_NAME
          ) F,
 (SELECT    DD.TABLESPACE_NAME,
