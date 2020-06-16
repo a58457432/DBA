@@ -1,0 +1,2329 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Wed Jun 10 00:00:01 2020
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: ORCL (DBID=1492966431)
+
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 10> 11> 12> 13> 14> 15> 16> 17> 18> 19> 20> 21> 
+using target database control file instead of recovery catalog
+allocated channel: c1
+channel c1: SID=187 instance=orcl2 device type=DISK
+
+allocated channel: c2
+channel c2: SID=411 instance=orcl2 device type=DISK
+
+allocated channel: c3
+channel c3: SID=518 instance=orcl2 device type=DISK
+
+allocated channel: c4
+channel c4: SID=802 instance=orcl2 device type=DISK
+
+allocated channel: c5
+channel c5: SID=1097 instance=orcl2 device type=DISK
+
+allocated channel: c6
+channel c6: SID=302 instance=orcl2 device type=DISK
+
+Starting backup at 10-JUN-20
+channel c1: starting compressed incremental level 1 datafile backup set
+channel c1: specifying datafile(s) in backup set
+input datafile file number=00029 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.535.1036266693
+input datafile file number=00037 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.529.1036266733
+input datafile file number=00014 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.259.1036266773
+input datafile file number=00020 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.270.1036266813
+input datafile file number=00065 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.276.1036266851
+input datafile file number=00072 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.282.1036266893
+input datafile file number=00078 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.288.1036266935
+input datafile file number=00085 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.294.1036266979
+input datafile file number=00091 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.295.1036269159
+input datafile file number=00097 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.299.1036271259
+input datafile file number=00103 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.308.1036272815
+input datafile file number=00110 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.314.1036272921
+input datafile file number=00116 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.316.1036273001
+input datafile file number=00123 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.325.1036273279
+input datafile file number=00130 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.328.1036273323
+input datafile file number=00136 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.333.1036273801
+input datafile file number=00142 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.346.1036275423
+input datafile file number=00148 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.352.1036278113
+input datafile file number=00154 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.361.1036279265
+input datafile file number=00160 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.364.1036279431
+input datafile file number=00166 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.373.1036279761
+input datafile file number=00172 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.378.1036280005
+input datafile file number=00178 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.380.1036280131
+input datafile file number=00184 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.387.1036280593
+input datafile file number=00190 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.398.1036282171
+input datafile file number=00197 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.401.1036284701
+input datafile file number=00204 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.412.1036285787
+input datafile file number=00210 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.416.1036285943
+input datafile file number=00216 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.424.1036286275
+input datafile file number=00222 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.428.1036286515
+input datafile file number=00229 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.432.1036286641
+input datafile file number=00235 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.435.1036287081
+input datafile file number=00241 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.446.1036288547
+input datafile file number=00247 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.450.1036290953
+input datafile file number=00253 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.466.1036292001
+input datafile file number=00259 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.470.1036292173
+input datafile file number=00265 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.574.1037141047
+input datafile file number=00271 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.580.1037141795
+input datafile file number=00277 name=+DATA01/orcl/datafile/tbs_paic.479.15867640473
+input datafile file number=00283 name=+DATA01/orcl/datafile/tbs_paic.264.1038245767
+input datafile file number=00289 name=+DATA01/orcl/datafile/tbs_paic.270.1038255593
+input datafile file number=00295 name=+DATA01/orcl/datafile/tbs_paic.276.1038255789
+input datafile file number=00301 name=+DATA01/orcl/datafile/tbs_paic.282.1038255987
+input datafile file number=00307 name=+DATA01/orcl/datafile/tbs_paic_clob.288.1040472481
+input datafile file number=00313 name=+DATA01/orcl/datafile/tbs_paic.294.1040472733
+input datafile file number=00319 name=+DATA01/orcl/datafile/tbs_paic.295.1041586153
+input datafile file number=00325 name=+DATA01/orcl/datafile/tbs_paic.301.1041586471
+input datafile file number=00331 name=+DATA_ARCH/orcl/datafile/tbs_paic_arch.266.1041634555
+input datafile file number=00047 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.468.1036292065
+input datafile file number=00052 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.484.1036292861
+input datafile file number=00058 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.487.1036293027
+input datafile file number=00064 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.490.1036293259
+input datafile file number=00012 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta_index.497.1036293589
+input datafile file number=00008 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.498.1036293603
+input datafile file number=00004 name=+DG_DATA_NEW_1/orcl/datafile/users.559.1036295521
+input datafile file number=00005 name=+DG_DATA_NEW_1/orcl/datafile/undotbs2.555.1036295111
+channel c1: starting piece 1 at 10-JUN-20
+channel c2: starting compressed incremental level 1 datafile backup set
+channel c2: specifying datafile(s) in backup set
+input datafile file number=00026 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.538.1036266691
+input datafile file number=00035 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.532.1036266729
+input datafile file number=00011 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.258.1036266769
+input datafile file number=00017 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.260.1036266809
+input datafile file number=00040 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.272.1036266849
+input datafile file number=00069 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.278.1036266889
+input datafile file number=00076 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.284.1036266933
+input datafile file number=00083 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.291.1036266977
+input datafile file number=00089 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.296.1036269341
+input datafile file number=00095 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.297.1036269517
+input datafile file number=00101 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.306.1036272767
+input datafile file number=00108 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.310.1036272857
+input datafile file number=00114 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.315.1036272963
+input datafile file number=00121 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.319.1036273011
+input datafile file number=00127 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.321.1036273101
+input datafile file number=00134 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.322.1036273205
+input datafile file number=00140 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.344.1036275073
+input datafile file number=00146 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.347.1036275663
+input datafile file number=00152 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.348.1036275703
+input datafile file number=00158 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.358.1036279065
+input datafile file number=00164 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.365.1036279475
+input datafile file number=00170 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.367.1036279493
+input datafile file number=00176 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.371.1036279659
+input datafile file number=00182 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.374.1036279769
+input datafile file number=00188 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.394.1036281531
+input datafile file number=00195 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.396.1036282073
+input datafile file number=00202 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.397.1036282111
+input datafile file number=00208 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.407.1036285453
+input datafile file number=00214 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.414.1036285859
+input datafile file number=00220 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.415.1036285877
+input datafile file number=00227 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.419.1036286037
+input datafile file number=00233 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.422.1036286143
+input datafile file number=00239 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.443.1036287795
+input datafile file number=00245 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.444.1036288301
+input datafile file number=00251 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.445.1036288335
+input datafile file number=00257 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.454.1036291445
+input datafile file number=00263 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.460.1036291853
+input datafile file number=00269 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.578.1037141753
+input datafile file number=00275 name=+DATA01/orcl/datafile/tbs_paic.479.15867640471
+input datafile file number=00281 name=+DATA01/orcl/datafile/tbs_paic_index.479.15867640474
+input datafile file number=00287 name=+DATA01/orcl/datafile/tbs_paic.268.1038255493
+input datafile file number=00293 name=+DATA01/orcl/datafile/tbs_paic.274.1038255715
+input datafile file number=00299 name=+DATA01/orcl/datafile/tbs_paic.280.1038255915
+input datafile file number=00305 name=+DATA01/orcl/datafile/tbs_paic_index.286.1040128425
+input datafile file number=00311 name=+DATA01/orcl/datafile/tbs_paic.292.1040472665
+input datafile file number=00317 name=+DATA_ARCH/orcl/datafile/tbs_paic_arch_index.259.1040764433
+input datafile file number=00323 name=+DATA01/orcl/datafile/tbs_paic.299.1041586361
+input datafile file number=00329 name=+DATA_ARCH/orcl/datafile/tbs_paic_arch.264.1041634025
+input datafile file number=00027 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.478.1036292547
+input datafile file number=00056 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.481.1036292677
+input datafile file number=00062 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.494.1036293419
+input datafile file number=00009 name=+DG_DATA_NEW_1/orcl/datafile/undotbs1.495.1036293439
+input datafile file number=00082 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.492.1036293339
+input datafile file number=00045 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.505.1036294853
+channel c2: starting piece 1 at 10-JUN-20
+channel c3: starting compressed incremental level 1 datafile backup set
+channel c3: specifying datafile(s) in backup set
+input datafile file number=00025 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.537.1036266693
+input datafile file number=00034 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.531.1036266731
+input datafile file number=00042 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.257.1036266771
+input datafile file number=00039 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.263.1036266811
+input datafile file number=00068 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.274.1036266851
+input datafile file number=00075 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.280.1036266891
+input datafile file number=00081 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.286.1036266933
+input datafile file number=00088 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.292.1036266977
+input datafile file number=00094 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.302.1036272381
+input datafile file number=00100 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.303.1036272469
+input datafile file number=00106 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.304.1036272537
+input datafile file number=00113 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.307.1036272815
+input datafile file number=00120 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.312.1036272899
+input datafile file number=00126 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.317.1036273003
+input datafile file number=00133 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.318.1036273011
+input datafile file number=00139 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.335.1036273901
+input datafile file number=00145 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.341.1036274581
+input datafile file number=00151 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.345.1036275233
+input datafile file number=00157 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.353.1036278711
+input datafile file number=00163 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.359.1036279101
+input datafile file number=00169 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.360.1036279177
+input datafile file number=00175 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.362.1036279305
+input datafile file number=00181 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.370.1036279613
+input datafile file number=00187 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.383.1036280423
+input datafile file number=00194 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.390.1036281011
+input datafile file number=00200 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.395.1036281599
+input datafile file number=00207 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.402.1036284901
+input datafile file number=00213 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.404.1036285269
+input datafile file number=00219 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.405.1036285341
+input datafile file number=00226 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.408.1036285461
+input datafile file number=00232 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.411.1036285755
+input datafile file number=00238 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.429.1036286527
+input datafile file number=00244 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.436.1036287113
+input datafile file number=00250 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.440.1036287653
+input datafile file number=00256 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.449.1036290861
+input datafile file number=00262 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.452.1036291241
+input datafile file number=00268 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.577.1037141117
+input datafile file number=00274 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.583.1037141881
+input datafile file number=00280 name=+DATA01/orcl/datafile/tbs_paic_index.479.15867640473
+input datafile file number=00286 name=+DATA01/orcl/datafile/tbs_paic.267.1038255445
+input datafile file number=00292 name=+DATA01/orcl/datafile/tbs_paic.273.1038255683
+input datafile file number=00298 name=+DATA01/orcl/datafile/tbs_paic.279.1038255887
+input datafile file number=00304 name=+DATA01/orcl/datafile/tbs_paic_index.285.1040128323
+input datafile file number=00310 name=+DATA01/orcl/datafile/tbs_paic.291.1040472641
+input datafile file number=00316 name=+DATA_ARCH/orcl/datafile/tbs_paic_arch.258.1040764397
+input datafile file number=00322 name=+DATA01/orcl/datafile/tbs_paic.298.1041586317
+input datafile file number=00328 name=+DATA_ARCH/orcl/datafile/tbs_paic_arch.263.1041633937
+input datafile file number=00334 name=+DATA01/orcl/datafile/tbs_paic.304.1042292489
+input datafile file number=00050 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.477.1036292537
+input datafile file number=00055 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.479.1036292655
+input datafile file number=00061 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.482.1036292707
+input datafile file number=00010 name=+DG_DATA_NEW_1/orcl/datafile/undotbs2.483.1036292807
+input datafile file number=00071 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_readonly.496.1036293551
+input datafile file number=00007 name=+DG_DATA_NEW_1/orcl/datafile/system.489.1036293205
+input datafile file number=00003 name=+DG_DATA_NEW_1/orcl/datafile/undotbs1.500.1036293687
+input datafile file number=00224 name=+DG_DATA_NEW_1/orcl/datafile/users.499.1036293629
+channel c3: starting piece 1 at 10-JUN-20
+channel c4: starting compressed incremental level 1 datafile backup set
+channel c4: specifying datafile(s) in backup set
+input datafile file number=00028 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.533.1036266693
+input datafile file number=00036 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.265.1036266733
+input datafile file number=00013 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.526.1036266773
+input datafile file number=00018 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.264.1036266811
+input datafile file number=00044 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.273.1036266849
+input datafile file number=00070 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.279.1036266889
+input datafile file number=00077 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.285.1036266933
+input datafile file number=00084 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.290.1036266977
+input datafile file number=00090 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.298.1036271217
+input datafile file number=00096 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.305.1036272707
+input datafile file number=00102 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.309.1036272833
+input datafile file number=00109 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.323.1036273231
+input datafile file number=00115 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.326.1036273303
+input datafile file number=00122 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.329.1036273391
+input datafile file number=00128 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.334.1036273851
+input datafile file number=00135 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.339.1036274301
+input datafile file number=00141 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.349.1036277499
+input datafile file number=00147 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.355.1036278863
+input datafile file number=00153 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.357.1036279027
+input datafile file number=00159 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.372.1036279703
+input datafile file number=00165 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.376.1036279889
+input datafile file number=00171 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.377.1036279949
+input datafile file number=00177 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.385.1036280465
+input datafile file number=00183 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.388.1036280919
+input datafile file number=00189 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.399.1036284071
+input datafile file number=00196 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.406.1036285351
+input datafile file number=00203 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.409.1036285503
+input datafile file number=00209 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.421.1036286139
+input datafile file number=00215 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.425.1036286323
+input datafile file number=00221 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.426.1036286373
+input datafile file number=00228 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.433.1036286863
+input datafile file number=00234 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.437.1036287281
+input datafile file number=00240 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.448.1036290235
+input datafile file number=00246 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.456.1036291483
+input datafile file number=00252 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.458.1036291633
+input datafile file number=00258 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.472.1036292237
+input datafile file number=00264 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.473.1036292409
+input datafile file number=00270 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.579.1037141773
+input datafile file number=00276 name=+DATA01/orcl/datafile/tbs_paic.479.15867640472
+input datafile file number=00282 name=+DATA01/orcl/datafile/tbs_paic.263.1038245653
+input datafile file number=00288 name=+DATA01/orcl/datafile/tbs_paic.269.1038255553
+input datafile file number=00294 name=+DATA01/orcl/datafile/tbs_paic.275.1038255767
+input datafile file number=00300 name=+DATA01/orcl/datafile/tbs_paic.281.1038255943
+input datafile file number=00306 name=+DATA01/orcl/datafile/tbs_paic.287.1040472383
+input datafile file number=00312 name=+DATA01/orcl/datafile/tbs_paic.293.1040472707
+input datafile file number=00318 name=+DATA_ARCH/orcl/datafile/tbs_paic_arch_index.260.1040764457
+input datafile file number=00324 name=+DATA01/orcl/datafile/tbs_paic.300.1041586449
+input datafile file number=00330 name=+DATA_ARCH/orcl/datafile/tbs_paic_arch.265.1041634077
+input datafile file number=00046 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.471.1036292225
+input datafile file number=00051 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.455.1036291447
+input datafile file number=00057 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.457.1036291539
+input datafile file number=00063 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.461.1036291863
+input datafile file number=00129 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_readonly.480.1036292657
+input datafile file number=00002 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.493.1036293399
+input datafile file number=00022 name=+DG_DATA_NEW_1/orcl/datafile/undotbs3.501.1036293761
+input datafile file number=00201 name=+DG_DATA_NEW_1/orcl/datafile/users.502.1036293825
+channel c4: starting piece 1 at 10-JUN-20
+channel c5: starting compressed incremental level 1 datafile backup set
+channel c5: specifying datafile(s) in backup set
+input datafile file number=00030 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.534.1036266693
+input datafile file number=00038 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.266.1036266733
+input datafile file number=00015 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.527.1036266773
+input datafile file number=00032 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.269.1036266813
+input datafile file number=00066 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.275.1036266851
+input datafile file number=00073 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.281.1036266891
+input datafile file number=00079 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.287.1036266935
+input datafile file number=00086 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.293.1036266979
+input datafile file number=00092 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.300.1036271525
+input datafile file number=00098 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.311.1036272869
+input datafile file number=00104 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.313.1036272907
+input datafile file number=00111 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.320.1036273041
+input datafile file number=00117 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.324.1036273233
+input datafile file number=00124 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.330.1036273433
+input datafile file number=00131 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.332.1036273703
+input datafile file number=00137 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.337.1036274109
+input datafile file number=00143 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.351.1036277953
+input datafile file number=00149 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.356.1036278957
+input datafile file number=00155 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.363.1036279325
+input datafile file number=00161 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.366.1036279489
+input datafile file number=00167 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.368.1036279553
+input datafile file number=00173 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.375.1036279831
+input datafile file number=00179 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.379.1036280051
+input datafile file number=00185 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.382.1036280227
+input datafile file number=00192 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.386.1036280491
+input datafile file number=00198 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.410.1036285511
+input datafile file number=00205 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.413.1036285821
+input datafile file number=00211 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.417.1036285969
+input datafile file number=00217 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.418.1036286031
+input datafile file number=00223 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.423.1036286251
+input datafile file number=00230 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.427.1036286439
+input datafile file number=00236 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.430.1036286611
+input datafile file number=00242 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.434.1036286873
+input datafile file number=00248 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.459.1036291659
+input datafile file number=00254 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.465.1036291981
+input datafile file number=00260 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.469.1036292155
+input datafile file number=00266 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.575.1037141075
+input datafile file number=00272 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.581.1037141815
+input datafile file number=00278 name=+DATA01/orcl/datafile/tbs_paic_index.479.15867640471
+input datafile file number=00284 name=+DATA01/orcl/datafile/tbs_paic.265.1038255385
+input datafile file number=00290 name=+DATA01/orcl/datafile/tbs_paic.271.1038255621
+input datafile file number=00296 name=+DATA01/orcl/datafile/tbs_paic.277.1038255831
+input datafile file number=00302 name=+DATA01/orcl/datafile/tbs_paic.283.1038256085
+input datafile file number=00308 name=+DATA01/orcl/datafile/tbs_paic_index.289.1040472543
+input datafile file number=00314 name=+DATA_ARCH/orcl/datafile/tbs_paic_arch.256.1040764309
+input datafile file number=00320 name=+DATA01/orcl/datafile/tbs_paic.296.1041586229
+input datafile file number=00326 name=+DATA_ARCH/orcl/datafile/tbs_paic_arch.261.1041633785
+input datafile file number=00332 name=+DATA01/orcl/datafile/tbs_paic.302.1042292221
+input datafile file number=00048 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.453.1036291317
+input datafile file number=00053 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.462.1036291871
+input datafile file number=00059 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.463.1036291945
+input datafile file number=00107 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_readonly.467.1036292051
+input datafile file number=00024 name=+DG_DATA_NEW_1/orcl/datafile/undotbs3.486.1036293003
+input datafile file number=00023 name=+DG_DATA_NEW_1/orcl/datafile/undotbs3.488.1036293051
+input datafile file number=00001 name=+DG_DATA_NEW_1/orcl/datafile/system.503.1036294401
+input datafile file number=00191 name=+DG_DATA_NEW_1/orcl/datafile/users.558.1036295355
+channel c5: starting piece 1 at 10-JUN-20
+channel c6: starting compressed incremental level 1 datafile backup set
+channel c6: specifying datafile(s) in backup set
+input datafile file number=00031 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.536.1036266693
+input datafile file number=00041 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.530.1036266731
+input datafile file number=00016 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.528.1036266771
+input datafile file number=00033 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.261.1036266809
+input datafile file number=00067 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.271.1036266849
+input datafile file number=00074 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.277.1036266889
+input datafile file number=00080 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.283.1036266931
+input datafile file number=00087 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.289.1036266975
+input datafile file number=00093 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.301.1036271889
+input datafile file number=00099 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.327.1036273309
+input datafile file number=00105 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.331.1036273653
+input datafile file number=00112 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.336.1036273923
+input datafile file number=00118 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.338.1036274249
+input datafile file number=00125 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.340.1036274317
+input datafile file number=00132 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.342.1036274795
+input datafile file number=00138 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.343.1036274807
+input datafile file number=00144 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.350.1036277721
+input datafile file number=00150 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.354.1036278763
+input datafile file number=00156 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.369.1036279587
+input datafile file number=00162 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.381.1036280167
+input datafile file number=00168 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.384.1036280443
+input datafile file number=00174 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.389.1036280935
+input datafile file number=00180 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.391.1036281167
+input datafile file number=00186 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.392.1036281413
+input datafile file number=00193 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.393.1036281425
+input datafile file number=00199 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.400.1036284233
+input datafile file number=00206 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.403.1036285253
+input datafile file number=00212 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.420.1036286073
+input datafile file number=00218 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.431.1036286613
+input datafile file number=00225 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.438.1036287307
+input datafile file number=00231 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.439.1036287473
+input datafile file number=00237 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.441.1036287689
+input datafile file number=00243 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.442.1036287701
+input datafile file number=00249 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.447.1036290235
+input datafile file number=00255 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.451.1036291199
+input datafile file number=00261 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.464.1036291949
+input datafile file number=00267 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.576.1037141097
+input datafile file number=00273 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.582.1037141861
+input datafile file number=00279 name=+DATA01/orcl/datafile/tbs_paic_index.479.15867640472
+input datafile file number=00285 name=+DATA01/orcl/datafile/tbs_paic.266.1038255423
+input datafile file number=00291 name=+DATA01/orcl/datafile/tbs_paic.272.1038255659
+input datafile file number=00297 name=+DATA01/orcl/datafile/tbs_paic.278.1038255861
+input datafile file number=00303 name=+DATA01/orcl/datafile/tbs_paic.284.1038256107
+input datafile file number=00309 name=+DATA01/orcl/datafile/tbs_paic.290.1040472577
+input datafile file number=00315 name=+DATA_ARCH/orcl/datafile/tbs_paic_arch.257.1040764365
+input datafile file number=00321 name=+DATA01/orcl/datafile/tbs_paic.297.1041586291
+input datafile file number=00327 name=+DATA_ARCH/orcl/datafile/tbs_paic_arch.262.1041633873
+input datafile file number=00333 name=+DATA01/orcl/datafile/tbs_paic.303.1042292393
+input datafile file number=00049 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.476.1036292481
+input datafile file number=00054 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.474.1036292461
+input datafile file number=00060 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.485.1036292979
+input datafile file number=00019 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.491.1036293289
+input datafile file number=00021 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_readonly.475.1036292463
+input datafile file number=00006 name=+DG_DATA_NEW_1/orcl/datafile/users.556.1036295343
+input datafile file number=00043 name=+DG_DATA_NEW_1/orcl/datafile/users.557.1036295353
+input datafile file number=00119 name=+DG_DATA_NEW_1/orcl/datafile/users.504.1036294599
+channel c6: starting piece 1 at 10-JUN-20
+channel c4: finished piece 1 at 10-JUN-20
+piece handle=/dbbackup/paic/Wednesday_dt_inc1_o7v2btgl_20200610 tag=TAG20200610T000014 comment=NONE
+channel c4: backup set complete, elapsed time: 00:52:50
+channel c4: starting compressed incremental level 1 datafile backup set
+channel c4: specifying datafile(s) in backup set
+including current control file in backup set
+channel c4: starting piece 1 at 10-JUN-20
+channel c4: finished piece 1 at 10-JUN-20
+piece handle=/dbbackup/paic/Wednesday_dt_inc1_oav2c0jq_20200610 tag=TAG20200610T000014 comment=NONE
+channel c4: backup set complete, elapsed time: 00:00:01
+channel c2: finished piece 1 at 10-JUN-20
+piece handle=/dbbackup/paic/Wednesday_dt_inc1_o5v2btgj_20200610 tag=TAG20200610T000014 comment=NONE
+channel c2: backup set complete, elapsed time: 00:53:21
+channel c1: finished piece 1 at 10-JUN-20
+piece handle=/dbbackup/paic/Wednesday_dt_inc1_o4v2btgi_20200610 tag=TAG20200610T000014 comment=NONE
+channel c1: backup set complete, elapsed time: 00:54:01
+channel c6: finished piece 1 at 10-JUN-20
+piece handle=/dbbackup/paic/Wednesday_dt_inc1_o9v2btgu_20200610 tag=TAG20200610T000014 comment=NONE
+channel c6: backup set complete, elapsed time: 00:53:42
+channel c5: finished piece 1 at 10-JUN-20
+piece handle=/dbbackup/paic/Wednesday_dt_inc1_o8v2btgo_20200610 tag=TAG20200610T000014 comment=NONE
+channel c5: backup set complete, elapsed time: 00:54:00
+channel c3: finished piece 1 at 10-JUN-20
+piece handle=/dbbackup/paic/Wednesday_dt_inc1_o6v2btgj_20200610 tag=TAG20200610T000014 comment=NONE
+channel c3: backup set complete, elapsed time: 00:57:19
+Finished backup at 10-JUN-20
+
+Starting backup at 10-JUN-20
+channel c1: starting full datafile backup set
+channel c1: specifying datafile(s) in backup set
+including current control file in backup set
+channel c1: starting piece 1 at 10-JUN-20
+channel c1: finished piece 1 at 10-JUN-20
+piece handle=/dbbackup/paic/Wednesday_ctf_obv2c0s5_20200610 tag=TAG20200610T005741 comment=NONE
+channel c1: backup set complete, elapsed time: 00:00:01
+Finished backup at 10-JUN-20
+
+Starting backup at 10-JUN-20
+current log archived
+skipping archived logs of thread 1 from sequence 5536 to 5716; already backed up
+skipping archived logs of thread 2 from sequence 5598 to 6131; already backed up
+channel c1: starting compressed archived log backup set
+channel c1: specifying archived log(s) in backup set
+input archived log thread=2 sequence=6132 RECID=198807 STAMP=1042616972
+input archived log thread=1 sequence=5717 RECID=198810 STAMP=1042620513
+input archived log thread=2 sequence=6133 RECID=198808 STAMP=1042619579
+input archived log thread=2 sequence=6134 RECID=198809 STAMP=1042620512
+input archived log thread=2 sequence=6135 RECID=198811 STAMP=1042621199
+input archived log thread=1 sequence=5718 RECID=198814 STAMP=1042622217
+input archived log thread=2 sequence=6136 RECID=198812 STAMP=1042621751
+input archived log thread=2 sequence=6137 RECID=198813 STAMP=1042622216
+input archived log thread=2 sequence=6138 RECID=198815 STAMP=1042622664
+input archived log thread=1 sequence=5719 RECID=198818 STAMP=1042623495
+input archived log thread=2 sequence=6139 RECID=198816 STAMP=1042623099
+input archived log thread=2 sequence=6140 RECID=198817 STAMP=1042623495
+input archived log thread=2 sequence=6141 RECID=198819 STAMP=1042623918
+input archived log thread=1 sequence=5720 RECID=198822 STAMP=1042624794
+input archived log thread=2 sequence=6142 RECID=198820 STAMP=1042624368
+input archived log thread=2 sequence=6143 RECID=198821 STAMP=1042624794
+input archived log thread=2 sequence=6144 RECID=198823 STAMP=1042625241
+input archived log thread=1 sequence=5721 RECID=198826 STAMP=1042626102
+input archived log thread=2 sequence=6145 RECID=198824 STAMP=1042625673
+input archived log thread=2 sequence=6146 RECID=198825 STAMP=1042626102
+input archived log thread=2 sequence=6147 RECID=198827 STAMP=1042626477
+input archived log thread=1 sequence=5722 RECID=198830 STAMP=1042627302
+input archived log thread=2 sequence=6148 RECID=198828 STAMP=1042626876
+channel c1: starting piece 1 at 10-JUN-20
+channel c2: starting compressed archived log backup set
+channel c2: specifying archived log(s) in backup set
+input archived log thread=2 sequence=6149 RECID=198829 STAMP=1042627302
+input archived log thread=2 sequence=6150 RECID=198831 STAMP=1042627680
+input archived log thread=1 sequence=5723 RECID=198834 STAMP=1042628472
+input archived log thread=2 sequence=6151 RECID=198832 STAMP=1042628064
+input archived log thread=2 sequence=6152 RECID=198833 STAMP=1042628472
+input archived log thread=2 sequence=6153 RECID=198835 STAMP=1042628880
+input archived log thread=1 sequence=5724 RECID=198838 STAMP=1042629663
+input archived log thread=2 sequence=6154 RECID=198836 STAMP=1042629291
+input archived log thread=2 sequence=6155 RECID=198837 STAMP=1042629663
+input archived log thread=2 sequence=6156 RECID=198839 STAMP=1042630038
+input archived log thread=1 sequence=5725 RECID=198842 STAMP=1042630830
+input archived log thread=2 sequence=6157 RECID=198840 STAMP=1042630431
+input archived log thread=2 sequence=6158 RECID=198841 STAMP=1042630830
+input archived log thread=2 sequence=6159 RECID=198843 STAMP=1042631250
+input archived log thread=1 sequence=5726 RECID=198846 STAMP=1042632072
+input archived log thread=2 sequence=6160 RECID=198844 STAMP=1042631643
+input archived log thread=2 sequence=6161 RECID=198845 STAMP=1042632072
+input archived log thread=2 sequence=6162 RECID=198847 STAMP=1042632630
+input archived log thread=1 sequence=5727 RECID=198850 STAMP=1042634022
+input archived log thread=2 sequence=6163 RECID=198848 STAMP=1042633263
+input archived log thread=2 sequence=6164 RECID=198849 STAMP=1042634022
+input archived log thread=2 sequence=6165 RECID=198851 STAMP=1042634769
+input archived log thread=1 sequence=5728 RECID=198854 STAMP=1042636269
+channel c2: starting piece 1 at 10-JUN-20
+channel c3: starting compressed archived log backup set
+channel c3: specifying archived log(s) in backup set
+input archived log thread=2 sequence=6166 RECID=198852 STAMP=1042635567
+input archived log thread=2 sequence=6167 RECID=198853 STAMP=1042636269
+input archived log thread=2 sequence=6168 RECID=198855 STAMP=1042637055
+input archived log thread=1 sequence=5729 RECID=198858 STAMP=1042638363
+input archived log thread=2 sequence=6169 RECID=198856 STAMP=1042637763
+input archived log thread=2 sequence=6170 RECID=198857 STAMP=1042638363
+input archived log thread=2 sequence=6171 RECID=198859 STAMP=1042638900
+input archived log thread=1 sequence=5730 RECID=198862 STAMP=1042639863
+input archived log thread=2 sequence=6172 RECID=198860 STAMP=1042639398
+input archived log thread=2 sequence=6173 RECID=198861 STAMP=1042639863
+input archived log thread=2 sequence=6174 RECID=198863 STAMP=1042640289
+input archived log thread=1 sequence=5731 RECID=198866 STAMP=1042641115
+input archived log thread=2 sequence=6175 RECID=198864 STAMP=1042640718
+input archived log thread=2 sequence=6176 RECID=198865 STAMP=1042641114
+input archived log thread=2 sequence=6177 RECID=198867 STAMP=1042641525
+input archived log thread=1 sequence=5732 RECID=198870 STAMP=1042642273
+input archived log thread=2 sequence=6178 RECID=198868 STAMP=1042641897
+input archived log thread=2 sequence=6179 RECID=198869 STAMP=1042642272
+input archived log thread=2 sequence=6180 RECID=198871 STAMP=1042642671
+input archived log thread=1 sequence=5733 RECID=198874 STAMP=1042643401
+input archived log thread=2 sequence=6181 RECID=198872 STAMP=1042643034
+input archived log thread=2 sequence=6182 RECID=198873 STAMP=1042643401
+input archived log thread=2 sequence=6183 RECID=198875 STAMP=1042643770
+channel c3: starting piece 1 at 10-JUN-20
+channel c4: starting compressed archived log backup set
+channel c4: specifying archived log(s) in backup set
+input archived log thread=1 sequence=5734 RECID=198877 STAMP=1042644493
+input archived log thread=2 sequence=6184 RECID=198876 STAMP=1042644130
+input archived log thread=2 sequence=6185 RECID=198878 STAMP=1042644493
+input archived log thread=2 sequence=6186 RECID=198879 STAMP=1042644874
+input archived log thread=1 sequence=5735 RECID=198882 STAMP=1042645603
+input archived log thread=2 sequence=6187 RECID=198880 STAMP=1042645249
+input archived log thread=2 sequence=6188 RECID=198881 STAMP=1042645603
+input archived log thread=2 sequence=6189 RECID=198883 STAMP=1042645963
+input archived log thread=1 sequence=5736 RECID=198885 STAMP=1042646659
+input archived log thread=2 sequence=6190 RECID=198884 STAMP=1042646314
+input archived log thread=2 sequence=6191 RECID=198886 STAMP=1042646659
+input archived log thread=2 sequence=6192 RECID=198887 STAMP=1042647028
+input archived log thread=1 sequence=5737 RECID=198890 STAMP=1042647805
+input archived log thread=2 sequence=6193 RECID=198888 STAMP=1042647427
+input archived log thread=2 sequence=6194 RECID=198889 STAMP=1042647802
+input archived log thread=2 sequence=6195 RECID=198891 STAMP=1042648186
+input archived log thread=1 sequence=5738 RECID=198894 STAMP=1042648900
+input archived log thread=2 sequence=6196 RECID=198892 STAMP=1042648528
+input archived log thread=2 sequence=6197 RECID=198893 STAMP=1042648897
+input archived log thread=2 sequence=6198 RECID=198895 STAMP=1042649224
+input archived log thread=1 sequence=5739 RECID=198898 STAMP=1042649941
+input archived log thread=2 sequence=6199 RECID=198896 STAMP=1042649572
+input archived log thread=2 sequence=6200 RECID=198897 STAMP=1042649938
+channel c4: starting piece 1 at 10-JUN-20
+channel c5: starting compressed archived log backup set
+channel c5: specifying archived log(s) in backup set
+input archived log thread=2 sequence=6201 RECID=198899 STAMP=1042650280
+input archived log thread=1 sequence=5740 RECID=198902 STAMP=1042651021
+input archived log thread=2 sequence=6202 RECID=198900 STAMP=1042650652
+input archived log thread=2 sequence=6203 RECID=198901 STAMP=1042651018
+input archived log thread=2 sequence=6204 RECID=198903 STAMP=1042651402
+input archived log thread=1 sequence=5741 RECID=198906 STAMP=1042652158
+input archived log thread=2 sequence=6205 RECID=198904 STAMP=1042651765
+input archived log thread=2 sequence=6206 RECID=198905 STAMP=1042652155
+input archived log thread=2 sequence=6207 RECID=198907 STAMP=1042652512
+input archived log thread=1 sequence=5742 RECID=198910 STAMP=1042653277
+input archived log thread=2 sequence=6208 RECID=198908 STAMP=1042652878
+input archived log thread=2 sequence=6209 RECID=198909 STAMP=1042653274
+input archived log thread=2 sequence=6210 RECID=198911 STAMP=1042653664
+input archived log thread=1 sequence=5743 RECID=198914 STAMP=1042654459
+input archived log thread=2 sequence=6211 RECID=198912 STAMP=1042654057
+input archived log thread=2 sequence=6212 RECID=198913 STAMP=1042654456
+input archived log thread=2 sequence=6213 RECID=198915 STAMP=1042654927
+input archived log thread=1 sequence=5744 RECID=198918 STAMP=1042655950
+input archived log thread=2 sequence=6214 RECID=198916 STAMP=1042655398
+input archived log thread=2 sequence=6215 RECID=198917 STAMP=1042655947
+input archived log thread=2 sequence=6216 RECID=198919 STAMP=1042656550
+input archived log thread=1 sequence=5745 RECID=198922 STAMP=1042657858
+input archived log thread=2 sequence=6217 RECID=198920 STAMP=1042657168
+channel c5: starting piece 1 at 10-JUN-20
+channel c6: starting compressed archived log backup set
+channel c6: specifying archived log(s) in backup set
+input archived log thread=2 sequence=6218 RECID=198921 STAMP=1042657855
+input archived log thread=2 sequence=6219 RECID=198923 STAMP=1042658566
+input archived log thread=1 sequence=5746 RECID=198926 STAMP=1042660249
+input archived log thread=2 sequence=6220 RECID=198924 STAMP=1042659370
+input archived log thread=2 sequence=6221 RECID=198925 STAMP=1042660246
+input archived log thread=2 sequence=6222 RECID=198927 STAMP=1042661146
+input archived log thread=1 sequence=5747 RECID=198930 STAMP=1042663018
+input archived log thread=2 sequence=6223 RECID=198928 STAMP=1042662011
+input archived log thread=2 sequence=6224 RECID=198929 STAMP=1042663016
+input archived log thread=2 sequence=6225 RECID=198931 STAMP=1042664018
+input archived log thread=1 sequence=5748 RECID=198934 STAMP=1042666156
+input archived log thread=2 sequence=6226 RECID=198932 STAMP=1042665068
+input archived log thread=2 sequence=6227 RECID=198933 STAMP=1042666154
+input archived log thread=2 sequence=6228 RECID=198935 STAMP=1042667309
+input archived log thread=1 sequence=5749 RECID=198938 STAMP=1042669660
+input archived log thread=2 sequence=6229 RECID=198936 STAMP=1042668425
+input archived log thread=2 sequence=6230 RECID=198937 STAMP=1042669658
+input archived log thread=2 sequence=6231 RECID=198939 STAMP=1042670990
+input archived log thread=1 sequence=5750 RECID=198941 STAMP=1042677742
+input archived log thread=2 sequence=6232 RECID=198940 STAMP=1042673195
+input archived log thread=2 sequence=6233 RECID=198942 STAMP=1042677742
+input archived log thread=2 sequence=6234 RECID=198944 STAMP=1042678667
+input archived log thread=1 sequence=5751 RECID=198943 STAMP=1042678666
+channel c6: starting piece 1 at 10-JUN-20
+channel c1: finished piece 1 at 10-JUN-20
+piece handle=/dbbackup/paic/Wednesday_arch_ocv2c0si_20200610 tag=TAG20200610T005752 comment=NONE
+channel c1: backup set complete, elapsed time: 00:02:56
+channel c2: finished piece 1 at 10-JUN-20
+piece handle=/dbbackup/paic/Wednesday_arch_odv2c0si_20200610 tag=TAG20200610T005752 comment=NONE
+channel c2: backup set complete, elapsed time: 00:02:56
+channel c4: finished piece 1 at 10-JUN-20
+piece handle=/dbbackup/paic/Wednesday_arch_ofv2c0si_20200610 tag=TAG20200610T005752 comment=NONE
+channel c4: backup set complete, elapsed time: 00:02:56
+channel c5: finished piece 1 at 10-JUN-20
+piece handle=/dbbackup/paic/Wednesday_arch_ogv2c0si_20200610 tag=TAG20200610T005752 comment=NONE
+channel c5: backup set complete, elapsed time: 00:02:55
+channel c6: finished piece 1 at 10-JUN-20
+piece handle=/dbbackup/paic/Wednesday_arch_ohv2c0sj_20200610 tag=TAG20200610T005752 comment=NONE
+channel c6: backup set complete, elapsed time: 00:02:55
+channel c3: finished piece 1 at 10-JUN-20
+piece handle=/dbbackup/paic/Wednesday_arch_oev2c0si_20200610 tag=TAG20200610T005752 comment=NONE
+channel c3: backup set complete, elapsed time: 00:03:16
+Finished backup at 10-JUN-20
+
+Starting Control File and SPFILE Autobackup at 10-JUN-20
+piece handle=/app/oracle/product/11.2.0/oracle/dbs/c-1492966431-20200610-00 comment=NONE
+Finished Control File and SPFILE Autobackup at 10-JUN-20
+
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5536.1637.1042107833 RECID=198093 STAMP=1042107833
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5537.1641.1042109051 RECID=198097 STAMP=1042109051
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5538.1645.1042110143 RECID=198101 STAMP=1042110143
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5539.1649.1042111309 RECID=198105 STAMP=1042111310
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5540.1653.1042112407 RECID=198109 STAMP=1042112408
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5541.1657.1042113557 RECID=198113 STAMP=1042113557
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5542.1661.1042115397 RECID=198117 STAMP=1042115396
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5543.1665.1042117647 RECID=198121 STAMP=1042117646
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5544.1669.1042119717 RECID=198125 STAMP=1042119716
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5545.1673.1042121315 RECID=198129 STAMP=1042121315
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5546.1677.1042122593 RECID=198133 STAMP=1042122593
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5547.1681.1042123841 RECID=198137 STAMP=1042123841
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5548.1685.1042125057 RECID=198141 STAMP=1042125056
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5549.1689.1042126197 RECID=198145 STAMP=1042126196
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5550.1693.1042127379 RECID=198149 STAMP=1042127378
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5551.1697.1042128539 RECID=198153 STAMP=1042128539
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5552.1701.1042129625 RECID=198157 STAMP=1042129625
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5553.1705.1042130811 RECID=198161 STAMP=1042130810
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5554.1709.1042131935 RECID=198165 STAMP=1042131935
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5555.1713.1042133045 RECID=198169 STAMP=1042133045
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5556.1717.1042134185 RECID=198173 STAMP=1042134185
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5557.1721.1042135355 RECID=198177 STAMP=1042135355
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5558.1725.1042136699 RECID=198181 STAMP=1042136699
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5559.1729.1042138353 RECID=198185 STAMP=1042138352
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5560.1733.1042140443 RECID=198189 STAMP=1042140443
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5561.1737.1042143003 RECID=198193 STAMP=1042143002
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5562.1741.1042145867 RECID=198197 STAMP=1042145868
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5563.1745.1042149303 RECID=198201 STAMP=1042149303
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_1_seq_5564.1749.1042153149 RECID=198205 STAMP=1042153149
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5565.1753.1042160031 RECID=198209 STAMP=1042160031
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5566.1757.1042188463 RECID=198213 STAMP=1042188462
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5567.1761.1042190305 RECID=198217 STAMP=1042190304
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5568.1765.1042191721 RECID=198221 STAMP=1042191720
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5569.1769.1042193007 RECID=198225 STAMP=1042193007
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5570.1773.1042194237 RECID=198229 STAMP=1042194237
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5571.1777.1042195411 RECID=198233 STAMP=1042195410
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5572.1781.1042196557 RECID=198237 STAMP=1042196556
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5573.1785.1042197739 RECID=198241 STAMP=1042197738
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5574.1789.1042198905 RECID=198245 STAMP=1042198905
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5575.1793.1042200175 RECID=198249 STAMP=1042200174
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5576.1797.1042202163 RECID=198253 STAMP=1042202163
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5577.1801.1042204443 RECID=198257 STAMP=1042204443
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5578.1805.1042206585 RECID=198261 STAMP=1042206585
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5579.1809.1042208053 RECID=198265 STAMP=1042208052
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5580.1813.1042209339 RECID=198269 STAMP=1042209339
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5581.1817.1042210561 RECID=198273 STAMP=1042210560
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5582.1821.1042211763 RECID=198277 STAMP=1042211763
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5583.1825.1042212879 RECID=198281 STAMP=1042212879
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5584.1829.1042213965 RECID=198285 STAMP=1042213965
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5585.1833.1042215127 RECID=198289 STAMP=1042215126
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5586.1837.1042216261 RECID=198293 STAMP=1042216260
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5587.1841.1042217391 RECID=198297 STAMP=1042217392
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5588.1845.1042218559 RECID=198301 STAMP=1042218559
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5589.1849.1042219699 RECID=198305 STAMP=1042219699
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5590.1853.1042220813 RECID=198309 STAMP=1042220812
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5591.1857.1042222075 RECID=198313 STAMP=1042222075
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5592.1861.1042223431 RECID=198317 STAMP=1042223431
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5593.1865.1042225063 RECID=198321 STAMP=1042225063
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5594.386.1042230911 RECID=198323 STAMP=1042230910
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5595.1463.1042234301 RECID=198329 STAMP=1042234300
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_1_seq_5596.1457.1042238021 RECID=198333 STAMP=1042238020
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5597.1452.1042244957 RECID=198336 STAMP=1042244956
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5598.1449.1042246555 RECID=198339 STAMP=1042246555
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5599.1444.1042274959 RECID=198343 STAMP=1042274959
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5600.1439.1042276757 RECID=198347 STAMP=1042276757
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5601.1433.1042278217 RECID=198351 STAMP=1042278217
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5602.1428.1042279511 RECID=198355 STAMP=1042279511
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5603.1423.1042280791 RECID=198359 STAMP=1042280792
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5604.1417.1042282051 RECID=198363 STAMP=1042282052
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5605.1412.1042283251 RECID=198367 STAMP=1042283252
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5606.1407.1042284405 RECID=198371 STAMP=1042284404
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5607.1401.1042285601 RECID=198375 STAMP=1042285601
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5608.1396.1042287053 RECID=198379 STAMP=1042287053
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5609.1391.1042289255 RECID=198383 STAMP=1042289255
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5610.1385.1042291643 RECID=198387 STAMP=1042291643
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5611.1380.1042293615 RECID=198391 STAMP=1042293614
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5612.1375.1042295021 RECID=198395 STAMP=1042295021
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5613.1369.1042296269 RECID=198399 STAMP=1042296269
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5614.1364.1042297487 RECID=198403 STAMP=1042297487
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5615.1359.1042298691 RECID=198407 STAMP=1042298690
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5616.1353.1042299887 RECID=198411 STAMP=1042299887
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5617.1348.1042301073 RECID=198415 STAMP=1042301072
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5618.1342.1042302287 RECID=198419 STAMP=1042302287
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5619.1337.1042303487 RECID=198423 STAMP=1042303487
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5620.1332.1042304613 RECID=198427 STAMP=1042304612
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5621.1326.1042305783 RECID=198431 STAMP=1042305782
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5622.1321.1042306977 RECID=198435 STAMP=1042306976
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5623.1316.1042308207 RECID=198439 STAMP=1042308206
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5624.1310.1042309707 RECID=198443 STAMP=1042309706
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5625.1305.1042311747 RECID=198447 STAMP=1042311746
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5626.1300.1042314615 RECID=198451 STAMP=1042314614
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5627.1294.1042318695 RECID=198455 STAMP=1042318695
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_1_seq_5628.1289.1042323713 RECID=198459 STAMP=1042323714
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5629.1284.1042331315 RECID=198463 STAMP=1042331316
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5630.1281.1042353133 RECID=198465 STAMP=1042353132
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5631.1276.1042362835 RECID=198469 STAMP=1042362834
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5632.1270.1042364995 RECID=198473 STAMP=1042364994
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5633.1265.1042366807 RECID=198477 STAMP=1042366806
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5634.1260.1042368447 RECID=198481 STAMP=1042368447
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5635.1254.1042369995 RECID=198485 STAMP=1042369995
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5636.1249.1042371487 RECID=198489 STAMP=1042371486
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5637.1244.1042373091 RECID=198493 STAMP=1042373091
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5638.1238.1042375347 RECID=198497 STAMP=1042375347
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5639.1233.1042377729 RECID=198501 STAMP=1042377729
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5640.1228.1042379947 RECID=198505 STAMP=1042379946
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5641.1222.1042381701 RECID=198509 STAMP=1042381701
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5642.1217.1042383277 RECID=198513 STAMP=1042383276
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5643.1212.1042384723 RECID=198517 STAMP=1042384722
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5644.1206.1042386177 RECID=198521 STAMP=1042386177
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5645.1201.1042387653 RECID=198525 STAMP=1042387653
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5646.1196.1042389075 RECID=198529 STAMP=1042389075
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5647.1190.1042390461 RECID=198533 STAMP=1042390461
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5648.1185.1042391791 RECID=198537 STAMP=1042391791
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5649.1180.1042393237 RECID=198541 STAMP=1042393236
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5650.1174.1042394775 RECID=198545 STAMP=1042394776
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5651.1169.1042396737 RECID=198549 STAMP=1042396738
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5652.1164.1042399695 RECID=198553 STAMP=1042399696
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5653.1158.1042403953 RECID=198557 STAMP=1042403953
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5654.1153.1042408961 RECID=198561 STAMP=1042408960
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_1_seq_5655.1148.1042414793 RECID=198565 STAMP=1042414792
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5656.1144.1042419305 RECID=198568 STAMP=1042419304
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5657.1138.1042448609 RECID=198571 STAMP=1042448608
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5658.1133.1042450931 RECID=198575 STAMP=1042450930
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5659.1127.1042452743 RECID=198580 STAMP=1042452742
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5660.1122.1042454399 RECID=198583 STAMP=1042454398
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5661.1117.1042456025 RECID=198587 STAMP=1042456024
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5662.1111.1042457569 RECID=198591 STAMP=1042457569
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5663.1106.1042459375 RECID=198596 STAMP=1042459375
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5664.1101.1042461715 RECID=198600 STAMP=1042461715
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5665.1095.1042464269 RECID=198604 STAMP=1042464268
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5666.1090.1042466539 RECID=198608 STAMP=1042466539
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5667.1085.1042468465 RECID=198612 STAMP=1042468465
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5668.1079.1042470089 RECID=198616 STAMP=1042470088
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5669.1074.1042471645 RECID=198620 STAMP=1042471645
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5670.1069.1042473155 RECID=198624 STAMP=1042473154
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5671.1063.1042474591 RECID=198628 STAMP=1042474591
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5672.1058.1042476109 RECID=198632 STAMP=1042476109
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5673.1053.1042477603 RECID=198636 STAMP=1042477603
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5674.1047.1042479221 RECID=198640 STAMP=1042479220
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5675.1042.1042480873 RECID=198644 STAMP=1042480873
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5676.1037.1042482811 RECID=198648 STAMP=1042482811
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5677.1031.1042485637 RECID=198652 STAMP=1042485637
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5678.1026.1042490033 RECID=198656 STAMP=1042490032
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5679.1021.1042494565 RECID=198660 STAMP=1042494566
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_1_seq_5680.1015.1042499423 RECID=198664 STAMP=1042499423
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5681.1011.1042505613 RECID=198667 STAMP=1042505612
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5682.1006.1042534553 RECID=198671 STAMP=1042534553
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5683.997.1042536287 RECID=198675 STAMP=1042536287
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5684.990.1042537679 RECID=198679 STAMP=1042537679
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5685.982.1042538979 RECID=198683 STAMP=1042538978
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5686.1632.1042540205 RECID=198687 STAMP=1042540205
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5687.1627.1042541355 RECID=198691 STAMP=1042541354
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5688.1622.1042542495 RECID=198695 STAMP=1042542494
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5689.1616.1042543631 RECID=198699 STAMP=1042543631
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5690.1611.1042544843 RECID=198703 STAMP=1042544843
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5691.1606.1042546239 RECID=198707 STAMP=1042546238
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5692.1600.1042548573 RECID=198711 STAMP=1042548572
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5693.1595.1042550745 RECID=198715 STAMP=1042550744
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5694.1590.1042552643 RECID=198719 STAMP=1042552643
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5695.1584.1042554027 RECID=198723 STAMP=1042554026
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5696.1579.1042555209 RECID=198727 STAMP=1042555208
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5697.1574.1042556381 RECID=198731 STAMP=1042556381
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5698.1568.1042557567 RECID=198735 STAMP=1042557566
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5699.1563.1042558715 RECID=198739 STAMP=1042558715
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5700.1558.1042559891 RECID=198743 STAMP=1042559891
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5701.1552.1042561055 RECID=198747 STAMP=1042561055
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5702.1547.1042562151 RECID=198751 STAMP=1042562150
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5703.1542.1042563291 RECID=198755 STAMP=1042563290
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5704.1536.1042564403 RECID=198759 STAMP=1042564404
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5705.1531.1042565475 RECID=198763 STAMP=1042565474
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5706.1526.1042566519 RECID=198767 STAMP=1042566519
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5707.1520.1042567619 RECID=198771 STAMP=1042567620
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5708.1515.1042568975 RECID=198775 STAMP=1042568976
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5709.1510.1042570479 RECID=198779 STAMP=1042570479
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5710.1504.1042572231 RECID=198783 STAMP=1042572231
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5711.1499.1042574457 RECID=198787 STAMP=1042574457
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5712.1494.1042576959 RECID=198791 STAMP=1042576959
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5713.1488.1042579881 RECID=198795 STAMP=1042579881
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5714.1483.1042583163 RECID=198799 STAMP=1042583163
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_1_seq_5715.1477.1042587997 RECID=198803 STAMP=1042587996
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5716.1473.1042592247 RECID=198806 STAMP=1042592247
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5717.1468.1042620513 RECID=198810 STAMP=1042620513
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5718.1621.1042622217 RECID=198814 STAMP=1042622217
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5719.1605.1042623495 RECID=198818 STAMP=1042623495
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5720.1589.1042624795 RECID=198822 STAMP=1042624794
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5721.1573.1042626103 RECID=198826 STAMP=1042626102
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5722.1557.1042627303 RECID=198830 STAMP=1042627302
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5723.1541.1042628473 RECID=198834 STAMP=1042628472
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5724.1525.1042629663 RECID=198838 STAMP=1042629663
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5725.1509.1042630831 RECID=198842 STAMP=1042630830
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5726.1493.1042632073 RECID=198846 STAMP=1042632072
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5727.1478.1042634023 RECID=198850 STAMP=1042634022
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5728.975.1042636269 RECID=198854 STAMP=1042636269
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5729.967.1042638363 RECID=198858 STAMP=1042638363
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5730.959.1042639863 RECID=198862 STAMP=1042639863
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5731.950.1042641115 RECID=198866 STAMP=1042641115
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5732.942.1042642273 RECID=198870 STAMP=1042642273
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5733.934.1042643401 RECID=198874 STAMP=1042643401
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5734.925.1042644493 RECID=198877 STAMP=1042644493
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5735.918.1042645603 RECID=198882 STAMP=1042645603
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5736.909.1042646659 RECID=198885 STAMP=1042646659
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5737.902.1042647805 RECID=198890 STAMP=1042647805
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5738.894.1042648901 RECID=198894 STAMP=1042648900
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5739.886.1042649941 RECID=198898 STAMP=1042649941
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5740.877.1042651021 RECID=198902 STAMP=1042651021
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5741.869.1042652159 RECID=198906 STAMP=1042652158
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5742.861.1042653277 RECID=198910 STAMP=1042653277
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5743.852.1042654459 RECID=198914 STAMP=1042654459
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5744.844.1042655951 RECID=198918 STAMP=1042655950
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5745.837.1042657859 RECID=198922 STAMP=1042657858
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5746.828.1042660249 RECID=198926 STAMP=1042660249
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5747.819.1042663019 RECID=198930 STAMP=1042663018
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5748.812.1042666157 RECID=198934 STAMP=1042666156
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_1_seq_5749.804.1042669661 RECID=198938 STAMP=1042669660
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_10/thread_1_seq_5750.796.1042677743 RECID=198941 STAMP=1042677742
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_10/thread_1_seq_5751.793.1042678667 RECID=198943 STAMP=1042678666
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5598.1636.1042107833 RECID=198092 STAMP=1042107832
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5599.1638.1042108243 RECID=198094 STAMP=1042108243
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5600.1639.1042108669 RECID=198095 STAMP=1042108669
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5601.1640.1042109051 RECID=198096 STAMP=1042109050
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5602.1642.1042109425 RECID=198098 STAMP=1042109425
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5603.1643.1042109783 RECID=198099 STAMP=1042109782
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5604.1644.1042110143 RECID=198100 STAMP=1042110142
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5605.1646.1042110541 RECID=198102 STAMP=1042110541
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5606.1647.1042110943 RECID=198103 STAMP=1042110943
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5607.1648.1042111309 RECID=198104 STAMP=1042111309
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5608.1650.1042111681 RECID=198106 STAMP=1042111681
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5609.1651.1042112051 RECID=198107 STAMP=1042112050
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5610.1652.1042112407 RECID=198108 STAMP=1042112407
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5611.1654.1042112783 RECID=198110 STAMP=1042112782
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5612.1655.1042113169 RECID=198111 STAMP=1042113169
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5613.1656.1042113557 RECID=198112 STAMP=1042113556
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5614.1658.1042114007 RECID=198114 STAMP=1042114006
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5615.1659.1042114651 RECID=198115 STAMP=1042114651
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5616.1660.1042115395 RECID=198116 STAMP=1042115395
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5617.1662.1042116143 RECID=198118 STAMP=1042116142
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5618.1663.1042116917 RECID=198119 STAMP=1042116916
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5619.1664.1042117645 RECID=198120 STAMP=1042117645
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5620.1666.1042118453 RECID=198122 STAMP=1042118452
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5621.1667.1042119161 RECID=198123 STAMP=1042119160
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5622.1668.1042119715 RECID=198124 STAMP=1042119715
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5623.1670.1042120321 RECID=198126 STAMP=1042120321
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5624.1671.1042120855 RECID=198127 STAMP=1042120855
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5625.1672.1042121315 RECID=198128 STAMP=1042121314
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5626.1674.1042121755 RECID=198130 STAMP=1042121755
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5627.1675.1042122173 RECID=198131 STAMP=1042122172
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5628.1676.1042122593 RECID=198132 STAMP=1042122592
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5629.1678.1042123025 RECID=198134 STAMP=1042123024
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5630.1679.1042123451 RECID=198135 STAMP=1042123450
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5631.1680.1042123841 RECID=198136 STAMP=1042123840
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5632.1682.1042124255 RECID=198138 STAMP=1042124255
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5633.1683.1042124663 RECID=198139 STAMP=1042124663
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5634.1684.1042125055 RECID=198140 STAMP=1042125055
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5635.1686.1042125425 RECID=198142 STAMP=1042125425
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5636.1687.1042125809 RECID=198143 STAMP=1042125809
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5637.1688.1042126195 RECID=198144 STAMP=1042126196
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5638.1690.1042126579 RECID=198146 STAMP=1042126580
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5639.1691.1042126979 RECID=198147 STAMP=1042126979
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5640.1692.1042127377 RECID=198148 STAMP=1042127378
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5641.1694.1042127785 RECID=198150 STAMP=1042127786
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5642.1695.1042128151 RECID=198151 STAMP=1042128152
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5643.1696.1042128539 RECID=198152 STAMP=1042128539
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5644.1698.1042128895 RECID=198154 STAMP=1042128896
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5645.1699.1042129259 RECID=198155 STAMP=1042129259
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5646.1700.1042129625 RECID=198156 STAMP=1042129625
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5647.1702.1042129993 RECID=198158 STAMP=1042129994
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5648.1703.1042130419 RECID=198159 STAMP=1042130420
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5649.1704.1042130809 RECID=198160 STAMP=1042130810
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5650.1706.1042131173 RECID=198162 STAMP=1042131173
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5651.1707.1042131569 RECID=198163 STAMP=1042131569
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5652.1708.1042131935 RECID=198164 STAMP=1042131935
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5653.1710.1042132319 RECID=198166 STAMP=1042132319
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5654.1711.1042132679 RECID=198167 STAMP=1042132679
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5655.1712.1042133045 RECID=198168 STAMP=1042133045
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5656.1714.1042133439 RECID=198170 STAMP=1042133438
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5657.1715.1042133799 RECID=198171 STAMP=1042133798
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5658.1716.1042134185 RECID=198172 STAMP=1042134185
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5659.1718.1042134569 RECID=198174 STAMP=1042134569
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5660.1719.1042134953 RECID=198175 STAMP=1042134953
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5661.1720.1042135355 RECID=198176 STAMP=1042135355
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5662.1722.1042135775 RECID=198178 STAMP=1042135775
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5663.1723.1042136231 RECID=198179 STAMP=1042136231
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5664.1724.1042136699 RECID=198180 STAMP=1042136699
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5665.1726.1042137209 RECID=198182 STAMP=1042137209
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5666.1727.1042137747 RECID=198183 STAMP=1042137746
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5667.1728.1042138353 RECID=198184 STAMP=1042138352
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5668.1730.1042138989 RECID=198186 STAMP=1042138988
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5669.1731.1042139673 RECID=198187 STAMP=1042139672
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5670.1732.1042140443 RECID=198188 STAMP=1042140443
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5671.1734.1042141235 RECID=198190 STAMP=1042141235
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5672.1735.1042142051 RECID=198191 STAMP=1042142051
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5673.1736.1042143003 RECID=198192 STAMP=1042143002
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5674.1738.1042143927 RECID=198194 STAMP=1042143926
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5675.1739.1042144865 RECID=198195 STAMP=1042144865
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5676.1740.1042145867 RECID=198196 STAMP=1042145867
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5677.1742.1042146987 RECID=198198 STAMP=1042146986
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5678.1743.1042148169 RECID=198199 STAMP=1042148168
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5679.1744.1042149303 RECID=198200 STAMP=1042149302
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5680.1746.1042150475 RECID=198202 STAMP=1042150475
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5681.1747.1042151709 RECID=198203 STAMP=1042151708
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5682.1748.1042153149 RECID=198204 STAMP=1042153149
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_03/thread_2_seq_5683.1750.1042154951 RECID=198206 STAMP=1042154952
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5684.1751.1042157983 RECID=198207 STAMP=1042157985
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5685.1752.1042160031 RECID=198208 STAMP=1042160031
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5686.1754.1042185385 RECID=198210 STAMP=1042185384
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5687.1755.1042187443 RECID=198211 STAMP=1042187442
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5688.1756.1042188459 RECID=198212 STAMP=1042188459
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5689.1758.1042189171 RECID=198214 STAMP=1042189170
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5690.1759.1042189761 RECID=198215 STAMP=1042189761
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5691.1760.1042190301 RECID=198216 STAMP=1042190301
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5692.1762.1042190803 RECID=198218 STAMP=1042190802
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5693.1763.1042191289 RECID=198219 STAMP=1042191288
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5694.1764.1042191717 RECID=198220 STAMP=1042191717
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5695.1766.1042192173 RECID=198222 STAMP=1042192173
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5696.1767.1042192597 RECID=198223 STAMP=1042192596
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5697.1768.1042193005 RECID=198224 STAMP=1042193004
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5698.1770.1042193439 RECID=198226 STAMP=1042193439
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5699.1771.1042193851 RECID=198227 STAMP=1042193850
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5700.1772.1042194235 RECID=198228 STAMP=1042194234
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5701.1774.1042194619 RECID=198230 STAMP=1042194618
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5702.1775.1042195021 RECID=198231 STAMP=1042195020
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5703.1776.1042195407 RECID=198232 STAMP=1042195407
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5704.1778.1042195789 RECID=198234 STAMP=1042195788
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5705.1779.1042196193 RECID=198235 STAMP=1042196193
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5706.1780.1042196553 RECID=198236 STAMP=1042196553
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5707.1782.1042196949 RECID=198238 STAMP=1042196949
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5708.1783.1042197343 RECID=198239 STAMP=1042197342
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5709.1784.1042197735 RECID=198240 STAMP=1042197735
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5710.1786.1042198117 RECID=198242 STAMP=1042198116
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5711.1787.1042198513 RECID=198243 STAMP=1042198512
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5712.1788.1042198903 RECID=198244 STAMP=1042198902
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5713.1790.1042199301 RECID=198246 STAMP=1042199301
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5714.1791.1042199739 RECID=198247 STAMP=1042199740
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5715.1792.1042200171 RECID=198248 STAMP=1042200172
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5716.1794.1042200703 RECID=198250 STAMP=1042200703
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5717.1795.1042201365 RECID=198251 STAMP=1042201366
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5718.1796.1042202161 RECID=198252 STAMP=1042202161
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5719.1798.1042202877 RECID=198254 STAMP=1042202878
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5720.1799.1042203657 RECID=198255 STAMP=1042203658
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5721.1800.1042204441 RECID=198256 STAMP=1042204441
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5722.1802.1042205193 RECID=198258 STAMP=1042205194
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5723.1803.1042205937 RECID=198259 STAMP=1042205938
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5724.1804.1042206583 RECID=198260 STAMP=1042206583
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5725.1806.1042207131 RECID=198262 STAMP=1042207132
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5726.1807.1042207609 RECID=198263 STAMP=1042207609
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5727.1808.1042208049 RECID=198264 STAMP=1042208050
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5728.1810.1042208493 RECID=198266 STAMP=1042208494
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5729.1811.1042208917 RECID=198267 STAMP=1042208917
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5730.1812.1042209337 RECID=198268 STAMP=1042209337
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5731.1814.1042209737 RECID=198270 STAMP=1042209736
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5732.1815.1042210145 RECID=198271 STAMP=1042210144
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5733.1816.1042210559 RECID=198272 STAMP=1042210558
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5734.1818.1042210963 RECID=198274 STAMP=1042210963
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5735.1819.1042211375 RECID=198275 STAMP=1042211374
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5736.1820.1042211761 RECID=198276 STAMP=1042211761
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5737.1822.1042212119 RECID=198278 STAMP=1042212118
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5738.1823.1042212487 RECID=198279 STAMP=1042212487
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5739.1824.1042212877 RECID=198280 STAMP=1042212877
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5740.1826.1042213223 RECID=198282 STAMP=1042213222
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5741.1827.1042213595 RECID=198283 STAMP=1042213594
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5742.1828.1042213963 RECID=198284 STAMP=1042213963
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5743.1830.1042214363 RECID=198286 STAMP=1042214362
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5744.1831.1042214729 RECID=198287 STAMP=1042214728
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5745.1832.1042215125 RECID=198288 STAMP=1042215124
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5746.1834.1042215509 RECID=198290 STAMP=1042215508
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5747.1835.1042215889 RECID=198291 STAMP=1042215889
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5748.1836.1042216259 RECID=198292 STAMP=1042216258
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5749.1838.1042216619 RECID=198294 STAMP=1042216618
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5750.1839.1042217021 RECID=198295 STAMP=1042217020
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5751.1840.1042217389 RECID=198296 STAMP=1042217389
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5752.1842.1042217785 RECID=198298 STAMP=1042217785
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5753.1843.1042218149 RECID=198299 STAMP=1042218148
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5754.1844.1042218557 RECID=198300 STAMP=1042218556
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5755.1846.1042218947 RECID=198302 STAMP=1042218946
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5756.1847.1042219303 RECID=198303 STAMP=1042219303
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5757.1848.1042219697 RECID=198304 STAMP=1042219696
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5758.1850.1042220047 RECID=198306 STAMP=1042220047
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5759.1851.1042220429 RECID=198307 STAMP=1042220428
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5760.1852.1042220809 RECID=198308 STAMP=1042220809
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5761.1854.1042221221 RECID=198310 STAMP=1042221220
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5762.1855.1042221625 RECID=198311 STAMP=1042221626
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5763.1856.1042222073 RECID=198312 STAMP=1042222073
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5764.1858.1042222513 RECID=198314 STAMP=1042222514
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5765.1859.1042222967 RECID=198315 STAMP=1042222967
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5766.1860.1042223429 RECID=198316 STAMP=1042223429
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5767.1862.1042223959 RECID=198318 STAMP=1042223960
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5768.1863.1042224503 RECID=198319 STAMP=1042224503
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5769.1864.1042225061 RECID=198320 STAMP=1042225061
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5770.380.1042230909 RECID=198322 STAMP=1042230908
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5771.383.1042230909 RECID=198324 STAMP=1042230911
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5772.382.1042230909 RECID=198325 STAMP=1042230912
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5773.1467.1042231935 RECID=198326 STAMP=1042231934
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5774.1465.1042233105 RECID=198327 STAMP=1042233104
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5775.1464.1042234299 RECID=198328 STAMP=1042234298
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5776.1461.1042235523 RECID=198330 STAMP=1042235522
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5777.1460.1042236717 RECID=198331 STAMP=1042236716
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5778.1459.1042238019 RECID=198332 STAMP=1042238018
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5779.1456.1042239609 RECID=198334 STAMP=1042239608
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_04/thread_2_seq_5780.1455.1042241721 RECID=198335 STAMP=1042241720
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5781.1453.1042244955 RECID=198337 STAMP=1042244957
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5782.1451.1042246553 RECID=198338 STAMP=1042246553
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5783.1448.1042272197 RECID=198340 STAMP=1042272198
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5784.1447.1042273995 RECID=198341 STAMP=1042273995
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5785.1445.1042274957 RECID=198342 STAMP=1042274958
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5786.1443.1042275657 RECID=198344 STAMP=1042275657
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5787.1441.1042276257 RECID=198345 STAMP=1042276257
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5788.1440.1042276755 RECID=198346 STAMP=1042276755
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5789.1437.1042277225 RECID=198348 STAMP=1042277226
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5790.1436.1042277727 RECID=198349 STAMP=1042277727
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5791.1435.1042278217 RECID=198350 STAMP=1042278216
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5792.1432.1042278643 RECID=198352 STAMP=1042278642
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5793.1431.1042279083 RECID=198353 STAMP=1042279083
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5794.1429.1042279509 RECID=198354 STAMP=1042279509
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5795.1427.1042279921 RECID=198356 STAMP=1042279920
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5796.1425.1042280355 RECID=198357 STAMP=1042280355
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5797.1424.1042280791 RECID=198358 STAMP=1042280790
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5798.1421.1042281235 RECID=198360 STAMP=1042281234
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5799.1420.1042281669 RECID=198361 STAMP=1042281669
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5800.1419.1042282051 RECID=198362 STAMP=1042282050
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5801.1416.1042282437 RECID=198364 STAMP=1042282437
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5802.1415.1042282855 RECID=198365 STAMP=1042282854
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5803.1413.1042283251 RECID=198366 STAMP=1042283250
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5804.1411.1042283635 RECID=198368 STAMP=1042283634
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5805.1409.1042284013 RECID=198369 STAMP=1042284012
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5806.1408.1042284403 RECID=198370 STAMP=1042284402
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5807.1405.1042284801 RECID=198372 STAMP=1042284801
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5808.1404.1042285189 RECID=198373 STAMP=1042285188
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5809.1403.1042285599 RECID=198374 STAMP=1042285599
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5810.1400.1042286025 RECID=198376 STAMP=1042286025
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5811.1399.1042286485 RECID=198377 STAMP=1042286484
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5812.1397.1042287051 RECID=198378 STAMP=1042287051
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5813.1395.1042287747 RECID=198380 STAMP=1042287747
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5814.1393.1042288479 RECID=198381 STAMP=1042288479
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5815.1392.1042289253 RECID=198382 STAMP=1042289253
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5816.1389.1042290055 RECID=198384 STAMP=1042290054
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5817.1388.1042290807 RECID=198385 STAMP=1042290807
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5818.1387.1042291641 RECID=198386 STAMP=1042291641
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5819.1384.1042292413 RECID=198388 STAMP=1042292412
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5820.1383.1042293019 RECID=198389 STAMP=1042293018
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5821.1381.1042293613 RECID=198390 STAMP=1042293612
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5822.1379.1042294117 RECID=198392 STAMP=1042294116
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5823.1377.1042294593 RECID=198393 STAMP=1042294593
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5824.1376.1042295019 RECID=198394 STAMP=1042295019
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5825.1373.1042295455 RECID=198396 STAMP=1042295454
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5826.1372.1042295859 RECID=198397 STAMP=1042295859
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5827.1371.1042296267 RECID=198398 STAMP=1042296267
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5828.1368.1042296675 RECID=198400 STAMP=1042296676
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5829.1367.1042297081 RECID=198401 STAMP=1042297081
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5830.1365.1042297485 RECID=198402 STAMP=1042297486
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5831.1363.1042297881 RECID=198404 STAMP=1042297882
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5832.1361.1042298281 RECID=198405 STAMP=1042298281
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5833.1360.1042298689 RECID=198406 STAMP=1042298689
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5834.1357.1042299085 RECID=198408 STAMP=1042299085
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5835.1356.1042299493 RECID=198409 STAMP=1042299493
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5836.1355.1042299885 RECID=198410 STAMP=1042299886
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5837.1352.1042300309 RECID=198412 STAMP=1042300309
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5838.1351.1042300693 RECID=198413 STAMP=1042300693
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5839.1349.1042301071 RECID=198414 STAMP=1042301071
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5840.1347.1042301463 RECID=198416 STAMP=1042301464
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5841.1345.1042301869 RECID=198417 STAMP=1042301869
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5842.1344.1042302285 RECID=198418 STAMP=1042302286
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5843.1341.1042302697 RECID=198420 STAMP=1042302697
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5844.1340.1042303077 RECID=198421 STAMP=1042303078
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5845.1338.1042303487 RECID=198422 STAMP=1042303486
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5846.1336.1042303853 RECID=198424 STAMP=1042303852
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5847.1334.1042304233 RECID=198425 STAMP=1042304233
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5848.1333.1042304611 RECID=198426 STAMP=1042304611
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5849.1330.1042304983 RECID=198428 STAMP=1042304983
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5850.1329.1042305365 RECID=198429 STAMP=1042305364
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5851.1328.1042305781 RECID=198430 STAMP=1042305781
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5852.1325.1042306157 RECID=198432 STAMP=1042306156
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5853.1324.1042306561 RECID=198433 STAMP=1042306561
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5854.1322.1042306975 RECID=198434 STAMP=1042306975
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5855.1320.1042307371 RECID=198436 STAMP=1042307371
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5856.1318.1042307771 RECID=198437 STAMP=1042307770
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5857.1317.1042308205 RECID=198438 STAMP=1042308205
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5858.1314.1042308643 RECID=198440 STAMP=1042308643
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5859.1313.1042309135 RECID=198441 STAMP=1042309135
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5860.1312.1042309705 RECID=198442 STAMP=1042309705
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5861.1309.1042310329 RECID=198444 STAMP=1042310329
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5862.1308.1042311047 RECID=198445 STAMP=1042311046
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5863.1306.1042311745 RECID=198446 STAMP=1042311745
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5864.1304.1042312595 RECID=198448 STAMP=1042312594
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5865.1302.1042313587 RECID=198449 STAMP=1042313587
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5866.1301.1042314613 RECID=198450 STAMP=1042314613
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5867.1298.1042315813 RECID=198452 STAMP=1042315813
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5868.1297.1042317245 RECID=198453 STAMP=1042317244
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5869.1296.1042318693 RECID=198454 STAMP=1042318693
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5870.1293.1042320223 RECID=198456 STAMP=1042320223
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5871.1292.1042321931 RECID=198457 STAMP=1042321931
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5872.1290.1042323713 RECID=198458 STAMP=1042323712
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5873.1288.1042325669 RECID=198460 STAMP=1042325668
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_05/thread_2_seq_5874.1286.1042327991 RECID=198461 STAMP=1042327990
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5875.1285.1042331315 RECID=198462 STAMP=1042331315
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5876.1282.1042353131 RECID=198464 STAMP=1042353131
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5877.1280.1042360473 RECID=198466 STAMP=1042360472
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5878.1278.1042361937 RECID=198467 STAMP=1042361936
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5879.1277.1042362833 RECID=198468 STAMP=1042362833
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5880.1274.1042363575 RECID=198470 STAMP=1042363574
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5881.1273.1042364307 RECID=198471 STAMP=1042364306
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5882.1272.1042364993 RECID=198472 STAMP=1042364993
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5883.1269.1042365657 RECID=198474 STAMP=1042365656
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5884.1268.1042366265 RECID=198475 STAMP=1042366265
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5885.1266.1042366805 RECID=198476 STAMP=1042366805
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5886.1264.1042367381 RECID=198478 STAMP=1042367381
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5887.1262.1042367901 RECID=198479 STAMP=1042367900
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5888.1261.1042368447 RECID=198480 STAMP=1042368446
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5889.1258.1042368987 RECID=198482 STAMP=1042368986
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5890.1257.1042369533 RECID=198483 STAMP=1042369532
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5891.1256.1042369995 RECID=198484 STAMP=1042369994
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5892.1253.1042370517 RECID=198486 STAMP=1042370516
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5893.1252.1042370991 RECID=198487 STAMP=1042370990
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5894.1250.1042371485 RECID=198488 STAMP=1042371485
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5895.1248.1042372005 RECID=198490 STAMP=1042372004
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5896.1246.1042372539 RECID=198491 STAMP=1042372538
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5897.1245.1042373091 RECID=198492 STAMP=1042373090
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5898.1242.1042373763 RECID=198494 STAMP=1042373762
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5899.1241.1042374543 RECID=198495 STAMP=1042374542
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5900.1240.1042375347 RECID=198496 STAMP=1042375346
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5901.1237.1042376187 RECID=198498 STAMP=1042376186
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5902.1236.1042377003 RECID=198499 STAMP=1042377002
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5903.1234.1042377729 RECID=198500 STAMP=1042377729
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5904.1232.1042378515 RECID=198502 STAMP=1042378515
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5905.1230.1042379211 RECID=198503 STAMP=1042379211
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5906.1229.1042379945 RECID=198504 STAMP=1042379946
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5907.1226.1042380563 RECID=198506 STAMP=1042380564
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5908.1225.1042381139 RECID=198507 STAMP=1042381140
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5909.1224.1042381701 RECID=198508 STAMP=1042381701
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5910.1221.1042382225 RECID=198510 STAMP=1042382226
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5911.1220.1042382735 RECID=198511 STAMP=1042382736
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5912.1218.1042383275 RECID=198512 STAMP=1042383276
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5913.1216.1042383755 RECID=198514 STAMP=1042383756
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5914.1214.1042384241 RECID=198515 STAMP=1042384242
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5915.1213.1042384721 RECID=198516 STAMP=1042384722
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5916.1210.1042385207 RECID=198518 STAMP=1042385208
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5917.1209.1042385715 RECID=198519 STAMP=1042385715
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5918.1208.1042386177 RECID=198520 STAMP=1042386177
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5919.1205.1042386695 RECID=198522 STAMP=1042386696
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5920.1204.1042387191 RECID=198523 STAMP=1042387191
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5921.1202.1042387653 RECID=198524 STAMP=1042387653
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5922.1200.1042388121 RECID=198526 STAMP=1042388121
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5923.1198.1042388607 RECID=198527 STAMP=1042388607
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5924.1197.1042389075 RECID=198528 STAMP=1042389075
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5925.1194.1042389537 RECID=198530 STAMP=1042389537
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5926.1193.1042389999 RECID=198531 STAMP=1042389999
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5927.1192.1042390461 RECID=198532 STAMP=1042390461
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5928.1189.1042390899 RECID=198534 STAMP=1042390899
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5929.1188.1042391331 RECID=198535 STAMP=1042391331
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5930.1186.1042391791 RECID=198536 STAMP=1042391790
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5931.1184.1042392289 RECID=198538 STAMP=1042392288
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5932.1182.1042392771 RECID=198539 STAMP=1042392771
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5933.1181.1042393237 RECID=198540 STAMP=1042393236
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5934.1178.1042393753 RECID=198542 STAMP=1042393752
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5935.1177.1042394265 RECID=198543 STAMP=1042394265
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5936.1176.1042394775 RECID=198544 STAMP=1042394775
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5937.1173.1042395397 RECID=198546 STAMP=1042395396
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5938.1172.1042396047 RECID=198547 STAMP=1042396047
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5939.1170.1042396737 RECID=198548 STAMP=1042396737
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5940.1168.1042397617 RECID=198550 STAMP=1042397616
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5941.1166.1042398553 RECID=198551 STAMP=1042398552
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5942.1165.1042399695 RECID=198552 STAMP=1042399695
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5943.1162.1042401021 RECID=198554 STAMP=1042401021
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5944.1161.1042402357 RECID=198555 STAMP=1042402356
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5945.1160.1042403953 RECID=198556 STAMP=1042403952
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5946.1157.1042405561 RECID=198558 STAMP=1042405560
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5947.1156.1042407231 RECID=198559 STAMP=1042407231
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5948.1154.1042408959 RECID=198560 STAMP=1042408959
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5949.1152.1042410619 RECID=198562 STAMP=1042410618
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5950.1150.1042412541 RECID=198563 STAMP=1042412541
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_06/thread_2_seq_5951.1149.1042414791 RECID=198564 STAMP=1042414791
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5952.1146.1042419085 RECID=198566 STAMP=1042419086
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5953.1145.1042419303 RECID=198567 STAMP=1042419303
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5954.1142.1042445009 RECID=198569 STAMP=1042445008
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5955.1141.1042447399 RECID=198570 STAMP=1042447399
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5956.1140.1042448609 RECID=198572 STAMP=1042448608
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5957.1137.1042449475 RECID=198573 STAMP=1042449475
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5958.1135.1042450235 RECID=198574 STAMP=1042450234
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5959.1134.1042450931 RECID=198576 STAMP=1042450930
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5960.1131.1042451557 RECID=198577 STAMP=1042451557
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5961.1130.1042452185 RECID=198578 STAMP=1042452184
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5962.1129.1042452743 RECID=198579 STAMP=1042452742
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5963.1126.1042453265 RECID=198581 STAMP=1042453264
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5964.1125.1042453835 RECID=198582 STAMP=1042453834
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5965.1123.1042454399 RECID=198584 STAMP=1042454398
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5966.1121.1042454963 RECID=198585 STAMP=1042454962
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5967.1119.1042455491 RECID=198586 STAMP=1042455490
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5968.1118.1042456025 RECID=198588 STAMP=1042456024
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5969.1115.1042456495 RECID=198589 STAMP=1042456495
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5970.1114.1042457027 RECID=198590 STAMP=1042457026
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5971.1113.1042457569 RECID=198592 STAMP=1042457569
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5972.1110.1042458139 RECID=198593 STAMP=1042458139
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5973.1109.1042458751 RECID=198594 STAMP=1042458751
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5974.1107.1042459373 RECID=198595 STAMP=1042459372
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5975.1105.1042460081 RECID=198597 STAMP=1042460080
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5976.1103.1042460855 RECID=198598 STAMP=1042460854
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5977.1102.1042461713 RECID=198599 STAMP=1042461712
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5978.1099.1042462555 RECID=198601 STAMP=1042462555
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5979.1098.1042463413 RECID=198602 STAMP=1042463413
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5980.1097.1042464265 RECID=198603 STAMP=1042464265
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5981.1094.1042465043 RECID=198605 STAMP=1042465042
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5982.1093.1042465807 RECID=198606 STAMP=1042465807
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5983.1091.1042466537 RECID=198607 STAMP=1042466536
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5984.1089.1042467205 RECID=198609 STAMP=1042467206
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5985.1087.1042467859 RECID=198610 STAMP=1042467860
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5986.1086.1042468463 RECID=198611 STAMP=1042468463
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5987.1083.1042469041 RECID=198613 STAMP=1042469042
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5988.1082.1042469555 RECID=198614 STAMP=1042469555
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5989.1081.1042470085 RECID=198615 STAMP=1042470086
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5990.1078.1042470599 RECID=198617 STAMP=1042470599
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5991.1077.1042471147 RECID=198618 STAMP=1042471148
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5992.1075.1042471643 RECID=198619 STAMP=1042471643
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5993.1073.1042472159 RECID=198621 STAMP=1042472159
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5994.1071.1042472665 RECID=198622 STAMP=1042472666
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5995.1070.1042473151 RECID=198623 STAMP=1042473152
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5996.1067.1042473599 RECID=198625 STAMP=1042473599
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5997.1066.1042474073 RECID=198626 STAMP=1042474073
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5998.1065.1042474589 RECID=198627 STAMP=1042474589
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_5999.1062.1042475099 RECID=198629 STAMP=1042475099
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6000.1061.1042475609 RECID=198630 STAMP=1042475609
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6001.1059.1042476107 RECID=198631 STAMP=1042476107
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6002.1057.1042476571 RECID=198633 STAMP=1042476572
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6003.1055.1042477095 RECID=198634 STAMP=1042477094
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6004.1054.1042477601 RECID=198635 STAMP=1042477601
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6005.1051.1042478141 RECID=198637 STAMP=1042478141
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6006.1050.1042478679 RECID=198638 STAMP=1042478678
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6007.1049.1042479219 RECID=198639 STAMP=1042479218
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6008.1046.1042479777 RECID=198641 STAMP=1042479776
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6009.1045.1042480337 RECID=198642 STAMP=1042480337
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6010.1043.1042480871 RECID=198643 STAMP=1042480871
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6011.1041.1042481423 RECID=198645 STAMP=1042481423
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6012.1039.1042482087 RECID=198646 STAMP=1042482086
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6013.1038.1042482809 RECID=198647 STAMP=1042482809
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6014.1035.1042483617 RECID=198649 STAMP=1042483616
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6015.1034.1042484511 RECID=198650 STAMP=1042484510
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6016.1033.1042485635 RECID=198651 STAMP=1042485635
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6017.1030.1042487073 RECID=198653 STAMP=1042487072
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6018.1029.1042488557 RECID=198654 STAMP=1042488557
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6019.1027.1042490031 RECID=198655 STAMP=1042490030
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6020.1025.1042491639 RECID=198657 STAMP=1042491638
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6021.1023.1042493115 RECID=198658 STAMP=1042493114
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6022.1022.1042494563 RECID=198659 STAMP=1042494563
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6023.1019.1042495937 RECID=198661 STAMP=1042495937
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6024.1018.1042497633 RECID=198662 STAMP=1042497632
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6025.1017.1042499421 RECID=198663 STAMP=1042499420
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_07/thread_2_seq_6026.1014.1042501925 RECID=198665 STAMP=1042501925
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6027.1013.1042505611 RECID=198666 STAMP=1042505611
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6028.1010.1042531805 RECID=198668 STAMP=1042531806
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6029.1009.1042533629 RECID=198669 STAMP=1042533630
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6030.1007.1042534551 RECID=198670 STAMP=1042534551
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6031.1004.1042535231 RECID=198672 STAMP=1042535232
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6032.1001.1042535781 RECID=198673 STAMP=1042535781
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6033.1000.1042536285 RECID=198674 STAMP=1042536285
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6034.995.1042536765 RECID=198676 STAMP=1042536765
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6035.994.1042537223 RECID=198677 STAMP=1042537224
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6036.991.1042537677 RECID=198678 STAMP=1042537677
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6037.988.1042538117 RECID=198680 STAMP=1042538118
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6038.986.1042538543 RECID=198681 STAMP=1042538544
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6039.984.1042538975 RECID=198682 STAMP=1042538976
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6040.980.1042539373 RECID=198684 STAMP=1042539372
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6041.1635.1042539795 RECID=198685 STAMP=1042539795
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6042.1634.1042540203 RECID=198686 STAMP=1042540203
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6043.1631.1042540587 RECID=198688 STAMP=1042540587
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6044.1630.1042540975 RECID=198689 STAMP=1042540974
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6045.1628.1042541353 RECID=198690 STAMP=1042541352
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6046.1626.1042541767 RECID=198692 STAMP=1042541766
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6047.1624.1042542139 RECID=198693 STAMP=1042542138
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6048.1623.1042542493 RECID=198694 STAMP=1042542492
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6049.1620.1042542859 RECID=198696 STAMP=1042542858
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6050.1619.1042543257 RECID=198697 STAMP=1042543257
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6051.1618.1042543629 RECID=198698 STAMP=1042543629
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6052.1615.1042544013 RECID=198700 STAMP=1042544013
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6053.1614.1042544419 RECID=198701 STAMP=1042544418
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6054.1612.1042544841 RECID=198702 STAMP=1042544841
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6055.1610.1042545271 RECID=198704 STAMP=1042545270
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6056.1608.1042545709 RECID=198705 STAMP=1042545708
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6057.1607.1042546237 RECID=198706 STAMP=1042546236
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6058.1604.1042546915 RECID=198708 STAMP=1042546914
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6059.1603.1042547727 RECID=198709 STAMP=1042547727
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6060.1602.1042548571 RECID=198710 STAMP=1042548570
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6061.1599.1042549353 RECID=198712 STAMP=1042549353
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6062.1598.1042550019 RECID=198713 STAMP=1042550019
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6063.1596.1042550743 RECID=198714 STAMP=1042550742
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6064.1594.1042551453 RECID=198716 STAMP=1042551453
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6065.1592.1042552063 RECID=198717 STAMP=1042552062
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6066.1591.1042552641 RECID=198718 STAMP=1042552641
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6067.1588.1042553155 RECID=198720 STAMP=1042553154
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6068.1587.1042553629 RECID=198721 STAMP=1042553628
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6069.1586.1042554025 RECID=198722 STAMP=1042554024
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6070.1583.1042554409 RECID=198724 STAMP=1042554408
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6071.1582.1042554805 RECID=198725 STAMP=1042554805
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6072.1580.1042555207 RECID=198726 STAMP=1042555207
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6073.1578.1042555603 RECID=198728 STAMP=1042555603
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6074.1576.1042555977 RECID=198729 STAMP=1042555978
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6075.1575.1042556379 RECID=198730 STAMP=1042556380
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6076.1572.1042556745 RECID=198732 STAMP=1042556746
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6077.1571.1042557163 RECID=198733 STAMP=1042557163
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6078.1570.1042557565 RECID=198734 STAMP=1042557565
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6079.1567.1042557955 RECID=198736 STAMP=1042557955
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6080.1566.1042558341 RECID=198737 STAMP=1042558342
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6081.1564.1042558715 RECID=198738 STAMP=1042558714
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6082.1562.1042559087 RECID=198740 STAMP=1042559086
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6083.1560.1042559489 RECID=198741 STAMP=1042559488
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6084.1559.1042559891 RECID=198742 STAMP=1042559890
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6085.1556.1042560271 RECID=198744 STAMP=1042560271
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6086.1555.1042560641 RECID=198745 STAMP=1042560640
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6087.1554.1042561055 RECID=198746 STAMP=1042561054
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6088.1551.1042561453 RECID=198748 STAMP=1042561453
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6089.1550.1042561795 RECID=198749 STAMP=1042561795
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6090.1548.1042562149 RECID=198750 STAMP=1042562149
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6091.1546.1042562539 RECID=198752 STAMP=1042562539
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6092.1544.1042562903 RECID=198753 STAMP=1042562902
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6093.1543.1042563289 RECID=198754 STAMP=1042563289
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6094.1540.1042563655 RECID=198756 STAMP=1042563655
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6095.1539.1042564043 RECID=198757 STAMP=1042564042
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6096.1538.1042564403 RECID=198758 STAMP=1042564402
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6097.1535.1042564781 RECID=198760 STAMP=1042564780
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6098.1534.1042565129 RECID=198761 STAMP=1042565128
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6099.1532.1042565473 RECID=198762 STAMP=1042565473
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6100.1530.1042565821 RECID=198764 STAMP=1042565821
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6101.1528.1042566173 RECID=198765 STAMP=1042566173
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6102.1527.1042566517 RECID=198766 STAMP=1042566518
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6103.1524.1042566877 RECID=198768 STAMP=1042566878
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6104.1523.1042567247 RECID=198769 STAMP=1042567247
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6105.1522.1042567619 RECID=198770 STAMP=1042567619
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6106.1519.1042568039 RECID=198772 STAMP=1042568039
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6107.1518.1042568497 RECID=198773 STAMP=1042568498
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6108.1516.1042568975 RECID=198774 STAMP=1042568975
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6109.1514.1042569409 RECID=198776 STAMP=1042569410
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6110.1512.1042569925 RECID=198777 STAMP=1042569926
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6111.1511.1042570477 RECID=198778 STAMP=1042570478
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6112.1508.1042570987 RECID=198780 STAMP=1042570988
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6113.1507.1042571603 RECID=198781 STAMP=1042571603
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6114.1506.1042572229 RECID=198782 STAMP=1042572230
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6115.1503.1042572991 RECID=198784 STAMP=1042572992
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6116.1502.1042573705 RECID=198785 STAMP=1042573706
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6117.1500.1042574455 RECID=198786 STAMP=1042574456
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6118.1498.1042575303 RECID=198788 STAMP=1042575302
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6119.1496.1042576113 RECID=198789 STAMP=1042576112
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6120.1495.1042576959 RECID=198790 STAMP=1042576958
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6121.1492.1042577889 RECID=198792 STAMP=1042577888
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6122.1491.1042578905 RECID=198793 STAMP=1042578905
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6123.1490.1042579881 RECID=198794 STAMP=1042579880
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6124.1487.1042580883 RECID=198796 STAMP=1042580882
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6125.1486.1042581981 RECID=198797 STAMP=1042581980
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6126.1484.1042583163 RECID=198798 STAMP=1042583162
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6127.1482.1042584491 RECID=198800 STAMP=1042584491
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6128.1480.1042586133 RECID=198801 STAMP=1042586132
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_08/thread_2_seq_6129.1479.1042587995 RECID=198802 STAMP=1042587995
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6130.1476.1042591947 RECID=198804 STAMP=1042591948
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6131.1475.1042592245 RECID=198805 STAMP=1042592244
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6132.1472.1042616973 RECID=198807 STAMP=1042616972
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6133.1471.1042619579 RECID=198808 STAMP=1042619579
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6134.1469.1042620513 RECID=198809 STAMP=1042620512
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6135.1633.1042621199 RECID=198811 STAMP=1042621199
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6136.1629.1042621751 RECID=198812 STAMP=1042621751
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6137.1625.1042622217 RECID=198813 STAMP=1042622216
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6138.1617.1042622663 RECID=198815 STAMP=1042622664
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6139.1613.1042623099 RECID=198816 STAMP=1042623099
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6140.1609.1042623495 RECID=198817 STAMP=1042623495
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6141.1601.1042623917 RECID=198819 STAMP=1042623918
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6142.1597.1042624367 RECID=198820 STAMP=1042624368
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6143.1593.1042624793 RECID=198821 STAMP=1042624794
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6144.1585.1042625241 RECID=198823 STAMP=1042625241
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6145.1581.1042625673 RECID=198824 STAMP=1042625673
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6146.1577.1042626101 RECID=198825 STAMP=1042626102
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6147.1569.1042626477 RECID=198827 STAMP=1042626477
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6148.1565.1042626875 RECID=198828 STAMP=1042626876
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6149.1561.1042627301 RECID=198829 STAMP=1042627302
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6150.1553.1042627679 RECID=198831 STAMP=1042627680
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6151.1549.1042628063 RECID=198832 STAMP=1042628064
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6152.1545.1042628471 RECID=198833 STAMP=1042628472
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6153.1537.1042628881 RECID=198835 STAMP=1042628880
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6154.1533.1042629291 RECID=198836 STAMP=1042629291
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6155.1529.1042629663 RECID=198837 STAMP=1042629663
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6156.1521.1042630039 RECID=198839 STAMP=1042630038
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6157.1517.1042630431 RECID=198840 STAMP=1042630431
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6158.1513.1042630831 RECID=198841 STAMP=1042630830
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6159.1505.1042631251 RECID=198843 STAMP=1042631250
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6160.1501.1042631643 RECID=198844 STAMP=1042631643
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6161.1497.1042632073 RECID=198845 STAMP=1042632072
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6162.1489.1042632631 RECID=198847 STAMP=1042632630
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6163.1485.1042633263 RECID=198848 STAMP=1042633263
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6164.1481.1042634023 RECID=198849 STAMP=1042634022
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6165.1474.1042634769 RECID=198851 STAMP=1042634769
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6166.979.1042635567 RECID=198852 STAMP=1042635567
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6167.977.1042636269 RECID=198853 STAMP=1042636269
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6168.973.1042637055 RECID=198855 STAMP=1042637055
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6169.971.1042637763 RECID=198856 STAMP=1042637763
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6170.968.1042638363 RECID=198857 STAMP=1042638363
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6171.964.1042638901 RECID=198859 STAMP=1042638900
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6172.963.1042639399 RECID=198860 STAMP=1042639398
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6173.961.1042639863 RECID=198861 STAMP=1042639863
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6174.957.1042640289 RECID=198863 STAMP=1042640289
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6175.955.1042640719 RECID=198864 STAMP=1042640718
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6176.953.1042641115 RECID=198865 STAMP=1042641114
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6177.948.1042641525 RECID=198867 STAMP=1042641525
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6178.946.1042641897 RECID=198868 STAMP=1042641897
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6179.943.1042642273 RECID=198869 STAMP=1042642272
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6180.939.1042642671 RECID=198871 STAMP=1042642671
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6181.937.1042643035 RECID=198872 STAMP=1042643034
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6182.935.1042643401 RECID=198873 STAMP=1042643401
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6183.931.1042643769 RECID=198875 STAMP=1042643770
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6184.929.1042644129 RECID=198876 STAMP=1042644130
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6185.927.1042644493 RECID=198878 STAMP=1042644493
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6186.923.1042644873 RECID=198879 STAMP=1042644874
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6187.921.1042645249 RECID=198880 STAMP=1042645249
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6188.919.1042645603 RECID=198881 STAMP=1042645603
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6189.916.1042645963 RECID=198883 STAMP=1042645963
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6190.914.1042646313 RECID=198884 STAMP=1042646314
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6191.911.1042646659 RECID=198886 STAMP=1042646659
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6192.908.1042647027 RECID=198887 STAMP=1042647028
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6193.906.1042647427 RECID=198888 STAMP=1042647427
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6194.903.1042647803 RECID=198889 STAMP=1042647802
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6195.900.1042648187 RECID=198891 STAMP=1042648186
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6196.897.1042648529 RECID=198892 STAMP=1042648528
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6197.896.1042648897 RECID=198893 STAMP=1042648897
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6198.891.1042649225 RECID=198895 STAMP=1042649224
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6199.890.1042649573 RECID=198896 STAMP=1042649572
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6200.888.1042649939 RECID=198897 STAMP=1042649938
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6201.883.1042650281 RECID=198899 STAMP=1042650280
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6202.882.1042650653 RECID=198900 STAMP=1042650652
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6203.878.1042651019 RECID=198901 STAMP=1042651018
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6204.874.1042651403 RECID=198903 STAMP=1042651402
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6205.872.1042651765 RECID=198904 STAMP=1042651765
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6206.871.1042652155 RECID=198905 STAMP=1042652155
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6207.866.1042652513 RECID=198907 STAMP=1042652512
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6208.864.1042652879 RECID=198908 STAMP=1042652878
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6209.862.1042653275 RECID=198909 STAMP=1042653274
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6210.859.1042653665 RECID=198911 STAMP=1042653664
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6211.856.1042654057 RECID=198912 STAMP=1042654057
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6212.854.1042654457 RECID=198913 STAMP=1042654456
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6213.851.1042654927 RECID=198915 STAMP=1042654927
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6214.849.1042655399 RECID=198916 STAMP=1042655398
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6215.847.1042655947 RECID=198917 STAMP=1042655947
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6216.842.1042656551 RECID=198919 STAMP=1042656550
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6217.840.1042657169 RECID=198920 STAMP=1042657168
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6218.838.1042657855 RECID=198921 STAMP=1042657855
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6219.834.1042658567 RECID=198923 STAMP=1042658566
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6220.832.1042659371 RECID=198924 STAMP=1042659370
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6221.831.1042660247 RECID=198925 STAMP=1042660246
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6222.827.1042661147 RECID=198927 STAMP=1042661146
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6223.824.1042662011 RECID=198928 STAMP=1042662011
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6224.823.1042663015 RECID=198929 STAMP=1042663016
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6225.817.1042664017 RECID=198931 STAMP=1042664018
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6226.815.1042665067 RECID=198932 STAMP=1042665068
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6227.813.1042666153 RECID=198933 STAMP=1042666154
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6228.809.1042667309 RECID=198935 STAMP=1042667309
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6229.808.1042668425 RECID=198936 STAMP=1042668425
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6230.805.1042669657 RECID=198937 STAMP=1042669658
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6231.801.1042670991 RECID=198939 STAMP=1042670990
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_09/thread_2_seq_6232.799.1042673195 RECID=198940 STAMP=1042673195
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_10/thread_2_seq_6233.797.1042677741 RECID=198942 STAMP=1042677742
+validation succeeded for archived log
+archived log file name=+DG_ARCH_1/orcl/archivelog/2020_06_10/thread_2_seq_6234.792.1042678667 RECID=198944 STAMP=1042678667
+Crosschecked 853 objects
+
+
+specification does not match any archived log in the repository
+
+
+released channel: c1
+
+released channel: c2
+
+released channel: c3
+
+released channel: c4
+
+released channel: c5
+
+released channel: c6
+
+RMAN> 
+
+Recovery Manager complete.
+Last login: Tue Jun  9 23:59:01 CST 2020

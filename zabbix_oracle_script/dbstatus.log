@@ -1,12 +1,26 @@
 lsnrctl_status_flag=1
 listen_1521=1
-tns1=1
+tns_status=1
+scan_ip=1
 db_status=1
-db_active_session=29
-db_all_process=150
-tbl_SYSTEM=99.65
-tbl_SYSAUX=93.93
-tbl_USERS=26.20
-tbl_UNDOTBS1=25.83
-tbl_SJHDATA=1.06
-Last login: Mon Mar 23 16:51:01 CST 2020
+db_active_session=48
+db_all_process=1500
+tbl_TBS_PAIC=84.78
+tbl_UNDOTBS3=80.86
+tbl_TBS_PAIC_INDEX=80.81
+tbl_TBS_PAIC_ARCH=80.55
+tbl_TBS_PAIC_CLOB=78.76
+tbl_TBS_PAIC_READONLY=69.68
+tbl_TBS_PAIC_META=36.95
+tbl_TBS_PAIC_ARCH_INDEX=24.25
+tbl_TBS_PAIC_META_INDEX=0.02
+asm_DG_DATA_NEW_1=93
+asm_DATA01=36
+asm_DATA_ARCH=12
+asm_DG_ARCH_1=60
+asm_OCR=4
+db_cache_hit_rate= 90.89
+db_archivelog_size_MB= 4317.31
+sys_process_usage=0.0
+sys_app_home_size=25
+Last login: Tue Jun 16 10:09:01 CST 2020

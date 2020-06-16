@@ -1,0 +1,68 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Sun Mar 15 00:00:01 2020
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: VMIDB (DBID=3389753949)
+
+RMAN> 2> 3> 4> 5> 6> 7> 
+Starting backup at 15-MAR-20
+using target database control file instead of recovery catalog
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=714 instance=vmidb2 device type=DISK
+channel ORA_DISK_1: starting incremental level 2 datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+input datafile file number=00007 name=+DATA/vmidb/datafile/tbs_meta_vmi02.dbf
+input datafile file number=00008 name=+DATA/vmidb/datafile/tbs_meta_vmi03.dbf
+input datafile file number=00006 name=+DATA/vmidb/datafile/tbs_meta_vmi01.dbf
+input datafile file number=00003 name=+DATA/vmidb/datafile/undotbs1.261.1031941603
+input datafile file number=00002 name=+DATA/vmidb/datafile/sysaux.260.1031941603
+input datafile file number=00001 name=+DATA/vmidb/datafile/system.259.1031941601
+input datafile file number=00004 name=+DATA/vmidb/datafile/undotbs2.263.1031941607
+input datafile file number=00005 name=+DATA/vmidb/datafile/users.264.1031941609
+channel ORA_DISK_1: starting piece 1 at 15-MAR-20
+channel ORA_DISK_1: finished piece 1 at 15-MAR-20
+piece handle=/dbbackup/vmi/Sunday_dt_inc2_12ur3sg2_20200315 tag=TAG20200315T000002 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:01:05
+channel ORA_DISK_1: starting incremental level 2 datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+including current control file in backup set
+including current SPFILE in backup set
+channel ORA_DISK_1: starting piece 1 at 15-MAR-20
+channel ORA_DISK_1: finished piece 1 at 15-MAR-20
+piece handle=/dbbackup/vmi/Sunday_dt_inc2_13ur3si3_20200315 tag=TAG20200315T000002 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+Finished backup at 15-MAR-20
+
+Starting backup at 15-MAR-20
+current log archived
+using channel ORA_DISK_1
+skipping archived logs of thread 1 from sequence 2164 to 2558; already backed up
+skipping archived logs of thread 2 from sequence 673 to 855; already backed up
+channel ORA_DISK_1: starting archived log backup set
+channel ORA_DISK_1: specifying archived log(s) in backup set
+input archived log thread=2 sequence=856 RECID=3312 STAMP=1035046816
+input archived log thread=1 sequence=2559 RECID=3311 STAMP=1035039605
+input archived log thread=1 sequence=2560 RECID=3314 STAMP=1035072070
+input archived log thread=2 sequence=857 RECID=3313 STAMP=1035072070
+channel ORA_DISK_1: starting piece 1 at 15-MAR-20
+channel ORA_DISK_1: finished piece 1 at 15-MAR-20
+piece handle=/dbbackup/vmi/Sunday_arch_14ur3si7_20200315 tag=TAG20200315T000111 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+Finished backup at 15-MAR-20
+
+Starting backup at 15-MAR-20
+using channel ORA_DISK_1
+channel ORA_DISK_1: starting full datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+including current control file in backup set
+channel ORA_DISK_1: starting piece 1 at 15-MAR-20
+channel ORA_DISK_1: finished piece 1 at 15-MAR-20
+piece handle=/dbbackup/vmi/Sunday_ctf_15ur3si9_20200315 tag=TAG20200315T000113 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+Finished backup at 15-MAR-20
+
+RMAN> 
+
+Recovery Manager complete.
+Last login: Sat Mar 14 23:59:02 CST 2020

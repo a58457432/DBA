@@ -75,6 +75,7 @@ def init_dbins_info():
     dbinfo['insname'] = insname
     dbinfo['asm_status'] = {}
     dbinfo['scan_ip'] = {}
+    dbinfo['sys_status'] = {}
     dbins[insname] = copy.deepcopy(dbinfo)
     return dbins
 
@@ -97,13 +98,15 @@ def get_oracle_status():
                 if "tns" in line:
                     db['tns_status'][linelist[0]] = linelist[1]
                 if "db" in line:
-                    db['db_status'][linelist[0]] = linelist[1]
+                    db['db_status'][linelist[0]] = linelist[1].replace(" ", "")
                 if "tbl" in line:
                     db['tbl_status'][linelist[0]] = linelist[1]
                 if "asm" in line:
                     db['asm_status'][linelist[0]] = linelist[1]
                 if "scan" in line:
                     db['scan_ip'][linelist[0]] = linelist[1]
+                if "sys" in line:
+                    db['sys_status'][linelist[0]] = linelist[1]
 #    print dbins
     return dbins
 
@@ -119,7 +122,7 @@ def push_zabbix_items():
     dbs = dbins.values()
     dbs.sort()
     
-    for status_type in ('lsnrctl_status', 'listen_status', 'tns_status', 'db_status', 'tbl_status', 'asm_status','scan_ip'):
+    for status_type in ('lsnrctl_status', 'listen_status', 'tns_status', 'db_status', 'tbl_status', 'asm_status','scan_ip','sys_status'):
         for (key, value) in dbs[0][status_type].items():
             zb_sender_cmd = ('%s -z %s -p %d -s %s -k %s -o %s') % (zb_sender, zb_server, zb_server_port, insname, str(key), str(value))
             print zb_sender_cmd

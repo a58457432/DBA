@@ -1,0 +1,1071 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Sun May 10 00:00:01 2020
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: ORCL (DBID=1492966431)
+
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 10> 11> 12> 13> 14> 15> 16> 17> 18> 19> 
+using target database control file instead of recovery catalog
+allocated channel: c1
+channel c1: SID=1087 instance=orcl2 device type=DISK
+
+allocated channel: c2
+channel c2: SID=1797 instance=orcl2 device type=DISK
+
+allocated channel: c3
+channel c3: SID=1855 instance=orcl2 device type=DISK
+
+allocated channel: c4
+channel c4: SID=1907 instance=orcl2 device type=DISK
+
+allocated channel: c5
+channel c5: SID=1996 instance=orcl2 device type=DISK
+
+allocated channel: c6
+channel c6: SID=2070 instance=orcl2 device type=DISK
+
+Starting backup at 10-MAY-20
+channel c1: starting compressed incremental level 2 datafile backup set
+channel c1: specifying datafile(s) in backup set
+input datafile file number=00031 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.536.1036266693
+input datafile file number=00041 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.530.1036266731
+input datafile file number=00016 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.528.1036266771
+input datafile file number=00033 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.261.1036266809
+input datafile file number=00067 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.271.1036266849
+input datafile file number=00074 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.277.1036266889
+input datafile file number=00080 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.283.1036266931
+input datafile file number=00087 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.289.1036266975
+input datafile file number=00093 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.301.1036271889
+input datafile file number=00099 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.327.1036273309
+input datafile file number=00105 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.331.1036273653
+input datafile file number=00112 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.336.1036273923
+input datafile file number=00118 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.338.1036274249
+input datafile file number=00125 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.340.1036274317
+input datafile file number=00132 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.342.1036274795
+input datafile file number=00138 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.343.1036274807
+input datafile file number=00144 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.350.1036277721
+input datafile file number=00150 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.354.1036278763
+input datafile file number=00156 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.369.1036279587
+input datafile file number=00162 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.381.1036280167
+input datafile file number=00168 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.384.1036280443
+input datafile file number=00174 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.389.1036280935
+input datafile file number=00180 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.391.1036281167
+input datafile file number=00186 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.392.1036281413
+input datafile file number=00193 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.393.1036281425
+input datafile file number=00199 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.400.1036284233
+input datafile file number=00206 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.403.1036285253
+input datafile file number=00212 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.420.1036286073
+input datafile file number=00218 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.431.1036286613
+input datafile file number=00225 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.438.1036287307
+input datafile file number=00231 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.439.1036287473
+input datafile file number=00237 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.441.1036287689
+input datafile file number=00243 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.442.1036287701
+input datafile file number=00249 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.447.1036290235
+input datafile file number=00255 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.451.1036291199
+input datafile file number=00261 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.464.1036291949
+input datafile file number=00267 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.576.1037141097
+input datafile file number=00273 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.582.1037141861
+input datafile file number=00279 name=+DATA01/orcl/datafile/tbs_paic_index.479.15867640472
+input datafile file number=00285 name=+DATA01/orcl/datafile/tbs_paic.266.1038255423
+input datafile file number=00291 name=+DATA01/orcl/datafile/tbs_paic.272.1038255659
+input datafile file number=00297 name=+DATA01/orcl/datafile/tbs_paic.278.1038255861
+input datafile file number=00303 name=+DATA01/orcl/datafile/tbs_paic.284.1038256107
+input datafile file number=00050 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.477.1036292537
+input datafile file number=00056 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.481.1036292677
+input datafile file number=00062 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.494.1036293419
+input datafile file number=00009 name=+DG_DATA_NEW_1/orcl/datafile/undotbs1.495.1036293439
+input datafile file number=00071 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_readonly.496.1036293551
+input datafile file number=00006 name=+DG_DATA_NEW_1/orcl/datafile/users.556.1036295343
+input datafile file number=00002 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.493.1036293399
+input datafile file number=00045 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.505.1036294853
+channel c1: starting piece 1 at 10-MAY-20
+channel c2: starting compressed incremental level 2 datafile backup set
+channel c2: specifying datafile(s) in backup set
+input datafile file number=00030 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.534.1036266693
+input datafile file number=00038 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.266.1036266733
+input datafile file number=00015 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.527.1036266773
+input datafile file number=00032 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.269.1036266813
+input datafile file number=00066 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.275.1036266851
+input datafile file number=00073 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.281.1036266891
+input datafile file number=00079 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.287.1036266935
+input datafile file number=00086 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.293.1036266979
+input datafile file number=00092 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.300.1036271525
+input datafile file number=00098 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.311.1036272869
+input datafile file number=00104 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.313.1036272907
+input datafile file number=00111 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.320.1036273041
+input datafile file number=00117 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.324.1036273233
+input datafile file number=00124 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.330.1036273433
+input datafile file number=00131 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.332.1036273703
+input datafile file number=00137 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.337.1036274109
+input datafile file number=00143 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.351.1036277953
+input datafile file number=00149 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.356.1036278957
+input datafile file number=00155 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.363.1036279325
+input datafile file number=00161 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.366.1036279489
+input datafile file number=00167 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.368.1036279553
+input datafile file number=00173 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.375.1036279831
+input datafile file number=00179 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.379.1036280051
+input datafile file number=00185 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.382.1036280227
+input datafile file number=00192 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.386.1036280491
+input datafile file number=00198 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.410.1036285511
+input datafile file number=00205 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.413.1036285821
+input datafile file number=00211 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.417.1036285969
+input datafile file number=00217 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.418.1036286031
+input datafile file number=00223 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.423.1036286251
+input datafile file number=00230 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.427.1036286439
+input datafile file number=00236 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.430.1036286611
+input datafile file number=00242 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.434.1036286873
+input datafile file number=00248 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.459.1036291659
+input datafile file number=00254 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.465.1036291981
+input datafile file number=00260 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.469.1036292155
+input datafile file number=00266 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.575.1037141075
+input datafile file number=00272 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.581.1037141815
+input datafile file number=00278 name=+DATA01/orcl/datafile/tbs_paic_index.479.15867640471
+input datafile file number=00284 name=+DATA01/orcl/datafile/tbs_paic.265.1038255385
+input datafile file number=00290 name=+DATA01/orcl/datafile/tbs_paic.271.1038255621
+input datafile file number=00296 name=+DATA01/orcl/datafile/tbs_paic.277.1038255831
+input datafile file number=00302 name=+DATA01/orcl/datafile/tbs_paic.283.1038256085
+input datafile file number=00049 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.476.1036292481
+input datafile file number=00055 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.479.1036292655
+input datafile file number=00061 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.482.1036292707
+input datafile file number=00010 name=+DG_DATA_NEW_1/orcl/datafile/undotbs2.483.1036292807
+input datafile file number=00129 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_readonly.480.1036292657
+input datafile file number=00001 name=+DG_DATA_NEW_1/orcl/datafile/system.503.1036294401
+input datafile file number=00008 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.498.1036293603
+channel c2: starting piece 1 at 10-MAY-20
+channel c3: starting compressed incremental level 2 datafile backup set
+channel c3: specifying datafile(s) in backup set
+input datafile file number=00029 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.535.1036266693
+input datafile file number=00037 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.529.1036266733
+input datafile file number=00014 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.259.1036266773
+input datafile file number=00020 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.270.1036266813
+input datafile file number=00065 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.276.1036266851
+input datafile file number=00072 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.282.1036266893
+input datafile file number=00078 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.288.1036266935
+input datafile file number=00085 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.294.1036266979
+input datafile file number=00091 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.295.1036269159
+input datafile file number=00097 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.299.1036271259
+input datafile file number=00103 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.308.1036272815
+input datafile file number=00110 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.314.1036272921
+input datafile file number=00116 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.316.1036273001
+input datafile file number=00123 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.325.1036273279
+input datafile file number=00130 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.328.1036273323
+input datafile file number=00136 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.333.1036273801
+input datafile file number=00142 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.346.1036275423
+input datafile file number=00148 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.352.1036278113
+input datafile file number=00154 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.361.1036279265
+input datafile file number=00160 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.364.1036279431
+input datafile file number=00166 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.373.1036279761
+input datafile file number=00172 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.378.1036280005
+input datafile file number=00178 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.380.1036280131
+input datafile file number=00184 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.387.1036280593
+input datafile file number=00190 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.398.1036282171
+input datafile file number=00197 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.401.1036284701
+input datafile file number=00204 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.412.1036285787
+input datafile file number=00210 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.416.1036285943
+input datafile file number=00216 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.424.1036286275
+input datafile file number=00222 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.428.1036286515
+input datafile file number=00229 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.432.1036286641
+input datafile file number=00235 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.435.1036287081
+input datafile file number=00241 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.446.1036288547
+input datafile file number=00247 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.450.1036290953
+input datafile file number=00253 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.466.1036292001
+input datafile file number=00259 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.470.1036292173
+input datafile file number=00265 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.574.1037141047
+input datafile file number=00271 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.580.1037141795
+input datafile file number=00277 name=+DATA01/orcl/datafile/tbs_paic.479.15867640473
+input datafile file number=00283 name=+DATA01/orcl/datafile/tbs_paic.264.1038245767
+input datafile file number=00289 name=+DATA01/orcl/datafile/tbs_paic.270.1038255593
+input datafile file number=00295 name=+DATA01/orcl/datafile/tbs_paic.276.1038255789
+input datafile file number=00301 name=+DATA01/orcl/datafile/tbs_paic.282.1038255987
+input datafile file number=00048 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.453.1036291317
+input datafile file number=00054 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.474.1036292461
+input datafile file number=00060 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.485.1036292979
+input datafile file number=00019 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.491.1036293289
+input datafile file number=00012 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta_index.497.1036293589
+input datafile file number=00005 name=+DG_DATA_NEW_1/orcl/datafile/undotbs2.555.1036295111
+channel c3: starting piece 1 at 10-MAY-20
+channel c4: starting compressed incremental level 2 datafile backup set
+channel c4: specifying datafile(s) in backup set
+input datafile file number=00028 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.533.1036266693
+input datafile file number=00036 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.265.1036266733
+input datafile file number=00013 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.526.1036266773
+input datafile file number=00018 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.264.1036266811
+input datafile file number=00044 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.273.1036266849
+input datafile file number=00070 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.279.1036266889
+input datafile file number=00077 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.285.1036266933
+input datafile file number=00084 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.290.1036266977
+input datafile file number=00090 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.298.1036271217
+input datafile file number=00096 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.305.1036272707
+input datafile file number=00102 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.309.1036272833
+input datafile file number=00109 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.323.1036273231
+input datafile file number=00115 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.326.1036273303
+input datafile file number=00122 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.329.1036273391
+input datafile file number=00128 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.334.1036273851
+input datafile file number=00135 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.339.1036274301
+input datafile file number=00141 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.349.1036277499
+input datafile file number=00147 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.355.1036278863
+input datafile file number=00153 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.357.1036279027
+input datafile file number=00159 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.372.1036279703
+input datafile file number=00165 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.376.1036279889
+input datafile file number=00171 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.377.1036279949
+input datafile file number=00177 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.385.1036280465
+input datafile file number=00183 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.388.1036280919
+input datafile file number=00189 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.399.1036284071
+input datafile file number=00196 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.406.1036285351
+input datafile file number=00203 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.409.1036285503
+input datafile file number=00209 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.421.1036286139
+input datafile file number=00215 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.425.1036286323
+input datafile file number=00221 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.426.1036286373
+input datafile file number=00228 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.433.1036286863
+input datafile file number=00234 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.437.1036287281
+input datafile file number=00240 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.448.1036290235
+input datafile file number=00246 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.456.1036291483
+input datafile file number=00252 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.458.1036291633
+input datafile file number=00258 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.472.1036292237
+input datafile file number=00264 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.473.1036292409
+input datafile file number=00270 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.579.1037141773
+input datafile file number=00276 name=+DATA01/orcl/datafile/tbs_paic.479.15867640472
+input datafile file number=00282 name=+DATA01/orcl/datafile/tbs_paic.263.1038245653
+input datafile file number=00288 name=+DATA01/orcl/datafile/tbs_paic.269.1038255553
+input datafile file number=00294 name=+DATA01/orcl/datafile/tbs_paic.275.1038255767
+input datafile file number=00300 name=+DATA01/orcl/datafile/tbs_paic.281.1038255943
+input datafile file number=00047 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.468.1036292065
+input datafile file number=00053 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.462.1036291871
+input datafile file number=00059 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.463.1036291945
+input datafile file number=00107 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_readonly.467.1036292051
+input datafile file number=00023 name=+DG_DATA_NEW_1/orcl/datafile/undotbs3.488.1036293051
+input datafile file number=00022 name=+DG_DATA_NEW_1/orcl/datafile/undotbs3.501.1036293761
+input datafile file number=00224 name=+DG_DATA_NEW_1/orcl/datafile/users.499.1036293629
+input datafile file number=00004 name=+DG_DATA_NEW_1/orcl/datafile/users.559.1036295521
+channel c4: starting piece 1 at 10-MAY-20
+channel c5: starting compressed incremental level 2 datafile backup set
+channel c5: specifying datafile(s) in backup set
+input datafile file number=00025 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.537.1036266693
+input datafile file number=00034 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.531.1036266731
+input datafile file number=00042 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.257.1036266771
+input datafile file number=00039 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.263.1036266811
+input datafile file number=00068 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.274.1036266851
+input datafile file number=00075 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.280.1036266891
+input datafile file number=00081 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.286.1036266933
+input datafile file number=00088 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.292.1036266977
+input datafile file number=00094 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.302.1036272381
+input datafile file number=00100 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.303.1036272469
+input datafile file number=00106 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.304.1036272537
+input datafile file number=00113 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.307.1036272815
+input datafile file number=00120 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.312.1036272899
+input datafile file number=00126 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.317.1036273003
+input datafile file number=00133 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.318.1036273011
+input datafile file number=00139 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.335.1036273901
+input datafile file number=00145 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.341.1036274581
+input datafile file number=00151 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.345.1036275233
+input datafile file number=00157 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.353.1036278711
+input datafile file number=00163 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.359.1036279101
+input datafile file number=00169 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.360.1036279177
+input datafile file number=00175 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.362.1036279305
+input datafile file number=00181 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.370.1036279613
+input datafile file number=00187 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.383.1036280423
+input datafile file number=00194 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.390.1036281011
+input datafile file number=00200 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.395.1036281599
+input datafile file number=00207 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.402.1036284901
+input datafile file number=00213 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.404.1036285269
+input datafile file number=00219 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.405.1036285341
+input datafile file number=00226 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.408.1036285461
+input datafile file number=00232 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.411.1036285755
+input datafile file number=00238 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.429.1036286527
+input datafile file number=00244 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.436.1036287113
+input datafile file number=00250 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.440.1036287653
+input datafile file number=00256 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.449.1036290861
+input datafile file number=00262 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.452.1036291241
+input datafile file number=00268 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.577.1037141117
+input datafile file number=00274 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.583.1037141881
+input datafile file number=00280 name=+DATA01/orcl/datafile/tbs_paic_index.479.15867640473
+input datafile file number=00286 name=+DATA01/orcl/datafile/tbs_paic.267.1038255445
+input datafile file number=00292 name=+DATA01/orcl/datafile/tbs_paic.273.1038255683
+input datafile file number=00298 name=+DATA01/orcl/datafile/tbs_paic.279.1038255887
+input datafile file number=00027 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.478.1036292547
+input datafile file number=00051 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.455.1036291447
+input datafile file number=00057 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.457.1036291539
+input datafile file number=00063 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.461.1036291863
+input datafile file number=00021 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_readonly.475.1036292463
+input datafile file number=00082 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.492.1036293339
+input datafile file number=00007 name=+DG_DATA_NEW_1/orcl/datafile/system.489.1036293205
+input datafile file number=00043 name=+DG_DATA_NEW_1/orcl/datafile/users.557.1036295353
+input datafile file number=00003 name=+DG_DATA_NEW_1/orcl/datafile/undotbs1.500.1036293687
+channel c5: starting piece 1 at 10-MAY-20
+channel c6: starting compressed incremental level 2 datafile backup set
+channel c6: specifying datafile(s) in backup set
+input datafile file number=00026 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.538.1036266691
+input datafile file number=00035 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.532.1036266729
+input datafile file number=00011 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.258.1036266769
+input datafile file number=00017 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.260.1036266809
+input datafile file number=00040 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.272.1036266849
+input datafile file number=00069 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.278.1036266889
+input datafile file number=00076 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.284.1036266933
+input datafile file number=00083 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.291.1036266977
+input datafile file number=00089 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.296.1036269341
+input datafile file number=00095 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.297.1036269517
+input datafile file number=00101 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.306.1036272767
+input datafile file number=00108 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.310.1036272857
+input datafile file number=00114 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.315.1036272963
+input datafile file number=00121 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.319.1036273011
+input datafile file number=00127 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.321.1036273101
+input datafile file number=00134 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.322.1036273205
+input datafile file number=00140 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.344.1036275073
+input datafile file number=00146 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.347.1036275663
+input datafile file number=00152 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.348.1036275703
+input datafile file number=00158 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.358.1036279065
+input datafile file number=00164 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.365.1036279475
+input datafile file number=00170 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.367.1036279493
+input datafile file number=00176 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.371.1036279659
+input datafile file number=00182 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.374.1036279769
+input datafile file number=00188 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.394.1036281531
+input datafile file number=00195 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.396.1036282073
+input datafile file number=00202 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.397.1036282111
+input datafile file number=00208 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.407.1036285453
+input datafile file number=00214 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.414.1036285859
+input datafile file number=00220 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.415.1036285877
+input datafile file number=00227 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.419.1036286037
+input datafile file number=00233 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.422.1036286143
+input datafile file number=00239 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.443.1036287795
+input datafile file number=00245 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.444.1036288301
+input datafile file number=00251 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.445.1036288335
+input datafile file number=00257 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.454.1036291445
+input datafile file number=00263 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.460.1036291853
+input datafile file number=00269 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.578.1037141753
+input datafile file number=00275 name=+DATA01/orcl/datafile/tbs_paic.479.15867640471
+input datafile file number=00281 name=+DATA01/orcl/datafile/tbs_paic_index.479.15867640474
+input datafile file number=00287 name=+DATA01/orcl/datafile/tbs_paic.268.1038255493
+input datafile file number=00293 name=+DATA01/orcl/datafile/tbs_paic.274.1038255715
+input datafile file number=00299 name=+DATA01/orcl/datafile/tbs_paic.280.1038255915
+input datafile file number=00046 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.471.1036292225
+input datafile file number=00052 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.484.1036292861
+input datafile file number=00058 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.487.1036293027
+input datafile file number=00064 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.490.1036293259
+input datafile file number=00024 name=+DG_DATA_NEW_1/orcl/datafile/undotbs3.486.1036293003
+input datafile file number=00119 name=+DG_DATA_NEW_1/orcl/datafile/users.504.1036294599
+input datafile file number=00191 name=+DG_DATA_NEW_1/orcl/datafile/users.558.1036295355
+input datafile file number=00201 name=+DG_DATA_NEW_1/orcl/datafile/users.502.1036293825
+channel c6: starting piece 1 at 10-MAY-20
+channel c4: finished piece 1 at 10-MAY-20
+piece handle=/dbbackup/paic/Sunday_dt_inc2_8ouvq5sj_20200510 tag=TAG20200510T000014 comment=NONE
+channel c4: backup set complete, elapsed time: 00:47:18
+channel c4: starting compressed incremental level 2 datafile backup set
+channel c4: specifying datafile(s) in backup set
+including current control file in backup set
+channel c4: starting piece 1 at 10-MAY-20
+channel c4: finished piece 1 at 10-MAY-20
+piece handle=/dbbackup/paic/Sunday_dt_inc2_8ruvq8lc_20200510 tag=TAG20200510T000014 comment=NONE
+channel c4: backup set complete, elapsed time: 00:00:01
+channel c5: finished piece 1 at 10-MAY-20
+piece handle=/dbbackup/paic/Sunday_dt_inc2_8puvq5sm_20200510 tag=TAG20200510T000014 comment=NONE
+channel c5: backup set complete, elapsed time: 00:47:18
+channel c1: finished piece 1 at 10-MAY-20
+piece handle=/dbbackup/paic/Sunday_dt_inc2_8luvq5sh_20200510 tag=TAG20200510T000014 comment=NONE
+channel c1: backup set complete, elapsed time: 00:47:38
+channel c3: finished piece 1 at 10-MAY-20
+piece handle=/dbbackup/paic/Sunday_dt_inc2_8nuvq5si_20200510 tag=TAG20200510T000014 comment=NONE
+channel c3: backup set complete, elapsed time: 00:47:47
+channel c6: finished piece 1 at 10-MAY-20
+piece handle=/dbbackup/paic/Sunday_dt_inc2_8quvq5sr_20200510 tag=TAG20200510T000014 comment=NONE
+channel c6: backup set complete, elapsed time: 00:47:42
+channel c2: finished piece 1 at 10-MAY-20
+piece handle=/dbbackup/paic/Sunday_dt_inc2_8muvq5si_20200510 tag=TAG20200510T000014 comment=NONE
+channel c2: backup set complete, elapsed time: 00:49:38
+Finished backup at 10-MAY-20
+
+Starting backup at 10-MAY-20
+channel c1: starting full datafile backup set
+channel c1: specifying datafile(s) in backup set
+including current control file in backup set
+channel c1: starting piece 1 at 10-MAY-20
+channel c1: finished piece 1 at 10-MAY-20
+piece handle=/dbbackup/paic/Sunday_ctf_8suvq8pl_20200510 tag=TAG20200510T004957 comment=NONE
+channel c1: backup set complete, elapsed time: 00:00:01
+Finished backup at 10-MAY-20
+
+Starting backup at 10-MAY-20
+current log archived
+skipping archived logs of thread 1 from sequence 3785 to 4033; already backed up
+skipping archived logs of thread 2 from sequence 1476 to 2212; already backed up
+channel c1: starting compressed archived log backup set
+channel c1: specifying archived log(s) in backup set
+input archived log thread=2 sequence=2213 RECID=193205 STAMP=1039940313
+input archived log thread=1 sequence=4034 RECID=193208 STAMP=1039942264
+input archived log thread=2 sequence=2214 RECID=193206 STAMP=1039941559
+input archived log thread=2 sequence=2215 RECID=193207 STAMP=1039942264
+input archived log thread=2 sequence=2216 RECID=193209 STAMP=1039942822
+input archived log thread=1 sequence=4035 RECID=193212 STAMP=1039943755
+input archived log thread=2 sequence=2217 RECID=193210 STAMP=1039943332
+input archived log thread=2 sequence=2218 RECID=193211 STAMP=1039943755
+input archived log thread=2 sequence=2219 RECID=193213 STAMP=1039944157
+input archived log thread=1 sequence=4036 RECID=193215 STAMP=1039944904
+input archived log thread=2 sequence=2220 RECID=193214 STAMP=1039944544
+input archived log thread=2 sequence=2221 RECID=193216 STAMP=1039944904
+input archived log thread=2 sequence=2222 RECID=193217 STAMP=1039945258
+input archived log thread=1 sequence=4037 RECID=193219 STAMP=1039945978
+input archived log thread=2 sequence=2223 RECID=193218 STAMP=1039945615
+input archived log thread=2 sequence=2224 RECID=193220 STAMP=1039945978
+input archived log thread=2 sequence=2225 RECID=193221 STAMP=1039946317
+input archived log thread=1 sequence=4038 RECID=193223 STAMP=1039947007
+input archived log thread=2 sequence=2226 RECID=193222 STAMP=1039946662
+input archived log thread=2 sequence=2227 RECID=193224 STAMP=1039947007
+input archived log thread=2 sequence=2228 RECID=193225 STAMP=1039947376
+input archived log thread=1 sequence=4039 RECID=193227 STAMP=1039948027
+input archived log thread=2 sequence=2229 RECID=193226 STAMP=1039947682
+input archived log thread=2 sequence=2230 RECID=193228 STAMP=1039948027
+input archived log thread=2 sequence=2231 RECID=193229 STAMP=1039948360
+input archived log thread=1 sequence=4040 RECID=193231 STAMP=1039949029
+input archived log thread=2 sequence=2232 RECID=193230 STAMP=1039948708
+channel c1: starting piece 1 at 10-MAY-20
+channel c2: starting compressed archived log backup set
+channel c2: specifying archived log(s) in backup set
+input archived log thread=2 sequence=2233 RECID=193232 STAMP=1039949029
+input archived log thread=2 sequence=2234 RECID=193233 STAMP=1039949329
+input archived log thread=1 sequence=4041 RECID=193235 STAMP=1039949971
+input archived log thread=2 sequence=2235 RECID=193234 STAMP=1039949644
+input archived log thread=2 sequence=2236 RECID=193236 STAMP=1039949971
+input archived log thread=2 sequence=2237 RECID=193237 STAMP=1039950283
+input archived log thread=1 sequence=4042 RECID=193239 STAMP=1039950913
+input archived log thread=2 sequence=2238 RECID=193238 STAMP=1039950598
+input archived log thread=2 sequence=2239 RECID=193240 STAMP=1039950913
+input archived log thread=2 sequence=2240 RECID=193241 STAMP=1039951219
+input archived log thread=1 sequence=4043 RECID=193243 STAMP=1039951873
+input archived log thread=2 sequence=2241 RECID=193242 STAMP=1039951552
+input archived log thread=2 sequence=2242 RECID=193244 STAMP=1039951873
+input archived log thread=2 sequence=2243 RECID=193245 STAMP=1039952218
+input archived log thread=1 sequence=4044 RECID=193247 STAMP=1039952920
+input archived log thread=2 sequence=2244 RECID=193246 STAMP=1039952575
+input archived log thread=2 sequence=2245 RECID=193248 STAMP=1039952920
+input archived log thread=2 sequence=2246 RECID=193249 STAMP=1039953265
+input archived log thread=1 sequence=4045 RECID=193251 STAMP=1039954018
+input archived log thread=2 sequence=2247 RECID=193250 STAMP=1039953622
+input archived log thread=2 sequence=2248 RECID=193252 STAMP=1039954018
+input archived log thread=2 sequence=2249 RECID=193253 STAMP=1039954540
+input archived log thread=1 sequence=4046 RECID=193255 STAMP=1039955716
+input archived log thread=2 sequence=2250 RECID=193254 STAMP=1039955149
+input archived log thread=2 sequence=2251 RECID=193256 STAMP=1039955716
+input archived log thread=2 sequence=2252 RECID=193257 STAMP=1039956355
+input archived log thread=1 sequence=4047 RECID=193259 STAMP=1039957546
+channel c2: starting piece 1 at 10-MAY-20
+channel c3: starting compressed archived log backup set
+channel c3: specifying archived log(s) in backup set
+input archived log thread=2 sequence=2253 RECID=193258 STAMP=1039956940
+input archived log thread=2 sequence=2254 RECID=193260 STAMP=1039957546
+input archived log thread=2 sequence=2255 RECID=193261 STAMP=1039958116
+input archived log thread=1 sequence=4048 RECID=193263 STAMP=1039959184
+input archived log thread=2 sequence=2256 RECID=193262 STAMP=1039958680
+input archived log thread=2 sequence=2257 RECID=193264 STAMP=1039959184
+input archived log thread=2 sequence=2258 RECID=193265 STAMP=1039959670
+input archived log thread=1 sequence=4049 RECID=193267 STAMP=1039960540
+input archived log thread=2 sequence=2259 RECID=193266 STAMP=1039960132
+input archived log thread=2 sequence=2260 RECID=193268 STAMP=1039960540
+input archived log thread=2 sequence=2261 RECID=193269 STAMP=1039960945
+input archived log thread=1 sequence=4050 RECID=193272 STAMP=1039961695
+input archived log thread=2 sequence=2262 RECID=193270 STAMP=1039961323
+input archived log thread=2 sequence=2263 RECID=193271 STAMP=1039961692
+input archived log thread=2 sequence=2264 RECID=193273 STAMP=1039962037
+input archived log thread=1 sequence=4051 RECID=193276 STAMP=1039962727
+input archived log thread=2 sequence=2265 RECID=193274 STAMP=1039962391
+input archived log thread=2 sequence=2266 RECID=193275 STAMP=1039962725
+input archived log thread=2 sequence=2267 RECID=193277 STAMP=1039963057
+input archived log thread=1 sequence=4052 RECID=193280 STAMP=1039963759
+input archived log thread=2 sequence=2268 RECID=193278 STAMP=1039963403
+input archived log thread=2 sequence=2269 RECID=193279 STAMP=1039963757
+input archived log thread=2 sequence=2270 RECID=193281 STAMP=1039964078
+input archived log thread=1 sequence=4053 RECID=193284 STAMP=1039964725
+input archived log thread=2 sequence=2271 RECID=193282 STAMP=1039964399
+input archived log thread=2 sequence=2272 RECID=193283 STAMP=1039964723
+input archived log thread=2 sequence=2273 RECID=193285 STAMP=1039965053
+channel c3: starting piece 1 at 10-MAY-20
+channel c4: starting compressed archived log backup set
+channel c4: specifying archived log(s) in backup set
+input archived log thread=1 sequence=4054 RECID=193288 STAMP=1039965679
+input archived log thread=2 sequence=2274 RECID=193286 STAMP=1039965374
+input archived log thread=2 sequence=2275 RECID=193287 STAMP=1039965677
+input archived log thread=2 sequence=2276 RECID=193289 STAMP=1039965971
+input archived log thread=1 sequence=4055 RECID=193292 STAMP=1039966600
+input archived log thread=2 sequence=2277 RECID=193290 STAMP=1039966283
+input archived log thread=2 sequence=2278 RECID=193291 STAMP=1039966598
+input archived log thread=2 sequence=2279 RECID=193293 STAMP=1039966928
+input archived log thread=1 sequence=4056 RECID=193296 STAMP=1039967533
+input archived log thread=2 sequence=2280 RECID=193294 STAMP=1039967231
+input archived log thread=2 sequence=2281 RECID=193295 STAMP=1039967531
+input archived log thread=2 sequence=2282 RECID=193297 STAMP=1039967858
+input archived log thread=1 sequence=4057 RECID=193300 STAMP=1039968451
+input archived log thread=2 sequence=2283 RECID=193298 STAMP=1039968164
+input archived log thread=2 sequence=2284 RECID=193299 STAMP=1039968449
+input archived log thread=2 sequence=2285 RECID=193301 STAMP=1039968749
+input archived log thread=1 sequence=4058 RECID=193304 STAMP=1039969339
+input archived log thread=2 sequence=2286 RECID=193302 STAMP=1039969046
+input archived log thread=2 sequence=2287 RECID=193303 STAMP=1039969337
+input archived log thread=2 sequence=2288 RECID=193305 STAMP=1039969667
+input archived log thread=1 sequence=4059 RECID=193308 STAMP=1039970266
+input archived log thread=2 sequence=2289 RECID=193306 STAMP=1039969970
+input archived log thread=2 sequence=2290 RECID=193307 STAMP=1039970264
+input archived log thread=2 sequence=2291 RECID=193309 STAMP=1039970555
+input archived log thread=1 sequence=4060 RECID=193312 STAMP=1039971142
+input archived log thread=2 sequence=2292 RECID=193310 STAMP=1039970843
+input archived log thread=2 sequence=2293 RECID=193311 STAMP=1039971140
+channel c4: starting piece 1 at 10-MAY-20
+channel c5: starting compressed archived log backup set
+channel c5: specifying archived log(s) in backup set
+input archived log thread=2 sequence=2294 RECID=193313 STAMP=1039971452
+input archived log thread=1 sequence=4061 RECID=193316 STAMP=1039972087
+input archived log thread=2 sequence=2295 RECID=193314 STAMP=1039971764
+input archived log thread=2 sequence=2296 RECID=193315 STAMP=1039972085
+input archived log thread=2 sequence=2297 RECID=193317 STAMP=1039972400
+input archived log thread=1 sequence=4062 RECID=193320 STAMP=1039973026
+input archived log thread=2 sequence=2298 RECID=193318 STAMP=1039972736
+input archived log thread=2 sequence=2299 RECID=193319 STAMP=1039973024
+input archived log thread=2 sequence=2300 RECID=193321 STAMP=1039973321
+input archived log thread=1 sequence=4063 RECID=193324 STAMP=1039973905
+input archived log thread=2 sequence=2301 RECID=193322 STAMP=1039973612
+input archived log thread=2 sequence=2302 RECID=193323 STAMP=1039973903
+input archived log thread=2 sequence=2303 RECID=193325 STAMP=1039974236
+input archived log thread=1 sequence=4064 RECID=193328 STAMP=1039974898
+input archived log thread=2 sequence=2304 RECID=193326 STAMP=1039974569
+input archived log thread=2 sequence=2305 RECID=193327 STAMP=1039974896
+input archived log thread=2 sequence=2306 RECID=193329 STAMP=1039975247
+input archived log thread=1 sequence=4065 RECID=193332 STAMP=1039975930
+input archived log thread=2 sequence=2307 RECID=193330 STAMP=1039975577
+input archived log thread=2 sequence=2308 RECID=193331 STAMP=1039975928
+input archived log thread=2 sequence=2309 RECID=193333 STAMP=1039976312
+input archived log thread=1 sequence=4066 RECID=193336 STAMP=1039977136
+input archived log thread=2 sequence=2310 RECID=193334 STAMP=1039976720
+input archived log thread=2 sequence=2311 RECID=193335 STAMP=1039977134
+input archived log thread=2 sequence=2312 RECID=193337 STAMP=1039977569
+input archived log thread=1 sequence=4067 RECID=193340 STAMP=1039978507
+input archived log thread=2 sequence=2313 RECID=193338 STAMP=1039978010
+channel c5: starting piece 1 at 10-MAY-20
+channel c6: starting compressed archived log backup set
+channel c6: specifying archived log(s) in backup set
+input archived log thread=2 sequence=2314 RECID=193339 STAMP=1039978505
+input archived log thread=2 sequence=2315 RECID=193341 STAMP=1039979093
+input archived log thread=1 sequence=4068 RECID=193344 STAMP=1039980448
+input archived log thread=2 sequence=2316 RECID=193342 STAMP=1039979732
+input archived log thread=2 sequence=2317 RECID=193343 STAMP=1039980446
+input archived log thread=2 sequence=2318 RECID=193345 STAMP=1039981166
+input archived log thread=1 sequence=4069 RECID=193348 STAMP=1039982815
+input archived log thread=2 sequence=2319 RECID=193346 STAMP=1039982033
+input archived log thread=2 sequence=2320 RECID=193347 STAMP=1039982813
+input archived log thread=2 sequence=2321 RECID=193349 STAMP=1039983728
+input archived log thread=1 sequence=4070 RECID=193352 STAMP=1039985728
+input archived log thread=2 sequence=2322 RECID=193350 STAMP=1039984706
+input archived log thread=2 sequence=2323 RECID=193351 STAMP=1039985726
+input archived log thread=2 sequence=2324 RECID=193353 STAMP=1039986764
+input archived log thread=1 sequence=4071 RECID=193356 STAMP=1039989251
+input archived log thread=2 sequence=2325 RECID=193354 STAMP=1039987994
+input archived log thread=2 sequence=2326 RECID=193355 STAMP=1039989248
+input archived log thread=2 sequence=2327 RECID=193357 STAMP=1039990301
+input archived log thread=1 sequence=4072 RECID=193360 STAMP=1039992869
+input archived log thread=2 sequence=2328 RECID=193358 STAMP=1039991558
+input archived log thread=2 sequence=2329 RECID=193359 STAMP=1039992866
+input archived log thread=2 sequence=2330 RECID=193361 STAMP=1039994433
+input archived log thread=1 sequence=4073 RECID=193364 STAMP=1039999802
+input archived log thread=2 sequence=2331 RECID=193362 STAMP=1039996248
+input archived log thread=2 sequence=2332 RECID=193363 STAMP=1039999799
+channel c6: starting piece 1 at 10-MAY-20
+channel c6: finished piece 1 at 10-MAY-20
+piece handle=/dbbackup/paic/Sunday_arch_92uvq8q2_20200510 tag=TAG20200510T005007 comment=NONE
+channel c6: backup set complete, elapsed time: 00:03:15
+channel c1: finished piece 1 at 10-MAY-20
+piece handle=/dbbackup/paic/Sunday_arch_8tuvq8q1_20200510 tag=TAG20200510T005007 comment=NONE
+channel c1: backup set complete, elapsed time: 00:03:26
+channel c2: finished piece 1 at 10-MAY-20
+piece handle=/dbbackup/paic/Sunday_arch_8uuvq8q1_20200510 tag=TAG20200510T005007 comment=NONE
+channel c2: backup set complete, elapsed time: 00:03:26
+channel c4: finished piece 1 at 10-MAY-20
+piece handle=/dbbackup/paic/Sunday_arch_90uvq8q2_20200510 tag=TAG20200510T005007 comment=NONE
+channel c4: backup set complete, elapsed time: 00:03:25
+channel c5: finished piece 1 at 10-MAY-20
+piece handle=/dbbackup/paic/Sunday_arch_91uvq8q2_20200510 tag=TAG20200510T005007 comment=NONE
+channel c5: backup set complete, elapsed time: 00:03:25
+channel c3: finished piece 1 at 10-MAY-20
+piece handle=/dbbackup/paic/Sunday_arch_8vuvq8q1_20200510 tag=TAG20200510T005007 comment=NONE
+channel c3: backup set complete, elapsed time: 00:03:45
+Finished backup at 10-MAY-20
+
+Starting Control File Autobackup at 10-MAY-20
+piece handle=/app/oracle/product/11.2.0/oracle/dbs/c-1492966431-20200510-00 comment=NONE
+Finished Control File Autobackup at 10-MAY-20
+
+List of Archived Log Copies for database with db_unique_name ORCL
+=====================================================================
+
+Key     Thrd Seq     S Low Time 
+------- ---- ------- - ---------
+192222  1    3785    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3785.1544.1039338941
+
+192225  1    3786    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3786.1818.1039341335
+
+192229  1    3787    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3787.1750.1039343339
+
+192233  1    3788    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3788.1635.1039345125
+
+192237  1    3789    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3789.2075.1039346837
+
+192241  1    3790    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3790.1477.1039348733
+
+192245  1    3791    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3791.1624.1039351253
+
+192250  1    3792    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3792.1801.1039353783
+
+192253  1    3793    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3793.1931.1039356065
+
+192258  1    3794    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3794.1915.1039358081
+
+192262  1    3795    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3795.1461.1039359845
+
+192266  1    3796    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3796.1608.1039361535
+
+192270  1    3797    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3797.1790.1039363155
+
+192274  1    3798    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3798.1808.1039364797
+
+192278  1    3799    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3799.1826.1039366471
+
+192282  1    3800    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3800.1842.1039368129
+
+192286  1    3801    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3801.1724.1039369779
+
+192290  1    3802    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3802.1766.1039371591
+
+192294  1    3803    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3803.1814.1039374283
+
+192298  1    3804    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3804.1555.1039378867
+
+192302  1    3805    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3805.1699.1039383963
+
+192306  1    3806    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3806.1827.1039389745
+
+192309  1    3807    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_03/thread_1_seq_3807.1947.1039394923
+
+192219  2    1476    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1476.1979.1039336383
+
+192220  2    1477    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1477.2043.1039337955
+
+192221  2    1478    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1478.1440.1039338941
+
+192223  2    1479    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1479.1650.1039339767
+
+192224  2    1480    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1480.1794.1039340573
+
+192226  2    1481    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1481.1806.1039341335
+
+192227  2    1482    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1482.1833.1039342035
+
+192228  2    1483    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1483.1844.1039342707
+
+192230  2    1484    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1484.1856.1039343339
+
+192231  2    1485    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1485.1788.1039343985
+
+192232  2    1486    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1486.1820.1039344563
+
+192234  2    1487    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1487.1523.1039345125
+
+192235  2    1488    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1488.1747.1039345659
+
+192236  2    1489    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1489.1875.1039346241
+
+192238  2    1490    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1490.1963.1039346837
+
+192239  2    1491    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1491.2203.1039347461
+
+192240  2    1492    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1492.1401.1039348089
+
+192242  2    1493    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1493.1434.1039348733
+
+192243  2    1494    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1494.1512.1039349549
+
+192244  2    1495    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1495.1549.1039350401
+
+192246  2    1496    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1496.1592.1039351253
+
+192247  2    1497    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1497.1802.1039352123
+
+192248  2    1498    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1498.1603.1039352973
+
+192249  2    1499    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1499.1501.1039353779
+
+192251  2    1500    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1500.1840.1039354601
+
+192252  2    1501    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1501.1772.1039355351
+
+192254  2    1502    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1502.1587.1039356065
+
+192255  2    1503    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1503.2295.1039356761
+
+192256  2    1504    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1504.1496.1039357433
+
+192257  2    1505    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1505.1613.1039358079
+
+192259  2    1506    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1506.2171.1039358689
+
+192260  2    1507    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1507.2235.1039359283
+
+192261  2    1508    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1508.2263.1039359843
+
+192263  2    1509    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1509.1482.1039360395
+
+192264  2    1510    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1510.1522.1039360983
+
+192265  2    1511    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1511.1565.1039361533
+
+192267  2    1512    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1512.1629.1039362091
+
+192268  2    1513    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1513.1693.1039362625
+
+192269  2    1514    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1514.1714.1039363153
+
+192271  2    1515    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1515.1797.1039363693
+
+192272  2    1516    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1516.1800.1039364245
+
+192273  2    1517    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1517.1805.1039364793
+
+192275  2    1518    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1518.1813.1039365363
+
+192276  2    1519    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1519.1816.1039365919
+
+192277  2    1520    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1520.1822.1039366467
+
+192279  2    1521    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1521.1828.1039367023
+
+192280  2    1522    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1522.1834.1039367559
+
+192281  2    1523    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1523.1837.1039368127
+
+192283  2    1524    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1524.1848.1039368655
+
+192284  2    1525    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1525.1850.1039369189
+
+192285  2    1526    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1526.1854.1039369777
+
+192287  2    1527    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1527.1729.1039370355
+
+192288  2    1528    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1528.1734.1039370931
+
+192289  2    1529    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1529.1756.1039371589
+
+192291  2    1530    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1530.1777.1039372371
+
+192292  2    1531    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1531.1793.1039373253
+
+192293  2    1532    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1532.1809.1039374279
+
+192295  2    1533    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1533.1836.1039375597
+
+192296  2    1534    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1534.1841.1039377069
+
+192297  2    1535    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1535.1852.1039378863
+
+192299  2    1536    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1536.1571.1039380595
+
+192300  2    1537    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1537.1619.1039382335
+
+192301  2    1538    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1538.1651.1039383961
+
+192303  2    1539    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1539.1715.1039385653
+
+192304  2    1540    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1540.1779.1039387613
+
+192305  2    1541    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1541.1811.1039389743
+
+192307  2    1542    A 02-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_03/thread_2_seq_1542.1883.1039392331
+
+192308  2    1543    A 03-MAY-20
+        Name: +DG_ARCH_NEW/orcl/archivelog/2020_05_03/thread_2_seq_1543.1899.1039394921
+
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3785.1544.1039338941 RECID=192222 STAMP=1039338941
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3786.1818.1039341335 RECID=192225 STAMP=1039341335
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3787.1750.1039343339 RECID=192229 STAMP=1039343340
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3788.1635.1039345125 RECID=192233 STAMP=1039345124
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3789.2075.1039346837 RECID=192237 STAMP=1039346838
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3790.1477.1039348733 RECID=192241 STAMP=1039348734
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3791.1624.1039351253 RECID=192245 STAMP=1039351254
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3792.1801.1039353783 RECID=192250 STAMP=1039353782
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3793.1931.1039356065 RECID=192253 STAMP=1039356066
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3794.1915.1039358081 RECID=192258 STAMP=1039358082
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3795.1461.1039359845 RECID=192262 STAMP=1039359846
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3796.1608.1039361535 RECID=192266 STAMP=1039361535
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3797.1790.1039363155 RECID=192270 STAMP=1039363155
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3798.1808.1039364797 RECID=192274 STAMP=1039364796
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3799.1826.1039366471 RECID=192278 STAMP=1039366470
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3800.1842.1039368129 RECID=192282 STAMP=1039368129
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3801.1724.1039369779 RECID=192286 STAMP=1039369779
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3802.1766.1039371591 RECID=192290 STAMP=1039371591
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3803.1814.1039374283 RECID=192294 STAMP=1039374282
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3804.1555.1039378867 RECID=192298 STAMP=1039378866
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3805.1699.1039383963 RECID=192302 STAMP=1039383963
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_1_seq_3806.1827.1039389745 RECID=192306 STAMP=1039389744
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_03/thread_1_seq_3807.1947.1039394923 RECID=192309 STAMP=1039394922
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1476.1979.1039336383 RECID=192219 STAMP=1039336382
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1477.2043.1039337955 RECID=192220 STAMP=1039337954
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1478.1440.1039338941 RECID=192221 STAMP=1039338941
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1479.1650.1039339767 RECID=192223 STAMP=1039339766
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1480.1794.1039340573 RECID=192224 STAMP=1039340573
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1481.1806.1039341335 RECID=192226 STAMP=1039341335
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1482.1833.1039342035 RECID=192227 STAMP=1039342034
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1483.1844.1039342707 RECID=192228 STAMP=1039342706
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1484.1856.1039343339 RECID=192230 STAMP=1039343340
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1485.1788.1039343985 RECID=192231 STAMP=1039343984
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1486.1820.1039344563 RECID=192232 STAMP=1039344564
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1487.1523.1039345125 RECID=192234 STAMP=1039345125
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1488.1747.1039345659 RECID=192235 STAMP=1039345659
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1489.1875.1039346241 RECID=192236 STAMP=1039346241
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1490.1963.1039346837 RECID=192238 STAMP=1039346838
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1491.2203.1039347461 RECID=192239 STAMP=1039347462
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1492.1401.1039348089 RECID=192240 STAMP=1039348089
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1493.1434.1039348733 RECID=192242 STAMP=1039348734
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1494.1512.1039349549 RECID=192243 STAMP=1039349550
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1495.1549.1039350401 RECID=192244 STAMP=1039350402
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1496.1592.1039351253 RECID=192246 STAMP=1039351254
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1497.1802.1039352123 RECID=192247 STAMP=1039352124
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1498.1603.1039352973 RECID=192248 STAMP=1039352973
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1499.1501.1039353779 RECID=192249 STAMP=1039353780
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1500.1840.1039354601 RECID=192251 STAMP=1039354602
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1501.1772.1039355351 RECID=192252 STAMP=1039355352
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1502.1587.1039356065 RECID=192254 STAMP=1039356066
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1503.2295.1039356761 RECID=192255 STAMP=1039356762
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1504.1496.1039357433 RECID=192256 STAMP=1039357434
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1505.1613.1039358079 RECID=192257 STAMP=1039358079
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1506.2171.1039358689 RECID=192259 STAMP=1039358688
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1507.2235.1039359283 RECID=192260 STAMP=1039359282
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1508.2263.1039359843 RECID=192261 STAMP=1039359843
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1509.1482.1039360395 RECID=192263 STAMP=1039360395
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1510.1522.1039360983 RECID=192264 STAMP=1039360983
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1511.1565.1039361533 RECID=192265 STAMP=1039361532
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1512.1629.1039362091 RECID=192267 STAMP=1039362090
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1513.1693.1039362625 RECID=192268 STAMP=1039362624
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1514.1714.1039363153 RECID=192269 STAMP=1039363152
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1515.1797.1039363693 RECID=192271 STAMP=1039363692
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1516.1800.1039364245 RECID=192272 STAMP=1039364244
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1517.1805.1039364793 RECID=192273 STAMP=1039364793
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1518.1813.1039365363 RECID=192275 STAMP=1039365363
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1519.1816.1039365919 RECID=192276 STAMP=1039365918
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1520.1822.1039366467 RECID=192277 STAMP=1039366467
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1521.1828.1039367023 RECID=192279 STAMP=1039367022
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1522.1834.1039367559 RECID=192280 STAMP=1039367559
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1523.1837.1039368127 RECID=192281 STAMP=1039368126
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1524.1848.1039368655 RECID=192283 STAMP=1039368654
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1525.1850.1039369189 RECID=192284 STAMP=1039369188
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1526.1854.1039369777 RECID=192285 STAMP=1039369776
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1527.1729.1039370355 RECID=192287 STAMP=1039370355
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1528.1734.1039370931 RECID=192288 STAMP=1039370931
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1529.1756.1039371589 RECID=192289 STAMP=1039371589
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1530.1777.1039372371 RECID=192291 STAMP=1039372372
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1531.1793.1039373253 RECID=192292 STAMP=1039373254
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1532.1809.1039374279 RECID=192293 STAMP=1039374280
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1533.1836.1039375597 RECID=192295 STAMP=1039375597
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1534.1841.1039377069 RECID=192296 STAMP=1039377070
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1535.1852.1039378863 RECID=192297 STAMP=1039378864
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1536.1571.1039380595 RECID=192299 STAMP=1039380595
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1537.1619.1039382335 RECID=192300 STAMP=1039382335
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1538.1651.1039383961 RECID=192301 STAMP=1039383961
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1539.1715.1039385653 RECID=192303 STAMP=1039385653
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1540.1779.1039387613 RECID=192304 STAMP=1039387612
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_02/thread_2_seq_1541.1811.1039389743 RECID=192305 STAMP=1039389742
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_03/thread_2_seq_1542.1883.1039392331 RECID=192307 STAMP=1039392333
+deleted archived log
+archived log file name=+DG_ARCH_NEW/orcl/archivelog/2020_05_03/thread_2_seq_1543.1899.1039394921 RECID=192308 STAMP=1039394920
+Deleted 91 objects
+
+
+released channel: c1
+
+released channel: c2
+
+released channel: c3
+
+released channel: c4
+
+released channel: c5
+
+released channel: c6
+
+RMAN> 
+
+Recovery Manager complete.
+Last login: Sat May  9 23:59:01 CST 2020

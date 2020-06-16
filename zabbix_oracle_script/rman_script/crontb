@@ -1,0 +1,8 @@
+# rman backup
+0 0 * * 6 /usr/bin/bash /usr/local/webserver/zabbix_oracle_script/rman_script/rman_lv0.sh  >> /dev/null 2>&1
+0 0 * * 3 /usr/bin/bash /usr/local/webserver/zabbix_oracle_script/rman_script/rman_lv1.sh >> /dev/null 2>&1
+0 0 * * 1 /usr/bin/bash /usr/local/webserver/zabbix_oracle_script/rman_script/rman_lv2.sh Monday >> /dev/null 2>&1
+0 0 * * 2 /usr/bin/bash /usr/local/webserver/zabbix_oracle_script/rman_script/rman_lv2.sh Tuesday >> /dev/null 2>&1
+0 0 * * 4 /usr/bin/bash /usr/local/webserver/zabbix_oracle_script/rman_script/rman_lv2.sh Thursday >> /dev/null 2>&1
+0 0 * * 5 /usr/bin/bash /usr/local/webserver/zabbix_oracle_script/rman_script/rman_lv2.sh Friday  >> /dev/null 2>&1
+0 0 * * 0 /usr/bin/bash /usr/local/webserver/zabbix_oracle_script/rman_script/rman_lv2.sh Sunday >> /dev/null 2>&1

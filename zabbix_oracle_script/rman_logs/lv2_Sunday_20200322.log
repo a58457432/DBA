@@ -1,0 +1,185 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Sun Mar 22 00:00:01 2020
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: ORCL (DBID=1492966431, not open)
+
+RMAN> 2> 3> 4> 5> 6> 7> 
+Starting backup at 22-MAR-20
+using target database control file instead of recovery catalog
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=458 instance=orcl2 device type=DISK
+RMAN-06169: could not read file header for datafile 151 error reason 7
+RMAN-06169: could not read file header for datafile 151 error reason 7
+RMAN-06169: could not read file header for datafile 154 error reason 7
+RMAN-06169: could not read file header for datafile 154 error reason 7
+RMAN-06169: could not read file header for datafile 156 error reason 7
+RMAN-06169: could not read file header for datafile 156 error reason 7
+RMAN-06169: could not read file header for datafile 159 error reason 7
+RMAN-06169: could not read file header for datafile 159 error reason 7
+RMAN-06169: could not read file header for datafile 161 error reason 7
+RMAN-06169: could not read file header for datafile 161 error reason 7
+RMAN-06169: could not read file header for datafile 164 error reason 7
+RMAN-06169: could not read file header for datafile 164 error reason 7
+RMAN-06169: could not read file header for datafile 165 error reason 7
+RMAN-06169: could not read file header for datafile 165 error reason 7
+RMAN-06169: could not read file header for datafile 166 error reason 7
+RMAN-06169: could not read file header for datafile 166 error reason 7
+RMAN-06169: could not read file header for datafile 169 error reason 7
+RMAN-06169: could not read file header for datafile 169 error reason 7
+RMAN-06169: could not read file header for datafile 170 error reason 7
+RMAN-06169: could not read file header for datafile 170 error reason 7
+RMAN-06169: could not read file header for datafile 171 error reason 7
+RMAN-06169: could not read file header for datafile 171 error reason 7
+RMAN-06169: could not read file header for datafile 172 error reason 7
+RMAN-06169: could not read file header for datafile 172 error reason 7
+RMAN-06169: could not read file header for datafile 174 error reason 7
+RMAN-06169: could not read file header for datafile 174 error reason 7
+RMAN-06169: could not read file header for datafile 175 error reason 7
+RMAN-06169: could not read file header for datafile 175 error reason 7
+RMAN-06169: could not read file header for datafile 176 error reason 7
+RMAN-06169: could not read file header for datafile 176 error reason 7
+RMAN-06169: could not read file header for datafile 177 error reason 7
+RMAN-06169: could not read file header for datafile 177 error reason 7
+RMAN-06169: could not read file header for datafile 178 error reason 7
+RMAN-06169: could not read file header for datafile 178 error reason 7
+RMAN-06169: could not read file header for datafile 179 error reason 7
+RMAN-06169: could not read file header for datafile 179 error reason 7
+RMAN-06169: could not read file header for datafile 180 error reason 7
+RMAN-06169: could not read file header for datafile 180 error reason 7
+RMAN-06169: could not read file header for datafile 181 error reason 7
+RMAN-06169: could not read file header for datafile 181 error reason 7
+RMAN-06169: could not read file header for datafile 182 error reason 7
+RMAN-06169: could not read file header for datafile 182 error reason 7
+RMAN-06169: could not read file header for datafile 183 error reason 7
+RMAN-06169: could not read file header for datafile 183 error reason 7
+RMAN-06169: could not read file header for datafile 184 error reason 7
+RMAN-06169: could not read file header for datafile 184 error reason 7
+RMAN-06169: could not read file header for datafile 185 error reason 7
+RMAN-06169: could not read file header for datafile 185 error reason 7
+RMAN-06169: could not read file header for datafile 186 error reason 7
+RMAN-06169: could not read file header for datafile 186 error reason 7
+RMAN-06169: could not read file header for datafile 187 error reason 7
+RMAN-06169: could not read file header for datafile 187 error reason 7
+RMAN-06169: could not read file header for datafile 188 error reason 7
+RMAN-06169: could not read file header for datafile 188 error reason 7
+RMAN-06169: could not read file header for datafile 189 error reason 7
+RMAN-06169: could not read file header for datafile 189 error reason 7
+RMAN-06169: could not read file header for datafile 190 error reason 7
+RMAN-06169: could not read file header for datafile 190 error reason 7
+RMAN-06169: could not read file header for datafile 193 error reason 7
+RMAN-06169: could not read file header for datafile 193 error reason 7
+RMAN-06169: could not read file header for datafile 194 error reason 7
+RMAN-06169: could not read file header for datafile 194 error reason 7
+RMAN-06169: could not read file header for datafile 196 error reason 7
+RMAN-06169: could not read file header for datafile 196 error reason 7
+RMAN-06169: could not read file header for datafile 198 error reason 7
+RMAN-06169: could not read file header for datafile 198 error reason 7
+RMAN-06169: could not read file header for datafile 199 error reason 7
+RMAN-06169: could not read file header for datafile 199 error reason 7
+RMAN-06169: could not read file header for datafile 202 error reason 7
+RMAN-06169: could not read file header for datafile 202 error reason 7
+RMAN-06169: could not read file header for datafile 204 error reason 7
+RMAN-06169: could not read file header for datafile 204 error reason 7
+RMAN-06169: could not read file header for datafile 205 error reason 7
+RMAN-06169: could not read file header for datafile 205 error reason 7
+RMAN-06169: could not read file header for datafile 209 error reason 7
+RMAN-06169: could not read file header for datafile 209 error reason 7
+RMAN-06169: could not read file header for datafile 210 error reason 7
+RMAN-06169: could not read file header for datafile 210 error reason 7
+RMAN-06169: could not read file header for datafile 215 error reason 7
+RMAN-06169: could not read file header for datafile 215 error reason 7
+RMAN-06169: could not read file header for datafile 151 error reason 7
+RMAN-06169: could not read file header for datafile 154 error reason 7
+RMAN-06169: could not read file header for datafile 156 error reason 7
+RMAN-06169: could not read file header for datafile 159 error reason 7
+RMAN-06169: could not read file header for datafile 161 error reason 7
+RMAN-06169: could not read file header for datafile 164 error reason 7
+RMAN-06169: could not read file header for datafile 165 error reason 7
+RMAN-06169: could not read file header for datafile 166 error reason 7
+RMAN-06169: could not read file header for datafile 169 error reason 7
+RMAN-06169: could not read file header for datafile 170 error reason 7
+RMAN-06169: could not read file header for datafile 171 error reason 7
+RMAN-06169: could not read file header for datafile 172 error reason 7
+RMAN-06169: could not read file header for datafile 174 error reason 7
+RMAN-06169: could not read file header for datafile 175 error reason 7
+RMAN-06169: could not read file header for datafile 176 error reason 7
+RMAN-06169: could not read file header for datafile 177 error reason 7
+RMAN-06169: could not read file header for datafile 178 error reason 7
+RMAN-06169: could not read file header for datafile 179 error reason 7
+RMAN-06169: could not read file header for datafile 180 error reason 7
+RMAN-06169: could not read file header for datafile 181 error reason 7
+RMAN-06169: could not read file header for datafile 182 error reason 7
+RMAN-06169: could not read file header for datafile 183 error reason 7
+RMAN-06169: could not read file header for datafile 184 error reason 7
+RMAN-06169: could not read file header for datafile 185 error reason 7
+RMAN-06169: could not read file header for datafile 186 error reason 7
+RMAN-06169: could not read file header for datafile 187 error reason 7
+RMAN-06169: could not read file header for datafile 188 error reason 7
+RMAN-06169: could not read file header for datafile 189 error reason 7
+RMAN-06169: could not read file header for datafile 190 error reason 7
+RMAN-06169: could not read file header for datafile 193 error reason 7
+RMAN-06169: could not read file header for datafile 194 error reason 7
+RMAN-06169: could not read file header for datafile 196 error reason 7
+RMAN-06169: could not read file header for datafile 198 error reason 7
+RMAN-06169: could not read file header for datafile 199 error reason 7
+RMAN-06169: could not read file header for datafile 202 error reason 7
+RMAN-06169: could not read file header for datafile 204 error reason 7
+RMAN-06169: could not read file header for datafile 205 error reason 7
+RMAN-06169: could not read file header for datafile 209 error reason 7
+RMAN-06169: could not read file header for datafile 210 error reason 7
+RMAN-06169: could not read file header for datafile 215 error reason 7
+skipping datafile 16; already backed up 1 time(s)
+skipping datafile 17; already backed up 1 time(s)
+skipping datafile 25; already backed up 1 time(s)
+skipping datafile 26; already backed up 1 time(s)
+skipping datafile 31; already backed up 1 time(s)
+skipping datafile 33; already backed up 1 time(s)
+skipping datafile 34; already backed up 1 time(s)
+skipping datafile 38; already backed up 1 time(s)
+skipping datafile 39; already backed up 1 time(s)
+skipping datafile 41; already backed up 1 time(s)
+skipping datafile 66; already backed up 1 time(s)
+skipping datafile 67; already backed up 1 time(s)
+skipping datafile 72; already backed up 1 time(s)
+skipping datafile 73; already backed up 1 time(s)
+skipping datafile 77; already backed up 1 time(s)
+skipping datafile 78; already backed up 1 time(s)
+skipping datafile 83; already backed up 1 time(s)
+skipping datafile 84; already backed up 1 time(s)
+skipping datafile 88; already backed up 1 time(s)
+skipping datafile 89; already backed up 1 time(s)
+skipping datafile 93; already backed up 1 time(s)
+skipping datafile 94; already backed up 1 time(s)
+skipping datafile 98; already backed up 1 time(s)
+skipping datafile 99; already backed up 1 time(s)
+skipping datafile 103; already backed up 1 time(s)
+skipping datafile 104; already backed up 1 time(s)
+skipping datafile 109; already backed up 1 time(s)
+skipping datafile 110; already backed up 1 time(s)
+skipping datafile 114; already backed up 1 time(s)
+skipping datafile 115; already backed up 1 time(s)
+skipping datafile 120; already backed up 1 time(s)
+skipping datafile 121; already backed up 1 time(s)
+skipping datafile 125; already backed up 1 time(s)
+skipping datafile 126; already backed up 1 time(s)
+skipping datafile 131; already backed up 1 time(s)
+skipping datafile 132; already backed up 1 time(s)
+skipping datafile 136; already backed up 1 time(s)
+skipping datafile 137; already backed up 1 time(s)
+skipping datafile 141; already backed up 1 time(s)
+skipping datafile 142; already backed up 1 time(s)
+skipping datafile 146; already backed up 1 time(s)
+skipping datafile 147; already backed up 1 time(s)
+RMAN-06169: could not read file header for datafile 151 error reason 7
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: failure of backup command at 03/22/2020 00:00:08
+RMAN-06056: could not access datafile 151
+
+RMAN> 
+
+Recovery Manager complete.
+Last login: Sun Mar 22 00:00:01 CST 2020

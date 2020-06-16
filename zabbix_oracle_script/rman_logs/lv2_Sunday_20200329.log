@@ -1,0 +1,22 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Sun Mar 29 00:00:01 2020
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database (not started)
+
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 10> 11> 12> 13> 14> 15> 16> 17> 18> 
+using target database control file instead of recovery catalog
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: failure of allocate command at 03/29/2020 00:00:01
+RMAN-06403: could not obtain a fully authorized session
+ORA-01034: ORACLE not available
+ORA-27101: shared memory realm does not exist
+Linux-x86_64 Error: 2: No such file or directory
+
+RMAN> 
+
+Recovery Manager complete.
+Last login: Sun Mar 29 00:00:01 CST 2020

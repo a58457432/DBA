@@ -1,0 +1,77 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Thu Mar 26 00:00:01 2020
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: ORCL (DBID=1492966431, not open)
+
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 10> 11> 12> 13> 14> 15> 16> 17> 18> 
+using target database control file instead of recovery catalog
+allocated channel: c1
+channel c1: SID=1 instance=orcl2 device type=DISK
+
+allocated channel: c2
+channel c2: SID=58 instance=orcl2 device type=DISK
+
+allocated channel: c3
+channel c3: SID=116 instance=orcl2 device type=DISK
+
+allocated channel: c4
+channel c4: SID=173 instance=orcl2 device type=DISK
+
+allocated channel: c5
+channel c5: SID=230 instance=orcl2 device type=DISK
+
+allocated channel: c6
+channel c6: SID=287 instance=orcl2 device type=DISK
+
+Starting backup at 26-MAR-20
+channel c1: starting compressed incremental level 2 datafile backup set
+channel c1: specifying datafile(s) in backup set
+RMAN-03009: failure of backup command on c1 channel at 03/26/2020 00:00:11
+ORA-19643: datafile 25: incremental-start SCN is too recent
+ORA-19640: datafile checkpoint is SCN 6199245334 time 03/24/2020 20:17:16
+channel c1 disabled, job failed on it will be run on another channel
+channel c2: starting compressed incremental level 2 datafile backup set
+channel c2: specifying datafile(s) in backup set
+RMAN-03009: failure of backup command on c2 channel at 03/26/2020 00:00:11
+ORA-19643: datafile 31: incremental-start SCN is too recent
+ORA-19640: datafile checkpoint is SCN 6199245335 time 03/24/2020 20:17:17
+channel c2 disabled, job failed on it will be run on another channel
+channel c3: starting compressed incremental level 2 datafile backup set
+channel c3: specifying datafile(s) in backup set
+RMAN-03009: failure of backup command on c3 channel at 03/26/2020 00:00:11
+ORA-19643: datafile 30: incremental-start SCN is too recent
+ORA-19640: datafile checkpoint is SCN 6199245338 time 03/24/2020 20:17:17
+channel c3 disabled, job failed on it will be run on another channel
+channel c4: starting compressed incremental level 2 datafile backup set
+channel c4: specifying datafile(s) in backup set
+RMAN-03009: failure of backup command on c4 channel at 03/26/2020 00:00:11
+ORA-19643: datafile 26: incremental-start SCN is too recent
+ORA-19640: datafile checkpoint is SCN 6199245340 time 03/24/2020 20:17:18
+channel c4 disabled, job failed on it will be run on another channel
+channel c5: starting compressed incremental level 2 datafile backup set
+channel c5: specifying datafile(s) in backup set
+RMAN-03009: failure of backup command on c5 channel at 03/26/2020 00:00:11
+ORA-19643: datafile 28: incremental-start SCN is too recent
+ORA-19640: datafile checkpoint is SCN 6199245342 time 03/24/2020 20:17:18
+channel c5 disabled, job failed on it will be run on another channel
+channel c6: starting compressed incremental level 2 datafile backup set
+channel c6: specifying datafile(s) in backup set
+released channel: c1
+released channel: c2
+released channel: c3
+released channel: c4
+released channel: c5
+released channel: c6
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03009: failure of backup command on c6 channel at 03/26/2020 00:00:11
+ORA-19643: datafile 29: incremental-start SCN is too recent
+ORA-19640: datafile checkpoint is SCN 6199245344 time 03/24/2020 20:17:18
+
+RMAN> 
+
+Recovery Manager complete.
+Last login: Wed Mar 25 23:59:02 CST 2020

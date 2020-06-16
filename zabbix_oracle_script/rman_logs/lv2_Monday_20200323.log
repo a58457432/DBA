@@ -1,0 +1,358 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Mon Mar 23 00:00:01 2020
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: ORCL (DBID=1492966431)
+
+RMAN> 2> 3> 4> 5> 6> 7> 
+Starting backup at 23-MAR-20
+using target database control file instead of recovery catalog
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=858 instance=orcl2 device type=DISK
+channel ORA_DISK_1: starting compressed incremental level 2 datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+input datafile file number=00028 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.501.1034668455
+input datafile file number=00035 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.498.1034668497
+input datafile file number=00042 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.493.1034668535
+input datafile file number=00018 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.486.1034668577
+input datafile file number=00040 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.481.1034668613
+input datafile file number=00068 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.477.1034668615
+input datafile file number=00074 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.470.1034668657
+input datafile file number=00079 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.466.1034668705
+input datafile file number=00085 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.461.1034668749
+input datafile file number=00090 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.453.1034672415
+input datafile file number=00095 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.455.1034671269
+input datafile file number=00100 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.449.1034673769
+input datafile file number=00105 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.421.1034674765
+input datafile file number=00111 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.438.1034674125
+input datafile file number=00116 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.443.1034673969
+input datafile file number=00122 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.423.1034674521
+input datafile file number=00127 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.430.1034674309
+input datafile file number=00133 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.432.1034674271
+input datafile file number=00138 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.405.1034676467
+input datafile file number=00143 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.402.1034678239
+input datafile file number=00148 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.399.1034678937
+input datafile file number=00153 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.389.1034680001
+input datafile file number=00158 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.392.1034679799
+input datafile file number=00163 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.390.1034679997
+input datafile file number=00168 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.368.1034681405
+input datafile file number=00173 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.386.1034680039
+input datafile file number=00178 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.376.1034680497
+input datafile file number=00183 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.359.1034682703
+input datafile file number=00188 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.362.1034682011
+input datafile file number=00194 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.363.1034681791
+input datafile file number=00199 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.350.1034685243
+input datafile file number=00205 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.346.1034685711
+input datafile file number=00210 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.345.1034685741
+input datafile file number=00215 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.326.1034687033
+input datafile file number=00220 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.335.1034686321
+input datafile file number=00226 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.336.1034686317
+input datafile file number=00231 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.310.1034689007
+input datafile file number=00236 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.321.1034687351
+input datafile file number=00241 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.312.1034688807
+input datafile file number=00246 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.289.1034692241
+input datafile file number=00251 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.307.1034689375
+input datafile file number=00256 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.296.1034691675
+input datafile file number=00027 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.272.1034693051
+input datafile file number=00048 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.269.1034693203
+input datafile file number=00053 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.286.1034692337
+input datafile file number=00058 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.292.1034692061
+input datafile file number=00063 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.283.1034692429
+input datafile file number=00009 name=+DG_DATA_NEW_1/orcl/datafile/undotbs1.531.1034694497
+input datafile file number=00082 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.534.1034695019
+input datafile file number=00007 name=+DG_DATA_NEW_1/orcl/datafile/system.263.1034693269
+input datafile file number=00119 name=+DG_DATA_NEW_1/orcl/datafile/users.529.1034694195
+input datafile file number=00191 name=+DG_DATA_NEW_1/orcl/datafile/users.530.1034694195
+input datafile file number=00201 name=+DG_DATA_NEW_1/orcl/datafile/users.537.1034695339
+input datafile file number=00003 name=+DG_DATA_NEW_1/orcl/datafile/undotbs1.528.1034693815
+input datafile file number=00224 name=+DG_DATA_NEW_1/orcl/datafile/users.538.1034695339
+input datafile file number=00004 name=+DG_DATA_NEW_1/orcl/datafile/users.257.1034693831
+input datafile file number=00045 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.535.1034695329
+channel ORA_DISK_1: starting piece 1 at 23-MAR-20
+channel ORA_DISK_1: finished piece 1 at 23-MAR-20
+piece handle=/dbbackup/paic/Monday_dt_inc2_iuurovg9_20200323 tag=TAG20200323T000008 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:08:55
+channel ORA_DISK_1: starting compressed incremental level 2 datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+input datafile file number=00030 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.503.1034668455
+input datafile file number=00037 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.495.1034668499
+input datafile file number=00013 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.489.1034668539
+input datafile file number=00015 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.491.1034668539
+input datafile file number=00032 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.483.1034668577
+input datafile file number=00065 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.478.1034668615
+input datafile file number=00070 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.474.1034668657
+input datafile file number=00076 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.469.1034668703
+input datafile file number=00081 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.465.1034668705
+input datafile file number=00087 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.458.1034668751
+input datafile file number=00092 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.452.1034672605
+input datafile file number=00097 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.454.1034672357
+input datafile file number=00102 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.428.1034674335
+input datafile file number=00108 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.439.1034674117
+input datafile file number=00113 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.440.1034674085
+input datafile file number=00118 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.412.1034675711
+input datafile file number=00124 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.427.1034674353
+input datafile file number=00130 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.435.1034674241
+input datafile file number=00135 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.409.1034676047
+input datafile file number=00140 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.415.1034675491
+input datafile file number=00145 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.417.1034675367
+input datafile file number=00150 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.388.1034680013
+input datafile file number=00155 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.395.1034679613
+input datafile file number=00160 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.394.1034679699
+input datafile file number=00165 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.375.1034680541
+input datafile file number=00170 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.383.1034680269
+input datafile file number=00175 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.378.1034680431
+input datafile file number=00180 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.358.1034682739
+input datafile file number=00185 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.370.1034681159
+input datafile file number=00190 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.360.1034682697
+input datafile file number=00196 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.339.1034686131
+input datafile file number=00202 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.354.1034683263
+input datafile file number=00207 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.347.1034685681
+input datafile file number=00212 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.325.1034687089
+input datafile file number=00217 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.341.1034686001
+input datafile file number=00222 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.334.1034686327
+input datafile file number=00228 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.317.1034687917
+input datafile file number=00233 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.323.1034687219
+input datafile file number=00238 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.319.1034687653
+input datafile file number=00243 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.306.1034689459
+input datafile file number=00248 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.305.1034690857
+input datafile file number=00253 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.301.1034691365
+input datafile file number=00258 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.278.1034692623
+input datafile file number=00047 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.293.1034691915
+input datafile file number=00052 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.295.1034691823
+input datafile file number=00057 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.284.1034692403
+input datafile file number=00062 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.265.1034694013
+input datafile file number=00010 name=+DG_DATA_NEW_1/orcl/datafile/undotbs2.280.1034692531
+input datafile file number=00024 name=+DG_DATA_NEW_1/orcl/datafile/undotbs3.270.1034693113
+input datafile file number=00008 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.273.1034692829
+channel ORA_DISK_1: starting piece 1 at 23-MAR-20
+channel ORA_DISK_1: finished piece 1 at 23-MAR-20
+piece handle=/dbbackup/paic/Monday_dt_inc2_ivurp011_20200323 tag=TAG20200323T000008 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:08:35
+channel ORA_DISK_1: starting compressed incremental level 2 datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+input datafile file number=00029 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.502.1034668455
+input datafile file number=00036 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.496.1034668499
+input datafile file number=00011 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.492.1034668537
+input datafile file number=00014 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.490.1034668539
+input datafile file number=00020 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.484.1034668577
+input datafile file number=00044 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.480.1034668615
+input datafile file number=00069 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.475.1034668655
+input datafile file number=00075 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.471.1034668657
+input datafile file number=00080 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.464.1034668705
+input datafile file number=00086 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.460.1034668749
+input datafile file number=00091 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.456.1034670817
+input datafile file number=00096 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.444.1034673927
+input datafile file number=00101 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.442.1034673987
+input datafile file number=00106 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.448.1034673807
+input datafile file number=00112 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.416.1034675385
+input datafile file number=00117 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.429.1034674323
+input datafile file number=00123 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.436.1034674173
+input datafile file number=00128 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.414.1034675609
+input datafile file number=00134 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.426.1034674353
+input datafile file number=00139 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.420.1034675041
+input datafile file number=00144 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.400.1034678635
+input datafile file number=00149 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.401.1034678497
+input datafile file number=00154 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.397.1034679513
+input datafile file number=00159 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.382.1034680315
+input datafile file number=00164 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.384.1034680223
+input datafile file number=00169 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.387.1034680025
+input datafile file number=00174 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.366.1034681539
+input datafile file number=00179 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.380.1034680341
+input datafile file number=00184 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.364.1034681745
+input datafile file number=00189 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.353.1034684697
+input datafile file number=00195 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.357.1034682813
+input datafile file number=00200 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.361.1034682267
+input datafile file number=00206 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.328.1034686603
+input datafile file number=00211 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.342.1034685977
+input datafile file number=00216 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.337.1034686301
+input datafile file number=00221 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.324.1034687187
+input datafile file number=00227 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.332.1034686477
+input datafile file number=00232 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.327.1034687013
+input datafile file number=00237 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.308.1034689249
+input datafile file number=00242 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.320.1034687569
+input datafile file number=00247 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.303.1034691163
+input datafile file number=00252 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.281.1034692447
+input datafile file number=00257 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.300.1034691583
+input datafile file number=00046 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.294.1034691843
+input datafile file number=00051 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.287.1034692301
+input datafile file number=00056 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.264.1034693247
+input datafile file number=00061 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.282.1034692437
+input datafile file number=00019 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.532.1034694765
+input datafile file number=00023 name=+DG_DATA_NEW_1/orcl/datafile/undotbs3.533.1034694827
+input datafile file number=00005 name=+DG_DATA_NEW_1/orcl/datafile/undotbs2.527.1034693729
+channel ORA_DISK_1: starting piece 1 at 23-MAR-20
+channel ORA_DISK_1: finished piece 1 at 23-MAR-20
+piece handle=/dbbackup/paic/Monday_dt_inc2_j0urp0h5_20200323 tag=TAG20200323T000008 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:08:36
+channel ORA_DISK_1: starting compressed incremental level 2 datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+input datafile file number=00026 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.504.1034668453
+input datafile file number=00034 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.499.1034668495
+input datafile file number=00041 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.494.1034668499
+input datafile file number=00017 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.487.1034668575
+input datafile file number=00039 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.485.1034668577
+input datafile file number=00067 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.476.1034668617
+input datafile file number=00073 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.473.1034668657
+input datafile file number=00078 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.467.1034668705
+input datafile file number=00084 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.462.1034668749
+input datafile file number=00089 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.457.1034669849
+input datafile file number=00094 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta.450.1034673647
+input datafile file number=00099 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.422.1034674727
+input datafile file number=00104 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.441.1034674077
+input datafile file number=00110 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.445.1034673851
+input datafile file number=00115 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.424.1034674419
+input datafile file number=00121 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.431.1034674281
+input datafile file number=00126 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.433.1034674259
+input datafile file number=00132 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.408.1034676229
+input datafile file number=00137 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.413.1034675623
+input datafile file number=00142 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.407.1034676241
+input datafile file number=00147 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.396.1034679601
+input datafile file number=00152 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.404.1034676853
+input datafile file number=00157 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.398.1034679451
+input datafile file number=00162 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.374.1034680763
+input datafile file number=00167 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.391.1034679921
+input datafile file number=00172 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.379.1034680429
+input datafile file number=00177 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.365.1034681665
+input datafile file number=00182 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.372.1034680939
+input datafile file number=00187 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.367.1034681485
+input datafile file number=00193 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.355.1034683179
+input datafile file number=00198 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.352.1034684951
+input datafile file number=00204 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.349.1034685511
+input datafile file number=00209 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.330.1034686525
+input datafile file number=00214 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.338.1034686281
+input datafile file number=00219 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.343.1034685923
+input datafile file number=00225 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.318.1034687733
+input datafile file number=00230 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.331.1034686521
+input datafile file number=00235 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.316.1034687921
+input datafile file number=00240 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.304.1034690887
+input datafile file number=00245 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.311.1034688967
+input datafile file number=00250 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.313.1034688403
+input datafile file number=00255 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.279.1034692595
+input datafile file number=00260 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.297.1034691669
+input datafile file number=00050 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.271.1034693099
+input datafile file number=00055 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.288.1034692273
+input datafile file number=00060 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.258.1034693833
+input datafile file number=00107 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_readonly.276.1034692695
+input datafile file number=00071 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_readonly.277.1034692695
+input datafile file number=00012 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_meta_index.274.1034692813
+input datafile file number=00006 name=+DG_DATA_NEW_1/orcl/datafile/users.259.1034693681
+input datafile file number=00022 name=+DG_DATA_NEW_1/orcl/datafile/undotbs3.526.1034693691
+channel ORA_DISK_1: starting piece 1 at 23-MAR-20
+channel ORA_DISK_1: finished piece 1 at 23-MAR-20
+piece handle=/dbbackup/paic/Monday_dt_inc2_j1urp119_20200323 tag=TAG20200323T000008 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:08:25
+channel ORA_DISK_1: starting compressed incremental level 2 datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+input datafile file number=00025 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.505.1034668453
+input datafile file number=00031 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.500.1034668455
+input datafile file number=00038 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.497.1034668497
+input datafile file number=00016 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.488.1034668541
+input datafile file number=00033 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.482.1034668577
+input datafile file number=00066 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.479.1034668615
+input datafile file number=00072 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.472.1034668657
+input datafile file number=00077 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.468.1034668703
+input datafile file number=00083 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.463.1034668749
+input datafile file number=00088 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.459.1034668751
+input datafile file number=00093 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.451.1034673047
+input datafile file number=00098 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.446.1034673839
+input datafile file number=00103 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.447.1034673825
+input datafile file number=00109 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.425.1034674403
+input datafile file number=00114 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.434.1034674255
+input datafile file number=00120 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.437.1034674157
+input datafile file number=00125 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.410.1034676021
+input datafile file number=00131 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.419.1034675051
+input datafile file number=00136 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.418.1034675273
+input datafile file number=00141 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.403.1034678081
+input datafile file number=00146 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.406.1034676375
+input datafile file number=00151 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.411.1034675889
+input datafile file number=00156 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.377.1034680491
+input datafile file number=00161 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.393.1034679749
+input datafile file number=00166 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.385.1034680085
+input datafile file number=00171 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.371.1034681103
+input datafile file number=00176 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.381.1034680317
+input datafile file number=00181 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.373.1034680841
+input datafile file number=00186 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.356.1034682939
+input datafile file number=00192 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.369.1034681385
+input datafile file number=00197 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.351.1034685197
+input datafile file number=00203 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.333.1034686355
+input datafile file number=00208 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.348.1034685635
+input datafile file number=00213 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.344.1034685851
+input datafile file number=00218 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.322.1034687349
+input datafile file number=00223 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.340.1034686089
+input datafile file number=00229 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.329.1034686603
+input datafile file number=00234 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.309.1034689007
+input datafile file number=00239 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.314.1034688211
+input datafile file number=00244 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.315.1034687957
+input datafile file number=00249 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.302.1034691343
+input datafile file number=00254 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_clob.298.1034691647
+input datafile file number=00259 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.299.1034691623
+input datafile file number=00049 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.290.1034692233
+input datafile file number=00054 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.260.1034693399
+input datafile file number=00059 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic.285.1034692371
+input datafile file number=00064 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_index.291.1034692161
+input datafile file number=00021 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_readonly.275.1034692713
+input datafile file number=00129 name=+DG_DATA_NEW_1/orcl/datafile/tbs_paic_readonly.261.1034693381
+input datafile file number=00002 name=+DG_DATA_NEW_1/orcl/datafile/sysaux.539.1034696057
+input datafile file number=00043 name=+DG_DATA_NEW_1/orcl/datafile/users.536.1034695337
+input datafile file number=00001 name=+DG_DATA_NEW_1/orcl/datafile/system.266.1034694085
+channel ORA_DISK_1: starting piece 1 at 23-MAR-20
+channel ORA_DISK_1: finished piece 1 at 23-MAR-20
+piece handle=/dbbackup/paic/Monday_dt_inc2_j2urp1h3_20200323 tag=TAG20200323T000008 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:08:35
+channel ORA_DISK_1: starting compressed incremental level 2 datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+including current control file in backup set
+channel ORA_DISK_1: starting piece 1 at 23-MAR-20
+channel ORA_DISK_1: finished piece 1 at 23-MAR-20
+piece handle=/dbbackup/paic/Monday_dt_inc2_j3urp216_20200323 tag=TAG20200323T000008 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+Finished backup at 23-MAR-20
+
+Starting backup at 23-MAR-20
+using channel ORA_DISK_1
+channel ORA_DISK_1: starting full datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+including current control file in backup set
+channel ORA_DISK_1: starting piece 1 at 23-MAR-20
+channel ORA_DISK_1: finished piece 1 at 23-MAR-20
+piece handle=/dbbackup/paic/Monday_ctf_j4urp218_20200323 tag=TAG20200323T004320 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+Finished backup at 23-MAR-20
+
+Starting backup at 23-MAR-20
+current log archived
+using channel ORA_DISK_1
+skipping archived logs of thread 1 from sequence 52 to 721; already backed up
+skipping archived log of thread 1 with sequence 721; already backed up
+skipping archived logs of thread 2 from sequence 20 to 247; already backed up
+skipping archived log of thread 2 with sequence 247; already backed up
+channel ORA_DISK_1: starting compressed archived log backup set
+channel ORA_DISK_1: specifying archived log(s) in backup set
+input archived log thread=3 sequence=1 RECID=184101 STAMP=1035712380
+input archived log thread=1 sequence=722 RECID=184096 STAMP=1035712379
+input archived log thread=2 sequence=248 RECID=184097 STAMP=1035712379
+input archived log thread=2 sequence=249 RECID=184098 STAMP=1035712379
+input archived log thread=1 sequence=723 RECID=184099 STAMP=1035712379
+channel ORA_DISK_1: starting piece 1 at 23-MAR-20
+channel ORA_DISK_1: finished piece 1 at 23-MAR-20
+piece handle=/dbbackup/paic/Monday_arch_j5urp21j_20200323 tag=TAG20200323T004331 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:15
+channel ORA_DISK_1: starting compressed archived log backup set
+channel ORA_DISK_1: specifying archived log(s) in backup set
+input archived log thread=2 sequence=1 RECID=184103 STAMP=1035765806
+input archived log thread=1 sequence=1 RECID=184102 STAMP=1035765806
+channel ORA_DISK_1: starting piece 1 at 23-MAR-20
+channel ORA_DISK_1: finished piece 1 at 23-MAR-20
+piece handle=/dbbackup/paic/Monday_arch_j6urp222_20200323 tag=TAG20200323T004331 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:07
+Finished backup at 23-MAR-20
+
+Starting Control File Autobackup at 23-MAR-20
+piece handle=/app/oracle/product/11.2.0/oracle/dbs/c-1492966431-20200323-00 comment=NONE
+Finished Control File Autobackup at 23-MAR-20
+
+RMAN> 
+
+Recovery Manager complete.
+Last login: Sun Mar 22 23:59:01 CST 2020
