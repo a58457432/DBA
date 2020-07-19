@@ -202,7 +202,7 @@ def write_config():
     config['mysqld']['log-error'] = logs_dir + '/mysql-error-log.err'
     config['mysqld']['expire_logs_days'] = '7'
     # replication
-    config['mysqld']['slave-skip-errors'] = '1032'
+    config['mysqld']['subordinate-skip-errors'] = '1032'
     config['mysqld']['replicate_ignore_db'] = 'performance_schema'
     config['mysqld']['replicate_ignore_db'] = 'mysql'
     config['mysqld']['log-bin'] = logs_dir + '/mysql-bin'
@@ -213,7 +213,7 @@ def write_config():
     config['mysqld']['relay_log'] = logs_dir + '/mysql-relay-bin'
     config['mysqld']['max_relay_log_size'] = '1G'
     config['mysqld']['relay_log_purge'] = '1'
-    config['mysqld']['log_slave_updates'] = '1'
+    config['mysqld']['log_subordinate_updates'] = '1'
     config['mysqld']['sync_binlog'] = '10'
     config['mysqld']['gtid_mode'] = 'off'
     config['mysqld']['symbolic-links'] = '0'
