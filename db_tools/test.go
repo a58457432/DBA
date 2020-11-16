@@ -4,15 +4,29 @@ import (
 	"fmt"
 )
 
-func main(){
-    slice := make([]int, 1e6)
-    slice = foo(slice)
+type SliceInt []int
 
-    func foo(slice []int) []int {
-        fmt.Println(slice)    
-        return slice
+func (s SliceInt) Sum() int {
+    sum := 0
+    for _, i := range s {
+        sum += i
     }
+    return sum
+}
 
+func SliceInt_Sum(s SliceInt) int {
+    sum := 0
+    for _, i := range s {
+        sum += i
+    }
+    return sum
+}
 
-	fmt.Println(slice)
+func main(){
+
+    var s SliceInt = []int{1, 2, 3, 4}
+    fmt.Println(s.Sum())
+
+    fmt.Println(SliceInt_Sum(s))
+
 }
