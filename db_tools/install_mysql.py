@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 ## coding=utf-8
 # Creator: sjh
-# UpdateTime:2019.6.13
+# UpdateTime:2018.6.13
 
 import os
 import sys
@@ -17,7 +17,8 @@ import configparser
 import time
 
 softdir = "/usr/local/webserver/software/"
-mysql_url = "wget -c https://cdn.mysql.com//Downloads/MySQL-8.0/mysql-8.0.16-linux-glibc2.12-x86_64.tar.xz"
+#mysql_url = "wget -c https://cdn.mysql.com//Downloads/MySQL-8.0/mysql-8.0.16-linux-glibc2.12-x86_64.tar.xz"
+mysql_url = "wget -c https://cdn.mysql.com//Downloads/MySQL-8.0/mysql-8.0.19-linux-glibc2.12-x86_64.tar.xz"
 mysql_pkg = "mysql-8.0.16-linux-glibc2.12-x86_64.tar.xz"
 profile = "/root/.bash_profile"
 groupadd_cmd = "groupadd mysql"
@@ -28,18 +29,21 @@ mysql_root_dir = "/data/"
 data_dir = "/data/mysql/mysql_" + port + "/data"
 logs_dir = "/data/mysql/mysql_" + port + "/logs"
 tmp_dir = "/data/mysql/mysql_" + port + "/tmp"
+get_init_passwd="cat /data/mysql/mysql_%s/logs/mysql-error-log.err  |grep password | awk -F 'localhost: ' '{print $2}'" % (port)
 config_dir = "/etc/"
 mysql_dir = "/usr/local/mysql/"
 mkdir_cmd = "mkdir -p "
 cp_cmd = "cp "
 chmod_cmd = "chmod +x "
 mysqld_cmd = mysql_dir + "bin/mysqld " + "--initialize   --user=mysql  --datadir=%s --basedir=%s" % (data_dir, mysql_dir) 
+mysql_cmd = mysql_dir + "bin/mysql"
 target_file = "/etc/init.d/mysqld"
 mysql_start_cmd = target_file + " " + "start"
 mysql_stop_cmd = target_file + " " + "stop"
 source_file = "support-files/mysql.server"
 mysql_server_file = mysql_dir + source_file
 move_server_file = cp_cmd + mysql_dir + source_file + " " + target_file 
+mysql_bin = mysql_dir + "/bin/"
 
 chown_mysql_dir = chown_mysql + mysql_dir
 chown_mysql_data = chown_mysql + mysql_root_dir
@@ -79,6 +83,8 @@ def get_mysql():
 
 
 def init_sys_mysql():
+    if not os.path.exists(softdir):
+        os.makedirs(softdir)
     os.chdir(softdir)
     groupadd_tag = runCmd(groupadd_cmd)[1]
     useradd_tag = runCmd(useradd_cmd)[1]
@@ -120,14 +126,11 @@ def init_sys_mysql():
             f2.write(t)
 
     runCmd(chmod_mysqld)
-	
 
-# 
-# /usr/local/mysql/bin/mysqld --initialize   --user=mysql  --datadir=/data/mysql/mysql_3306/data/ --basedir=/usr/local/mysql/
+
 # cat /data/mysql/mysql_3306/logs/mysql-error-log.err  |grep password | awk -F 'localhost: ' '{print $2}'
-# update user set password_expired="N" where user="root";
-# ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123' EXPIRE NEVER;
-# flush privilegs;
+# ALTER USER USER() IDENTIFIED BY '123456';
+# flush privileges;
 def build_mysql():
     try:
         if len(os.listdir(data_dir)) > 0:
@@ -135,7 +138,7 @@ def build_mysql():
         else:
             init_mysql_data = runCmd(mysqld_cmd)[1]
             if init_mysql_data == 0:
-                print("init mysql sucesss")
+                print("init mysql sucess")
             else:
                 print("init mysql fail")
     except(BaseException,e):
@@ -153,7 +156,7 @@ def write_config():
     config['mysqld']['socket'] = config['client']['socket']
     config['mysqld']['pid-file'] = data_dir + '/mysql.pid'
     config['mysqld']['event_scheduler'] = '0'
-    config['mysqld']['lower_case_table_names'] = '1'
+    config['mysqld']['lower_case_table_names'] = '0'
     config['mysqld']['character-set-server'] = 'utf8mb4'
     config['mysqld']['transaction-isolation'] = 'REPEATABLE-READ'
     config['mysqld']['max_connect_errors'] = '100000'
@@ -240,8 +243,25 @@ def stop_mysql():
         else:
             print("stop mysql fail")
 
-def alter_user():
-    pass
+def chg_mysql_passwd():
+    global passwd_info
+    print("=================change mysql root password======================\n")
+    find_passwd = "cat %s/mysql-error-log.err  |grep password | awk -F 'localhost: ' '{print $2}'" % (logs_dir)
+    chsql = "ALTER USER USER() IDENTIFIED BY '123456';flush privileges;"
+    try:
+        passwd_info = runCmd(find_passwd)
+    except  Exception as e:
+        print(str(e))
+
+    if  passwd_info[1] == 0:
+        print("root init passwd:" + str(passwd_info[0].strip()) + "\n")
+    else:
+        print("no root passwd")
+
+    print('sql:' + chsql + "\n")
+    chg_root_passwd = mysql_cmd + (" -uroot -p -h 127.0.0.1 -P%d ") % (int(port))
+    print(chg_root_passwd)
+
 
 def main():
 #    get_mysql()
@@ -249,6 +269,7 @@ def main():
     write_config()
     build_mysql()
     start_mysql()
+    chg_mysql_passwd()
 
 if __name__ == '__main__':
     main()
