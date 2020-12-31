@@ -1,0 +1,1 @@
+listen_addresses='*'port=5432max_connections=5000shared_buffers=1G

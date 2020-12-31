@@ -46,15 +46,38 @@ func InitConfig(path string) map[string]string {
 }
 
 
+func CreateFile(path string) map[string]string {
+    config := make(map[string]string)
+    config["listen_addresses"] = "'*'"
+    config["port"] = "5432"
+    config["max_connections"] = "5000"
+    config["shared_buffers"] = "1G"
+    config["log_timezone"] = "'Asia/Shanghai'"
+    config["datestyle"] = "'iso, mdy'"
+    config["timezone"] = "'Asia/Shanghai'"
+    config["default_text_search_config"] = "'pg_catalog.english'"
+
+
+    file, err := os.Create(path)
+    if err != nil {
+        fmt.Println(" pg.confg file create fail", err)
+    }
+    defer file.Close()
+    for k, v := range config {
+        _, _ = file.WriteString(k + "=" + v + "\n")
+    }
+    return config
+}
+
+
 
 func main() {
-    config := InitConfig("/data/postgresql/data/postgresql.conf")
-//    ip := config["ip"]
-//    port := config["port"]
-//    name := config["name"]
-//    new02 := config["new02"]
+//    config := InitConfig("/tmp/postgresql.conf")
 
+    config := CreateFile("/opt/1.sql")
     fmt.Println(config)
+
+
 
 //    fmt.Println("ip=" + string(ip)," port=" + string(port), " name=" + string(name), " new2=" + string(new02))
 
