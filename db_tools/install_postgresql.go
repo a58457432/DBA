@@ -15,6 +15,7 @@ import (
     "strings"
     "bufio"
     "io"
+    "path"
 )
 
 
@@ -25,6 +26,9 @@ type PGer struct {
     PGPASSWD    string
     PGPROFILE   string
     PGINIT_CMD  string
+    PGCTL_CMD   string
+    PG_CONFIG   string
+    PGHBA_CONFIG    string
 }
 
 func runCmd(cmdStr string) (string, int) {
@@ -131,7 +135,7 @@ func CreateFile(path string) map[string]string {
     config["listen_addresses"] = "'*'"
     config["port"] = "5432"
     config["max_connections"] = "5000"
-    config["shared_buffers"] = "1G"
+    config["shared_buffers"] = "1GB"
     config["log_timezone"] = "'Asia/Shanghai'"
     config["datestyle"] = "'iso, mdy'"
     config["timezone"] = "'Asia/Shanghai'"
@@ -146,6 +150,12 @@ func CreateFile(path string) map[string]string {
         _, _ = file.WriteString(k + "=" + v + "\n")
     }
     return config
+}
+
+func AppendFile(path string, istr string) {
+    file, _ := os.OpenFile(path, os.O_WRONLY | os.O_APPEND, 0666)
+    defer file.Close()
+    _, _ = file.Write([]byte(istr))
 }
 
 
@@ -231,16 +241,7 @@ func (pger *PGer) write_pro_file(){
 
     }
 
-//    file, err := os.Open(pro_file)
-//    if err != nil {
-//        fmt.Println("file open fail ", err)
-//    }
 
-//    defer file.Close()
-//    content, _ := ioutil.ReadAll(file)
-//    fmt.Println(string(content))
-
-    fmt.Println(pro_file_cmd)
     _, res := runCmd(pro_file_cmd)
 
     if res == 0 {
@@ -268,28 +269,64 @@ func (pger *PGer) init_pg(){
     }
 }
 
-// update postgresql.conf
+// update postgresql.conf && append pg_hba.conf
 func (pger *PGer) update_pg_conf(){
-
+    pg_config := pger.PGDATA + pger.PG_CONFIG
+    pg_hba_config := pger.PGDATA + pger.PGHBA_CONFIG 
+    config := CreateFile(pg_config)
+    if config != nil {
+        fmt.Println("create pg.conf success!")
+    }
+    istr := "\nhost   all     all     0.0.0.0/0   trust"
+    _, num := findstr(pg_hba_config, istr[24:31])
+    if num > 0 {
+        fmt.Println("pg_hba_config Policy already exists!")
+    } else {
+        AppendFile(pg_hba_config, istr)         
+        fmt.Println("pg_hba_config append success!")
+    }
 }
 
 // start pg
 func (pger *PGer) start_pg_server(){
-
+    os.Chdir(pger.PGDATA)
+    pg_ctl_cmd := "su postgres -c " + "'" + pger.PGCTL_CMD + " -D " + pger.PGDATA + " -l pg_startup.log start"  +"'"
+    _, res := runCmd(pg_ctl_cmd)
+    if res == 0 {
+        fmt.Println("start pg server success\n")
+    }else {
+        fmt.Println("start pg server  fail\n")
+    }
+    
 }
 // stop pg
 func (pger *PGer) stop_pg_server(){
+    os.Chdir(pger.PGDATA)
+    pg_ctl_cmd := "su postgres -c " + "'" + pger.PGCTL_CMD + " -D " + pger.PGDATA + " -l pg_stop.log stop"  +"'"
+    _, res := runCmd(pg_ctl_cmd)
+    if res == 0 {
+        fmt.Println("stop pg server success\n")
+    }else {
+        fmt.Println("stop pg server  fail\n")
+    }
 
 }
 
+// delete pg file
+func (pger *PGer) delete_file(){
+    dir, err := ioutil.ReadDir(pger.PGDATA)
+    if err != nil {
+        panic(err)
+    }
+    for _, d := range dir {
+        os.RemoveAll(path.Join([]string{pger.PGDATA, d.Name()}...))
+    }
+
+    fmt.Println("clean postgresql file!")
+}
+
+
 func main() {
-//    resdata, res := runCmd("date +%Y-%m-%d") 
-//    fmt.Println(res)
-//    fmt.Println(resdata)
-//    flag := Exists("/usr/local/webserver/DBA/db_tools/hello")
-//    fmt.Println(flag)
-//    MKdir("/data/postgresql/data") 
-    
     myPGer := &PGer{
         PGHOME : "/usr/local/pgsql",
         PGDATA : "/data/postgresql/data",
@@ -297,13 +334,44 @@ func main() {
         PGPASSWD :  "postgres",
         PGPROFILE : "/etc/profile",
         PGINIT_CMD : "/usr/local/pgsql/bin/initdb",
+        PGCTL_CMD   :   "/usr/local/pgsql/bin/pg_ctl",
+        PG_CONFIG   :   "/postgresql.conf",
+        PGHBA_CONFIG    :   "/pg_hba.conf",
     }
 
-//    myPGer.init_sys_pg()
-//    myPGer.write_pro_file()
-    myPGer.init_pg()
-//    config := InitConfig("/tmp/postgresql.conf")
-    config := CreateFile("/opt/1.sql")
-    fmt.Println(config)
+    finger := os.Args[1]
+    switch finger {
+    case "start":
+        myPGer.start_pg_server()
+    case "stop":
+        myPGer.stop_pg_server() 
+    case "init":
+        myPGer.init_sys_pg()
+        myPGer.write_pro_file()
+        myPGer.init_pg()
+        myPGer.update_pg_conf()
+        myPGer.start_pg_server()
+    case "reInit":
+        myPGer.stop_pg_server()
+        myPGer.delete_file()
+        myPGer.init_sys_pg()
+        myPGer.write_pro_file()
+        myPGer.init_pg()
+        myPGer.update_pg_conf()
+        myPGer.start_pg_server()
+    case "Uninstall":
+        myPGer.stop_pg_server()
+        myPGer.delete_file()
+
+    case "help":
+        fmt.Println("install_postgresql.go is a tool for postgresql server.\n\n   Usage: install_postgresql.go <command>\n\nThe commands are:\n")
+        fmt.Println("       init        init system enverionment and install postgresql")
+        fmt.Println("       reInit      reinstall postgresql")
+        fmt.Println("       start       start postgresql server ")
+        fmt.Println("       stop        stop postgresql server")
+        fmt.Println("       Uninstall   uninstall postgresql")
+        fmt.Println("eg:    go run install_postgresql.go init")
+    
+    }
 }
 
