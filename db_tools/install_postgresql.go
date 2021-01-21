@@ -16,6 +16,7 @@ import (
     "bufio"
     "io"
     "path"
+    "strconv"
 )
 
 
@@ -291,8 +292,11 @@ func (pger *PGer) update_pg_conf(){
 func (pger *PGer) start_pg_server(){
     os.Chdir(pger.PGDATA)
     pg_ctl_cmd := "su postgres -c " + "'" + pger.PGCTL_CMD + " -D " + pger.PGDATA + " -l pg_startup.log start"  +"'"
+    ck_pg_progress := "ps -ef |grep postgres: |grep -iv grep | wc -l"
     _, res := runCmd(pg_ctl_cmd)
-    if res == 0 {
+    num, _ := runCmd(ck_pg_progress)
+    num1, _ := strconv.Atoi(strings.Replace(num,"\n","",-1))
+    if res == 0 && num1 > 4 {
         fmt.Println("start pg server success\n")
     }else {
         fmt.Println("start pg server  fail\n")
