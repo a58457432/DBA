@@ -7,8 +7,9 @@ dir='/usr/local/webserver/software/'
 wget_cmd=`which wget`
 curl_cmd=`which curl`
 ls_cmd=`which ls`
-go_init='https://dl.google.com/go/go1.12.6.linux-amd64.tar.gz'
-go_pkg='go1.12.6.linux-amd64.tar.gz'
+#go_init='https://dl.google.com/go/go1.12.6.linux-amd64.tar.gz'
+go_init='https://dl.google.com/go/go1.15.7.linux-amd64.tar.gz'
+go_pkg='go1.15.7.linux-amd64.tar.gz'
 hcode=`$curl_cmd -I -m 10 -o /dev/null -s -w %{http_code} www.baidu.com`
 
 init_go(){
