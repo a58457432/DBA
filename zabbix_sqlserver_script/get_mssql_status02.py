@@ -10,11 +10,11 @@ import pymssql
 
 # client
 
-ip = '172.21.107.4'
+ip = '172.21.117.2'
 user = 'db_reader'
 passwd = 'vHmWDCzi6iXCW3jC'
 database = 'master'
-insname = 'sqlserver_pro'
+insname = 'sqlserver_uat'
 
 # zabbix server
 zb_sender = '/usr/bin/zabbix_sender'
