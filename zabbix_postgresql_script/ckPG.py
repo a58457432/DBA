@@ -34,23 +34,34 @@ import subprocess
 # ----------------------------------------------------------------------------------------
 # -----> Global Variables
 # from global_var import *
-DBSTATUS_FILE = "/opt/DBins.Info"  # db状态输出文件的路径
+DBSTATUS_FILE = "/tmp/DBins.Info"  # db状态输出文件的路径
 dt = datetime.now()
 DATETIME = dt.strftime('%Y-%m-%d %H:%M:%S')
 
 
 #  PG info
 sock = ''
-port = 5432
-IP = '192.168.31.125'
+port = 5331
+IP = '192.168.71.128'
 user = 'wwg'
 password = 'wwg'
-dbschema = 'pgsql_zabbix'
+#dbschema = 'pg_zabbix'
+dbschema = 'postgres'
+pg_home = '/data/postgresql/data'
 
+# keepalived 
+VIP = '192.168.71.190'
+
+#other
+vping = '/usr/bin/ping'
+vecho = '/usr/bin/echo'
+vtelnet = '/usr/bin/telnet'
+vdf = '/usr/bin/df'
+vps = '/usr/bin/ps'
 
 # zabbix server
 zb_sender = '/usr/bin/zabbix_sender'
-zb_server = '192.168.31.156'
+zb_server = '192.168.71.130'
 zb_server_port = 10051
 
 # zabbix agent
@@ -100,6 +111,7 @@ def init_dbins_info():
     dbinfo['password'] = password
     dbinfo['dbschema'] = dbschema
     dbinfo['insname'] = insname
+    dbinfo['vip'] = VIP
 
     dbins[insname] = copy.deepcopy(dbinfo)
     return dbins
@@ -180,6 +192,67 @@ class DBStatus(object):
             self.cur.close()
             self.conn.close()
 
+    def ck_vip(self):
+        # ping -c 1 127.0.0.1 &> /dev/null && echo 1 || echo 0
+        ck_vip_cmd = ('%s -c 5 %s &> /dev/null && echo 1 || echo 0') % (vping, VIP)
+        try:
+            check_vip = runCmd(ck_vip_cmd)
+        except Exception as e:
+            print str(e)
+
+        if check_vip[1] == 0:
+            print "vip is alive"
+            for db in self.dbins.values():
+                db['vip_status'] = int(check_vip[0])
+        else:
+            print "vip is fail"
+    
+    def ck_port(self):
+        # echo -e "\n" | telnet 192.168.71.128 5331 2>/dev/null | grep Connected | wc -l
+        ck_port_cmd = ('%s -e "\\n" | %s %s %s 2>/dev/null | grep Connected | wc -l') % (vecho, vtelnet, IP, port)
+        print ck_port_cmd
+        try:
+            db_check_port = runCmd(ck_port_cmd)
+        except Exception as e:
+            print str(e)
+
+        if db_check_port[1] == 0:
+            print "port is alive"
+            print db_check_port[0]
+            for db in self.dbins.values():
+                db['db_port'] = int(db_check_port[0])
+        else:
+            print "port is fail"
+
+    def ck_tbl(self):
+        # df -h /data/postgresql/data/ | awk -F " " '{print $5}' | grep -vi Use
+        ck_tbl_cmd = ('%s -h %s | awk -F " " \'{print $5}\' | grep -vi Use') % (vdf, pg_home)
+        print ck_tbl_cmd
+        try:
+            ck_tbl_data = runCmd(ck_tbl_cmd)
+        except Exception as e:
+            print str(e)
+
+        if ck_tbl_data[1] == 0:
+            print type(int(ck_tbl_data[0].split('%')[0]))
+            for db in self.dbins.values():
+                db['pg_data'] = int(ck_tbl_data[0].split('%')[0])
+
+
+    def ck_process(self):
+        # ps -ef |grep postgres: | wc -l
+        ck_ps_cmd = ('%s -ef |grep postgres:|grep -iv grep | wc -l') % (vps)
+        try:
+            ck_pg_ps = runCmd(ck_ps_cmd)
+        except Exception as e:
+            print str(e)
+
+        if ck_pg_ps[1] == 0:
+            print ck_pg_ps[0]
+
+    def ck_etcd_count(self):
+        pass
+
     def write_result_file(self):
         """将计算结果写入db状态输出文件.
         """
@@ -194,7 +267,7 @@ class DBStatus(object):
             f.write('db_alive' + '=' + str(dbs[0]['db_alive']) + "\n")
 
     def push_zabbix_items(self):
-    #  zabbix_sender -z 192.168.31.156 -p 10051 -s "MySQL_mysql2" -k "QPS" -o 1000
+    #  zabbix_sender -z 192.167.123.5 -p 10051 -s "MySQL_mysql2" -k "QPS" -o 1000
         dbs = self.dbins.values()
         dbs.sort()
         print str(DATETIME) + " * "*20 + " push item " + " * "*20
@@ -225,5 +298,10 @@ class DBStatus(object):
 if __name__ == '__main__':
     db = DBStatus()
     db.get_status_var()
-    db.write_result_file()
-    db.push_zabbix_items()
+#    db.ck_vip()
+#    db.ck_port()
+#    db.ck_tbl()
+    db.ck_process()
+#    print db.dbins
+#    db.write_result_file()
+#    db.push_zabbix_items()
