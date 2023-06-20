@@ -96,6 +96,45 @@ def select_tbl_id(tablename,name_value):
             table_id = value 
     if table_id != '': return table_id 
 
+def select_hostname():
+    table_name = 'HostName'
+    hostname_lst = []
+    mydb = session_db()
+    result = mydb.select(table_name, fields=["name"])
+    for i in result:
+        for j in i:
+            hostname_lst.append(j)
+    
+    if hostname_lst:return hostname_lst
+
+def select_user():
+    table_name = 'User'
+    user_lst = []
+    mydb = session_db()
+    result = mydb.select(table_name, fields=["name"])
+    for i in result:
+        for j in i:
+            user_lst.append(j)
+    if user_lst: return user_lst
+
+def select_tag():
+    table_name = 'UserTag'
+    tag_lst = []
+    mydb = session_db()
+    result = mydb.select(table_name, fields=["name"])
+    for i in result:
+        for j in i:
+            tag_lst.append(j)
+    if tag_lst: return tag_lst
+
+def select_alert(hostid,userid,appid,alertid):
+    table_name = 'Alert_List_Table'
+    alert_lst = []
+    cond_dict = {'hostname_id':'%s' %(hostid),'user_id':'%s' % (userid),'apptype_id':'%s' % (appid),'alerttype_id':'%s' % (alertid)}
+    mydb = session_db()
+    result = mydb.select(table_name, cond_dict,fields=["id"])
+    if result: return len(result)
+
 
 def insert_hostname_tbl():
     alert_datas_list = list_execl_data()
@@ -106,14 +145,24 @@ def insert_hostname_tbl():
     tablename = 'HostName'
     
     mydb = session_db()
+    db_hostname_all = select_hostname()
+    
 
     for data_dict in alert_datas_list:
         if data_dict['name']: list_name.append(data_dict['name'])
         if data_dict['ip']: list_ip.append(data_dict['ip'])
-        dict_name_ip['name'] = data_dict['name']
-        dict_name_ip['ip'] = data_dict['ip']
-        list_dict_ni.append(dict_name_ip)
-        mydb.insert(tablename,dict_name_ip)
+        if db_hostname_all == None:
+            dict_name_ip['name'] = data_dict['name']
+            dict_name_ip['ip'] = data_dict['ip']
+            list_dict_ni.append(dict_name_ip)
+            mydb.insert(tablename,dict_name_ip)
+        elif data_dict['name'] not in db_hostname_all:
+            dict_name_ip['name'] = data_dict['name']
+            dict_name_ip['ip'] = data_dict['ip']
+            list_dict_ni.append(dict_name_ip)
+            mydb.insert(tablename,dict_name_ip)
+        else:
+            print("%s is exist" % (data_dict['name']))
 
 def insert_user_tbl():
     alert_datas_list = list_execl_data() 
@@ -122,6 +171,7 @@ def insert_user_tbl():
     tablename = 'User'
     
     mydb = session_db()
+    db_user_all = select_user()
     
     for data_dict in alert_datas_list:
         for key in data_dict:
@@ -134,14 +184,15 @@ def insert_user_tbl():
     myset = set(list_user)
     myset.discard('')
     for i in myset:
-        dict_user['name'] = i
-        mydb.insertone(tablename, dict_user)
-#        print(dict_user)
-#        print(alert_datas_list[data_dict])
-#        list = alert_datas_list[data_dict].split(",")
-#        for i in list:
-#            list_user.append(i)
-#    print(list_user)
+#        print(type(i),type(db_user_all), type(select_hostname()))
+        if db_user_all == None:
+            dict_user['name'] = i
+            mydb.insertone(tablename, dict_user)
+        elif i not in db_user_all: 
+            dict_user['name'] = i
+            mydb.insertone(tablename, dict_user)
+        else:
+            print("%s is exist" % (i))
 
 def insert_tag_tbl():
     alert_datas_list = list_execl_data()
@@ -150,6 +201,7 @@ def insert_tag_tbl():
     tablename = 'UserTag'
     
     mydb = session_db()
+    db_tag_all = select_tag()
     
     for data_dict in alert_datas_list:
 #        print(data_dict)
@@ -164,8 +216,14 @@ def insert_tag_tbl():
     myset = set(list_tag)
     myset.discard('')
     for i in myset:
-        dict_tag['name'] = i
-        mydb.insertone(tablename, dict_tag) 
+        if db_tag_all == None:
+            dict_tag['name'] = i
+            mydb.insertone(tablename, dict_tag)
+        elif i not in db_tag_all:
+            dict_tag['name'] = i
+            mydb.insertone(tablename, dict_tag)
+        else:
+            print("%s is exist" % (i)) 
 
 
 def countstat():
@@ -218,7 +276,13 @@ def insert_alert_list_table_tbl():
 #                    print(idlst)
                     n_list = [s_str,i,k_lst[0],k_lst[1]]
 #                    print([s_str,i,k_lst[0],k_lst[1]])
-                    mydb.insert(table_name, alert_list_table_dict)
+                    if select_alert(hostid,userid,appid,alertid) == None:
+                        mydb.insert(table_name, alert_list_table_dict)
+                    elif select_alert(hostid,userid,appid,alertid) == 1:
+                        print("%s is exist" % (idlst))
+                        continue
+                    else:
+                        print("others,please check")
                     
                     
         print("**********************%s**********************" % (c()))
@@ -229,5 +293,6 @@ def insert_alert_list_table_tbl():
 if __name__ == "__main__":
 #    insert_hostname_tbl()
 #    insert_user_tbl()
-#    insert_alert_list_table_tbl()
+    insert_alert_list_table_tbl()
+#    select_alert(27666,542,1,1)
 #    insert_tag_tbl()
