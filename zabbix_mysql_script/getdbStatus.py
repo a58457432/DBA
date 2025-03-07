@@ -40,7 +40,7 @@ dt = datetime.now()
 DATETIME = dt.strftime('%Y-%m-%d %H:%M:%S')
 
 
-# master/slave dba info
+# main/subordinate dba info
 sock = ''
 port = 3307
 IP = '192.168.31.125'
@@ -95,8 +95,8 @@ def init_dbins_info():
     dbinfo = {}  # db信息字典
     dbinfo['global_var'] = {}  # db global variables 字典
     dbinfo['global_status'] = {}  # db global status 字典
-    dbinfo['slave_status'] = {}  # db主从状态变量
-    dbinfo['master_status'] = {}  # db从库对应主库状态变量
+    dbinfo['subordinate_status'] = {}  # db主从状态变量
+    dbinfo['main_status'] = {}  # db从库对应主库状态变量
     dbinfo['last_status'] = {}  # db上一次状态数值字典
     dbinfo['cur_status_cal'] = {}  # db当前计算后状态变量
     dbinfo['processlist'] = {}
@@ -140,16 +140,16 @@ class DBStatus(object):
                               'MAX_USED_CONNECTIONS', 'COM_ROLLBACK', 'COM_COMMIT', 'COM_ROLLBACK_TO_SAVEPOINT',
                               'HANDLER_ROLLBACK')
 
-        self.slave_status = (
-            'Last_Error', 'Seconds_Behind_Master', 'Master_Host', 'Master_User', 'Master_Port', 'Master_Log_File',
-            'Read_Master_Log_Pos', 'Replicate_Do_DB', 'Exec_Master_Log_Pos', 'Master_Server_Id',
-            'Last_SQL_Error', 'Relay_Master_Log_File', 'Relay_Log_File', 'Replicate_Ignore_DB',
-            'Last_IO_Error', 'Last_Errno', 'Master_Host', 'Slave_SQL_Running', 'Relay_Log_Pos',
-            'Last_IO_Errno', 'Slave_IO_Running', 'Last_SQL_Errno')
+        self.subordinate_status = (
+            'Last_Error', 'Seconds_Behind_Main', 'Main_Host', 'Main_User', 'Main_Port', 'Main_Log_File',
+            'Read_Main_Log_Pos', 'Replicate_Do_DB', 'Exec_Main_Log_Pos', 'Main_Server_Id',
+            'Last_SQL_Error', 'Relay_Main_Log_File', 'Relay_Log_File', 'Replicate_Ignore_DB',
+            'Last_IO_Error', 'Last_Errno', 'Main_Host', 'Subordinate_SQL_Running', 'Relay_Log_Pos',
+            'Last_IO_Errno', 'Subordinate_IO_Running', 'Last_SQL_Errno')
 
-        self.master_status = ('File', 'Position', 'Executed_Gtid_Set')
+        self.main_status = ('File', 'Position', 'Executed_Gtid_Set')
 
-        self.master_slave_info = ('Master_id', 'Server_id')
+        self.main_subordinate_info = ('Main_id', 'Server_id')
 
         self.trycount = 5
 
@@ -181,13 +181,13 @@ class DBStatus(object):
                     self.dbins[db]['last_status'][var] = 0
 
     # ------------------------------------------------------------------------------------
-    # Get global variables, global status, slave status.
+    # Get global variables, global status, subordinate status.
     # ------------------------------------------------------------------------------------
     def get_status_var(self):
         """获取全局状态变量,系统变量,复制状态变量,从库对应主库状态变量.
         """
         for db in self.dbins.values():
-            is_master = ""
+            is_main = ""
             try:
                 self.conn = MySQLdb.connect(host=db['ip'], port=db['port'], user=db['user'], passwd=db['password'], db=db['dbschema'],
                                             charset='utf8') 
@@ -225,19 +225,19 @@ class DBStatus(object):
             # 获取复制的状态变量
             try:
                 self.cur = self.conn.cursor(MySQLdb.cursors.DictCursor)
-                sql = "show slave status;"
+                sql = "show subordinate status;"
                 self.cur.execute(sql)
                 rows = self.cur.fetchall()
-                db['slave_status'] = rows[0].copy()
+                db['subordinate_status'] = rows[0].copy()
                 for key in rows[0]:
-                    if key not in self.slave_status:
-                        del db['slave_status'][key]
-                for (key, value) in db['slave_status'].items():
+                    if key not in self.subordinate_status:
+                        del db['subordinate_status'][key]
+                for (key, value) in db['subordinate_status'].items():
                     if value == '' :
-                        db['slave_status'][key] = 'something'
+                        db['subordinate_status'][key] = 'something'
             except IndexError:
                 # 处理数据库不是从库(不存在复制状态变量)的情况
-                is_master = 1
+                is_main = 1
                 pass
             self.cur.close()
 
@@ -266,10 +266,10 @@ class DBStatus(object):
             self.conn.close()
 
             # 获取主库状态变量
-            if not is_master:
-                mip = db['slave_status']['Master_Host']
-                muser = db['slave_status']['Master_User']
-                mport = db['slave_status']['Master_Port']
+            if not is_main:
+                mip = db['subordinate_status']['Main_Host']
+                muser = db['subordinate_status']['Main_User']
+                mport = db['subordinate_status']['Main_Port']
 
                 try:
                     # 复制用户密码
@@ -281,13 +281,13 @@ class DBStatus(object):
                 # 获取对应主库状态变量
                 try:
                     self.cur = self.conn1.cursor(MySQLdb.cursors.DictCursor)
-                    master_sql = "show master status;"
-                    self.cur.execute(master_sql)
+                    main_sql = "show main status;"
+                    self.cur.execute(main_sql)
                     rows = self.cur.fetchall()
-                    db['master_status'] = rows[0].copy()
+                    db['main_status'] = rows[0].copy()
                     for key in rows[0]:
-                        if key not in self.master_status:
-                            del db['master_status'][key]
+                        if key not in self.main_status:
+                            del db['main_status'][key]
                 except Exception, e:
                     print e
                 self.cur.close()
@@ -308,8 +308,8 @@ class DBStatus(object):
             # other calculate
             # 计算当前从库传输的二进制日志与主库日志的差值
             try:
-                db['slave_status']['Binlog_File_Diff'] = \
-                    int(db['master_status']['File'][10:]) - int(db['slave_status']['Master_Log_File'][10:])
+                db['subordinate_status']['Binlog_File_Diff'] = \
+                    int(db['main_status']['File'][10:]) - int(db['subordinate_status']['Main_Log_File'][10:])
             except KeyError:
                 pass
 
@@ -519,7 +519,7 @@ class DBStatus(object):
             f.write("start_utime =" + str(int(time.mktime(time.strptime(DATETIME, '%Y-%m-%d %H:%M:%S')))) + "\n\n") 
             dbs = self.dbins.values() # 获取db实例名字
             dbs.sort()
-            for status_type in ('cur_status_cal','slave_status'):
+            for status_type in ('cur_status_cal','subordinate_status'):
                 f.write("# " + "-"*20 + ' ' + status_type + ' ' + "-"*20 + "\n")
                 for (key, value) in dbs[0][status_type].items():
                     f.write(insname + '.' + str(key) + '=' + str(value) + "\n")
@@ -553,7 +553,7 @@ class DBStatus(object):
         dbs = self.dbins.values()
         dbs.sort()
         print str(DATETIME) + " * "*20 + " push item " + " * "*20
-        for status_type in ('cur_status_cal','slave_status'):
+        for status_type in ('cur_status_cal','subordinate_status'):
             for (key, value) in dbs[0][status_type].items():
                 zb_sender_cmd = ('%s -z %s -p %d -s %s -k %s -o %s') % (zb_sender, zb_server, zb_server_port, insname, str(key), str(value))
                 print zb_sender_cmd
@@ -578,7 +578,7 @@ class DBStatus(object):
         
 
     # ------------------------------------------------------------------------
-    # Write cur_status_cal, slave status , master status , into DB tables
+    # Write cur_status_cal, subordinate status , main status , into DB tables
     # ------------------------------------------------------------------------
     def write_status_tbl():
         pass
